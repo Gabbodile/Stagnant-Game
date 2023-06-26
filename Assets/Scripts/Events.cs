@@ -8,34 +8,35 @@ public class Events : MonoBehaviour
 {
     [SerializeField] int toasterKey = 0;
 
-    public GameObject kitchenBackground;
-    public GameObject bedroomBackground;
     public GameObject bathroomBackground;
     public GameObject bathroomDoorBackground;
-
     public GameObject[] scenes;
     public int currentScene = 0;
 
     public TextMeshProUGUI display;
-    public TextMeshPro PrevButton;
-
-
-    bool bathroom = false;
-    bool bathroomDoor = false;
-    bool bedroom = false;
-    bool kitchen = false;
-    bool bathroomOpen = false;
-
+    public Button PrevButton;
+    public Button NextButton;
+    public Button LeaveButton;
     public float textResetTime = 1f;
+
+    public GameObject OldMan;
+
+    bool bathroomOpen = false;
+    bool InBathroom = false;
 
     public void Start()
     {
-        kitchenBackground.SetActive(true);
-        kitchen = true;
-        bedroomBackground.SetActive(false);
-        bathroomBackground.SetActive(false);
-        bathroomDoorBackground.SetActive(false);
-        scenes = GameObject.FindGameObjectsWithTag("Scene");
+        scenes[0].SetActive(true);
+        for (int i = 0; i < scenes.Length; i++)
+        {
+            scenes[i].SetActive(false);
+            if (scenes[0])
+            {
+                scenes[0].SetActive(true);
+                continue;
+            }
+        }
+            LeaveButton.gameObject.SetActive(false);
         
     }
     public void Update()
@@ -44,55 +45,44 @@ public class Events : MonoBehaviour
         {
             bathroomOpen = true;
         }
+        if (currentScene == scenes.Length - 1)
+        {
+            NextButton.interactable = false;
+        }
+        else
+        {
+            NextButton.interactable = true;
+        }
+        if (currentScene == 0)
+        {
+            PrevButton.interactable = false;
+        }
+        else if(InBathroom == false)
+        {
+            PrevButton.interactable = true;
+        }
     }
     public void SceneChanger()
     {
-        if(kitchen == true)
-        {
-            kitchen = false;
-            bathroomDoor = true;
-            kitchenBackground.SetActive(false);
-            bathroomDoorBackground.SetActive(true);
-            Debug.Log("Bathroom Door");
-        }
-        else if (bedroom == true)
-        {
-            bedroom = false;
-            kitchen = true;
-            bedroomBackground.SetActive(false);
-            kitchenBackground.SetActive(true);
-            Debug.Log("Kitchen");
-        }
-        else if (bathroomDoor == true)
-        {
-            bathroomDoor = false;
-            bedroom = true;
-            bathroomDoorBackground.SetActive (false);
-            bedroomBackground.SetActive(true);
-            Debug.Log("Bedroom");
-        }
-        else if (bathroom == true)
-        {
-            bathroom = false;
-            bathroomDoor = true;
-            bathroomBackground.SetActive(false);
-            bathroomDoorBackground.SetActive(true);
-            Debug.Log("Bathroom Door 2");
-        }
+        InBathroom = false;
+        bathroomBackground.SetActive(false);
+        bathroomDoorBackground.SetActive(true);
+        LeaveButton.gameObject.SetActive(false);
+        NextButton.interactable = false;
+        PrevButton.interactable = true;
+        
     }
 
     public void NextScene()
     {
+        
         scenes[currentScene].SetActive(false);
         scenes[currentScene + 1].SetActive(true);
         currentScene = currentScene + 1;
     }
     public void PreviousScene()
     {
-        if(currentScene < 0)
-        {
-
-        }
+        
         scenes[currentScene].SetActive(false);
         scenes[currentScene - 1].SetActive(true);
         currentScene = currentScene - 1;
@@ -101,10 +91,12 @@ public class Events : MonoBehaviour
     {
         if (bathroomOpen == true)
         {
-            bathroom = true;
-            bathroomDoor = false;
+            InBathroom = true;
             bathroomBackground.SetActive(true);
             bathroomDoorBackground.SetActive(false);
+            LeaveButton.gameObject.SetActive(true);
+            NextButton.interactable = false;
+            PrevButton.interactable = false;
         }
         else
         {
@@ -131,6 +123,7 @@ public class Events : MonoBehaviour
     public void FoundMeds()
     {
         display.text = "congrats You found Your Schizophrenia Meds now would you kindly take them";
+        OldMan.SetActive(false);
     }
 
     public IEnumerator resetText()
