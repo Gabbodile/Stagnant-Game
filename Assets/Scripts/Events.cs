@@ -13,7 +13,12 @@ public class Events : MonoBehaviour
     public GameObject bathroomBackground;
     public GameObject bathroomDoorBackground;
 
+    public GameObject[] scenes;
+    public int currentScene = 0;
+
     public TextMeshProUGUI display;
+    public TextMeshPro PrevButton;
+
 
     bool bathroom = false;
     bool bathroomDoor = false;
@@ -30,6 +35,8 @@ public class Events : MonoBehaviour
         bedroomBackground.SetActive(false);
         bathroomBackground.SetActive(false);
         bathroomDoorBackground.SetActive(false);
+        scenes = GameObject.FindGameObjectsWithTag("Scene");
+        
     }
     public void Update()
     {
@@ -74,6 +81,22 @@ public class Events : MonoBehaviour
         }
     }
 
+    public void NextScene()
+    {
+        scenes[currentScene].SetActive(false);
+        scenes[currentScene + 1].SetActive(true);
+        currentScene = currentScene + 1;
+    }
+    public void PreviousScene()
+    {
+        if(currentScene < 0)
+        {
+
+        }
+        scenes[currentScene].SetActive(false);
+        scenes[currentScene - 1].SetActive(true);
+        currentScene = currentScene - 1;
+    }
     public void DoorOpen()
     {
         if (bathroomOpen == true)

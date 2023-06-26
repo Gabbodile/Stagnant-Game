@@ -1071,7 +1071,10 @@ MonoBehaviour:
   bedroomBackground: {fileID: 2080676798}
   bathroomBackground: {fileID: 1718126966}
   bathroomDoorBackground: {fileID: 873802526}
+  scenes: []
+  currentScene: 0
   display: {fileID: 249769285}
+  PrevButton: {fileID: 0}
   textResetTime: 1
 --- !u!4 &1369550594
 Transform:
@@ -1473,7 +1476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1995487971
 SpriteRenderer:
   m_ObjectHideFlags: 0
