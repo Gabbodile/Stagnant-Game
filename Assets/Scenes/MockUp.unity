@@ -1068,7 +1068,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toasterKey: 0
   bathroomBackground: {fileID: 1718126966}
-  bathroomDoorBackground: {fileID: 873802526}
   scenes:
   - {fileID: 1995487970}
   - {fileID: 2080676798}
@@ -1079,6 +1078,12 @@ MonoBehaviour:
   NextButton: {fileID: 1626522916}
   LeaveButton: {fileID: 346414297}
   textResetTime: 1
+  dialogue:
+  - The Door Is Locked
+  - '*Rattle*'
+  - That Damn Toaster is Messing with the Locks Again, can you try giving it a couple
+    of Wacks for me? I need my Medicine from the Bathroom
+  - congrats You found Your Schizophrenia Meds now would you kindly take them
   OldMan: {fileID: 1276743985}
 --- !u!4 &1369550594
 Transform:
