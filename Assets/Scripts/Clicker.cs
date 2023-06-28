@@ -6,6 +6,8 @@ using UnityEngine;
 public class Clicker : MonoBehaviour
 {
     [SerializeField] string obName = null;//Empty string
+    [SerializeField] GameObject obObject = null;//Empty gameObject
+    [SerializeField] GameObject obObject1 = null;//Empty gameObject
 
     public Events eventScript;//Refrences the Event Script
 
@@ -22,8 +24,24 @@ public class Clicker : MonoBehaviour
             {
                 obName = Hit.transform.name;//grabs the hi bjects name and stores it in the empty string
                 Debug.Log(obName);
+                if (Hit.collider.gameObject.tag == "Drag")//checks if the object can be dragged
+                {
+                    obObject = Hit.collider.gameObject;//sets the object
+                }
             }
+           
         }
+        if (Input.GetMouseButtonUp(0))//Mouse Input
+        {
+            obObject = obObject1;//Resets the Object
+        }
+        
+        obObject.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);//Sets the Object to the Mouse Position
+        Actions();//Checks for actions
+    }
+
+    private void Actions()//Stores Actions
+    {
         if (obName == "Door")//Checks name
         {
             eventScript.DoorOpen();//acivates Function in Event script
@@ -39,7 +57,7 @@ public class Clicker : MonoBehaviour
             eventScript.OldManTalk();//acivates Function in Event script
             obName = "None";//Resets empty String
         }
-        if(obName == "Meds")//Checks name
+        if (obName == "Meds")//Checks name
         {
             eventScript.FoundMeds();//acivates Function in Event script
             obName = "None";//Resets empty String
