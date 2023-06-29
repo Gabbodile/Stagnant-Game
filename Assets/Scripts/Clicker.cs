@@ -35,8 +35,11 @@ public class Clicker : MonoBehaviour
         {
             obObject = obObject1;//Resets the Object
         }
-        
-        obObject.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);//Sets the Object to the Mouse Position
+
+        Vector3 mousePos = Input.mousePosition;//Sets up new Vector 3 that mimics the Mouse Position
+        mousePos.z = Camera.main.nearClipPlane;//defaults the Z axis to stop disapearing objects
+        obObject.transform.position = Camera.main.ScreenToWorldPoint(mousePos);//Sets the Object to the Mouse Position
+
         Actions();//Checks for actions
     }
 
