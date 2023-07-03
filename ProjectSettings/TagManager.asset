@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Scene
   - Drag
+  - NPC
+  - Door
   layers:
   - Default
   - TransparentFX
