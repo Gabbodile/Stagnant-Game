@@ -12,6 +12,7 @@ public class Interact : MonoBehaviour
     [SerializeField] GameObject obObject1 = null;//Empty gameObject
 
 
+
     //public Events eventScript;//Refrences the Event Script
 
     private void Start()
@@ -27,11 +28,12 @@ public class Interact : MonoBehaviour
             {
                 obName = Hit.transform.name;//grabs the hit objects name and stores it in the empty string
                 obObject = Hit.collider.gameObject;//sets the object
-                Debug.Log(obName);
+               
                 if (Hit.collider.gameObject.tag == "Drag")//checks if the object can be dragged
                 {
                     dragObject = Hit.collider.gameObject;//sets the object
                 }
+                Actions(); //Checks for actions
             }
 
         }
@@ -44,17 +46,18 @@ public class Interact : MonoBehaviour
         mousePos.z = Camera.main.nearClipPlane;//defaults the Z axis to stop disapearing objects
         dragObject.transform.position = Camera.main.ScreenToWorldPoint(mousePos);//Sets the Object to the Mouse Position
 
-        Actions();//Checks for actions
+
     }
 
     private void Actions()//Stores Actions
     {
-        if (obObject.tag == "NPC")
+        obObject.GetComponent<EventSystem>().Interacted();//tells the pbject that it has been interacted with
+        if (obObject.GetComponent<NPC>() != null)
         {
             obObject.GetComponent<NPC>().Dialogue();//activates the Npc scripts
             obObject = obObject1;//Resets the Object
         }
-        if(obObject.tag == "Door")
+        if(obObject.GetComponent<Doors>() != null)
         {
             obObject.GetComponent<Doors>().OpenDoor();//activates the doors script
             obObject = obObject1;//Resets the Object
