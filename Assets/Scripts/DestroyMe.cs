@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DestroyMe : MonoBehaviour
+{
+    public DestroyObject DO;
+    void Start()
+    {
+        DO = FindObjectOfType<DestroyObject>();
+    }
+
+   
+
+    public void IhaveBeenDestroyed()
+    {
+        DO.Destroy();
+    }
+}
