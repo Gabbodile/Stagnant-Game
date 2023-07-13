@@ -10,7 +10,7 @@ public class Interact : MonoBehaviour
 
     [SerializeField] GameObject obObject = null;//Empty gameObject
     [SerializeField] GameObject obObject1 = null;//Empty gameObject
-
+    public Unlock ul;
 
 
     //public Events eventScript;//Refrences the Event Script
@@ -35,7 +35,7 @@ public class Interact : MonoBehaviour
                 }
                 Actions(); //Checks for actions
             }
-
+            ul.UnlockThing();
         }
         if (Input.GetMouseButtonUp(0))//Mouse Input
         {
@@ -51,7 +51,7 @@ public class Interact : MonoBehaviour
 
     private void Actions()//Stores Actions
     {
-        obObject.GetComponent<EventSystem>().Interacted();//tells the pbject that it has been interacted with
+        obObject.GetComponent<EventReporter>().Interacted();//tells the pbject that it has been interacted with
         if (obObject.GetComponent<NPC>() != null)
         {
             obObject.GetComponent<NPC>().Dialogue();//activates the Npc scripts
