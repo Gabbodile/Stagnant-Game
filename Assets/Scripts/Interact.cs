@@ -8,7 +8,7 @@ public class Interact : MonoBehaviour
     [SerializeField] GameObject dragObject = null;//Empty gameObject
     [SerializeField] GameObject dragObject1 = null;//Empty gameObject
 
-    [SerializeField] GameObject obObject = null;//Empty gameObject
+    [SerializeField] public GameObject obObject = null;//Empty gameObject
     [SerializeField] GameObject obObject1 = null;//Empty gameObject
     public Unlock ul;
 
@@ -51,7 +51,12 @@ public class Interact : MonoBehaviour
 
     private void Actions()//Stores Actions
     {
-        obObject.GetComponent<EventReporter>().Interacted();//tells the pbject that it has been interacted with
+       
+        if (obObject.GetComponent<EventReporter>() != null)
+        {
+            obObject.GetComponent<EventReporter>().Interacted();//tells the pbject that it has been interacted with
+            
+        }
         if (obObject.GetComponent<NPC>() != null)
         {
             obObject.GetComponent<NPC>().Dialogue();//activates the Npc scripts
@@ -60,6 +65,11 @@ public class Interact : MonoBehaviour
         if(obObject.GetComponent<Doors>() != null)
         {
             obObject.GetComponent<Doors>().OpenDoor();//activates the doors script
+            obObject = obObject1;//Resets the Object
+        }
+        if (obObject.GetComponent<DestroyMe>() != null)
+        {
+            obObject.GetComponent<DestroyMe>().IhaveBeenDestroyed();//activates the Npc scripts
             obObject = obObject1;//Resets the Object
         }
     }
