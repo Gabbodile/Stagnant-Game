@@ -258,7 +258,7 @@ MonoBehaviour:
   dragObject1: {fileID: 525017862}
   obObject: {fileID: 1037917332}
   obObject1: {fileID: 1037917332}
-  ul: {fileID: 258621700}
+  ul: {fileID: 1860353119}
 --- !u!1 &258621696
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +270,6 @@ GameObject:
   - component: {fileID: 258621699}
   - component: {fileID: 258621698}
   - component: {fileID: 258621697}
-  - component: {fileID: 258621700}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
@@ -361,22 +360,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 697, y: 444}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &258621700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258621696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b050d9666bcb5254ea27ef0017ad3773, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dontDestroy: 0
-  _CL1: {fileID: 1860353115}
-  locks: {fileID: 1445020216}
-  key: 0000000001000000
 --- !u!1 &258942402
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,8 +878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88232fa4864bce3419df5b96089798d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CL: {fileID: 0}
-  EventName: 
+  CL: {fileID: 1860353115}
+  EventName: Pie
 --- !u!1 &1037917332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,7 +1445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CL: {fileID: 1860353115}
-  EventName: 
+  EventName: OldMan
 --- !u!1 &1853764334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1644,15 @@ MonoBehaviour:
   - Event: Laundry
     Check: 0
     pointValue: 0
+  - Event: Dave
+    Check: 0
+    pointValue: 0
+  - Event: OldMan
+    Check: 0
+    pointValue: 0
+  - Event: Pie
+    Check: 0
+    pointValue: 0
 --- !u!114 &1860353116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,8 +1709,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroy: 0
   _CL1: {fileID: 1860353115}
-  locks: {fileID: 1445020216}
-  key: 00000000
+  Lock: {fileID: 1445020216}
+  key1: 0
+  key2: 1
 --- !u!1 &1936603824
 GameObject:
   m_ObjectHideFlags: 0

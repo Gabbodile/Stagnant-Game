@@ -15,6 +15,10 @@ public class EventReporter : MonoBehaviour
             {
                 CL.structArray[i].Check = true;
             }
+            else if (CL.structArray[i].Event != EventName)
+            {
+                CL.structArray[i].Check = CL.structArray[i].Check;
+            }
         }
 
     }

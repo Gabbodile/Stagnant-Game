@@ -6,8 +6,10 @@ using UnityEngine;
 public class Unlock : GameBehaviour<Unlock>
 {
     public CheckList _CL1;
-    public GameObject locks;
-    public int[] key;
+    public GameObject Lock;
+    public int key1, key2;
+    bool Lock1;
+    bool Lock2;
     
 
     // Update is called once per frame
@@ -18,12 +20,19 @@ public class Unlock : GameBehaviour<Unlock>
     }
     public void UnlockThing()
     {
-        for (int i = 0; i < key.Length; i++)
-        {
-            if (_CL1.structArray[i].Check == true)
+            if (_CL1.structArray[key1].Check == true)
             {
-                    locks.gameObject.SetActive(true);
+                Lock1 = true;
             }
+ 
+            if (_CL1.structArray[key2].Check == true)
+            { 
+            Lock2 = true;
+            }
+
+        if (Lock1 == true && Lock2 == true)
+        {
+            Lock.gameObject.SetActive(true);
         }
     }
 }
