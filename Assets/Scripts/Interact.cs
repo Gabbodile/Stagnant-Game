@@ -34,8 +34,11 @@ public class Interact : MonoBehaviour
                     dragObject = Hit.collider.gameObject;//sets the object
                 }
                 Actions(); //Checks for actions
+                
+                    
+                
             }
-            ul.UnlockThing();
+            
         }
         if (Input.GetMouseButtonUp(0))//Mouse Input
         {
@@ -54,8 +57,11 @@ public class Interact : MonoBehaviour
        
         if (obObject.GetComponent<EventReporter>() != null)
         {
-            obObject.GetComponent<EventReporter>().Interacted();//tells the pbject that it has been interacted with
-            
+            obObject.GetComponent<EventReporter>().Interacted();//tells the object that it has been interacted with
+            if (obObject.GetComponent<EventReporter>().isKey == true)
+            {
+                ul.UnlockCheck();//checks for unlocks
+            }
         }
         if (obObject.GetComponent<NPC>() != null)
         {

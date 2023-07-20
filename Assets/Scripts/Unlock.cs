@@ -5,34 +5,30 @@ using UnityEngine;
 
 public class Unlock : GameBehaviour<Unlock>
 {
-    public CheckList _CL1;
-    public GameObject Lock;
-    public int key1, key2;
-    bool Lock1;
-    bool Lock2;
-    
+    public Unlock1Key[] oneKey;
+    public Unlock2Key[] twoKey;
+    public Unlock3Key[] threeKey;
+    public Unlock4Key[] fourKey;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-       
-    }
-    public void UnlockThing()
-    {
-            if (_CL1.structArray[key1].Check == true)
-            {
-                Lock1 = true;
-            }
- 
-            if (_CL1.structArray[key2].Check == true)
-            { 
-            Lock2 = true;
-            }
 
-        if (Lock1 == true && Lock2 == true)
+    public void UnlockCheck()
+    {
+        for (int i = 0; i < oneKey.Length; i++)
         {
-            Lock.gameObject.SetActive(true);
+            oneKey[i].UnlockThing1();
+        }
+        for (int j = 0; j < twoKey.Length; j++)
+        {
+            twoKey[j].UnlockThing2();
+        }
+        for (int k = 0; k < threeKey.Length; k++)
+        {
+            threeKey[k].UnlockThing3();
+        }
+        for (int l = 0; l < fourKey.Length; l++)
+        {
+            fourKey[l].UnlockThing4();
         }
     }
+
 }
