@@ -9,9 +9,6 @@ public class DestroyMe : MonoBehaviour
     {
         DO = FindObjectOfType<DestroyObject>();
     }
-
-   
-
     public void IhaveBeenDestroyed()
     {
         DO.Destroy();

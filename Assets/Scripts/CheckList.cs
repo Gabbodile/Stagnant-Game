@@ -25,12 +25,14 @@ public class CheckList : MonoBehaviour
                 Points = Points + structArray[i].pointValue;
             }
         }
-        DefaultPoints();
+        StartCoroutine(DefaultPoints());
 
     }
-    public void DefaultPoints()
+    public IEnumerator DefaultPoints()
     {
+        yield return new WaitForSeconds(1);
         Points = 0;
+        StopCoroutine(DefaultPoints());
     }
 
 }
