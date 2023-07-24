@@ -4,15 +4,9 @@ using UnityEngine;
 public enum PlayerState{GOOD, NUETRAL, BAD }
 public class GameManager : GameBehaviour<GameManager> 
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] public int LoopNumber;
+    public void LoopCalculator()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        LoopNumber = LoopNumber + 1;
     }
 }

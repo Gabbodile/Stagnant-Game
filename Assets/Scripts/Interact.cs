@@ -11,6 +11,7 @@ public class Interact : MonoBehaviour
     [SerializeField] public GameObject obObject = null;//Empty gameObject
     [SerializeField] GameObject obObject1 = null;//Empty gameObject
     public Unlock ul;
+    public GameManager GM;
 
 
     //public Events eventScript;//Refrences the Event Script
@@ -32,6 +33,10 @@ public class Interact : MonoBehaviour
                 if (Hit.collider.gameObject.tag == "Drag")//checks if the object can be dragged
                 {
                     dragObject = Hit.collider.gameObject;//sets the object
+                }
+                if (Hit.collider.gameObject.tag == "EndNight")
+                {
+                    GM.LoopCalculator();
                 }
                 Actions(); //Checks for actions
                 
