@@ -338,8 +338,8 @@ MonoBehaviour:
   dragObject1: {fileID: 525017862}
   obObject: {fileID: 1037917332}
   obObject1: {fileID: 1037917332}
-  ul: {fileID: 0}
-  GM: {fileID: 0}
+  ul: {fileID: 2023239844}
+  GM: {fileID: 1860353116}
 --- !u!1 &258621696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,9 +1027,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Portait: {fileID: 21300000, guid: 99e28fafa7c91fd4a828d0db12aa2356, type: 3}
-  dialogueText: Hi I Am Pie, here is your key
-  uiManager: {fileID: 0}
+  dialogueText:
+  - Hi I am Pie. Here is youre Key. Can you please do the Laundry
+  dialogueSelect: 0
+  uiManager: {fileID: 2023239843}
+  CL: {fileID: 1860353115}
   energyValue: 1
+  EventCheck:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!212 &841675700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1096,7 +1107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CL: {fileID: 1860353115}
   EventName: Pie
-  isKey: 0
+  isKey: 1
 --- !u!1 &1037917332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1223,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2023239843}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
         m_MethodName: closePanelFuncion
         m_Mode: 1
@@ -1812,6 +1823,7 @@ GameObject:
   - component: {fileID: 1445020217}
   - component: {fileID: 1445020219}
   - component: {fileID: 1445020218}
+  - component: {fileID: 1445020220}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -1879,6 +1891,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NewRoom: {fileID: 2084408834}
   currentRoom: {fileID: 258621696}
+--- !u!114 &1445020220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445020216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4241ae35d61aae343ba8ae4fb58bf35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CL1: {fileID: 1860353115}
+  Lock: {fileID: 1445020216}
+  key1: 0
+  key2: 2
 --- !u!1 &1491524591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2226,9 +2254,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Portait: {fileID: 21300000, guid: df85e721811561d4093062784fe113e1, type: 3}
-  dialogueText: The Door is Locked The Pie Has The Key
-  uiManager: {fileID: 0}
+  dialogueText:
+  - The Door is Locked. The Pie has the Key
+  - Did Pie have they key?
+  - Thank you for doing the Laundry
+  dialogueSelect: 0
+  uiManager: {fileID: 2023239843}
+  CL: {fileID: 1860353115}
   energyValue: 1
+  EventCheck:
+  - Laundry
+  - Pie
 --- !u!212 &1746358719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2336,7 +2372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CL: {fileID: 1860353115}
   EventName: OldMan
-  isKey: 0
+  isKey: 1
 --- !u!1 &1853764334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2385,7 @@ GameObject:
   - component: {fileID: 1853764338}
   - component: {fileID: 1853764337}
   - component: {fileID: 1853764336}
+  - component: {fileID: 1853764339}
   m_Layer: 0
   m_Name: Laundry
   m_TagString: Untagged
@@ -2462,6 +2499,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25.264217, y: 24.77935}
   m_EdgeRadius: 0
+--- !u!114 &1853764339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853764334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88232fa4864bce3419df5b96089798d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CL: {fileID: 1860353115}
+  EventName: Laundry
+  isKey: 0
 --- !u!1 &1860353112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,7 +2883,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroy: 0
   oneKey: []
-  twoKey: []
+  twoKey:
+  - {fileID: 1445020220}
   threeKey: []
   fourKey: []
 --- !u!114 &2023239845
