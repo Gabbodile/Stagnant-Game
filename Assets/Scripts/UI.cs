@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using DG.Tweening;
 
 public class UI : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class UI : MonoBehaviour
     public Button closePanel;
     public GameObject pausePanel;
     public static bool isPaused = false;
+    public GameObject Phone;
+    public Vector2 endPoint;
+    public Vector2 startPoint;
+    public bool PhoneInUse;
     public void Start()
     {
         panel.SetActive(false);
@@ -65,5 +70,18 @@ public class UI : MonoBehaviour
     {
         Debug.Log("Quit!");
         Application.Quit();
+    }
+    public void UsePhone()
+    {
+        if (PhoneInUse == true)
+        {
+            startPoint = Phone.transform.position;
+            Phone.transform.DOMove(endPoint, 1f, true);
+        }
+       else if (PhoneInUse == false)
+        {
+            Phone.transform.DOMove(startPoint, 1f, true);
+        }
+        
     }
 }
