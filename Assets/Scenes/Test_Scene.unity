@@ -2265,8 +2265,8 @@ MonoBehaviour:
   CL: {fileID: 1860353115}
   energyValue: 1
   EventCheck:
-  - Laundry
   - Pie
+  - Laundry
 --- !u!212 &1746358719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2576,7 +2576,7 @@ MonoBehaviour:
     pointValue: 0
   - Event: Pie
     Check: 0
-    pointValue: 0
+    pointValue: 1
 --- !u!114 &1860353116
 MonoBehaviour:
   m_ObjectHideFlags: 0
