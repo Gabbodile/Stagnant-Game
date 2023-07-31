@@ -340,6 +340,7 @@ MonoBehaviour:
   obObject1: {fileID: 1037917332}
   ul: {fileID: 2023239844}
   GM: {fileID: 1860353116}
+  CL: {fileID: 0}
 --- !u!1 &258621696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1109,7 @@ MonoBehaviour:
   CL: {fileID: 1860353115}
   EventName: Pie
   isKey: 1
+  usesEnergy: 0
 --- !u!1 &1037917332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2375,7 @@ MonoBehaviour:
   CL: {fileID: 1860353115}
   EventName: OldMan
   isKey: 1
+  usesEnergy: 0
 --- !u!1 &1853764334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,6 +2517,7 @@ MonoBehaviour:
   CL: {fileID: 1860353115}
   EventName: Laundry
   isKey: 0
+  usesEnergy: 0
 --- !u!1 &1860353112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,6 +2530,7 @@ GameObject:
   - component: {fileID: 1860353115}
   - component: {fileID: 1860353116}
   - component: {fileID: 1860353117}
+  - component: {fileID: 1860353118}
   m_Layer: 0
   m_Name: UniversalManagers
   m_TagString: Untagged
@@ -2560,6 +2565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a6c5c7826437747b787ea7396a4e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ES: {fileID: 0}
   Points: 0
   structArray:
   - Event: OldMan
@@ -2597,6 +2603,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02774d0c63c3b7e4e9b7669e31788cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1860353118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860353112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58e3d444535ede428444031753df540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CL: {fileID: 1860353115}
+  energyLevels: 0
+  LevelA: 5
+  LevelB: 10
+  LevelC: 15
+  LevelD: 20
+  ListA: []
+  ListB: []
+  ListC: []
+  ListD: []
 --- !u!1 &1936603824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2869,6 +2897,10 @@ MonoBehaviour:
   panel: {fileID: 1512153412}
   closePanel: {fileID: 1170094379}
   pausePanel: {fileID: 69735470}
+  Phone: {fileID: 0}
+  endPoint: {x: 0, y: 0}
+  startPoint: {x: 0, y: 0}
+  PhoneInUse: 0
 --- !u!114 &2023239844
 MonoBehaviour:
   m_ObjectHideFlags: 0

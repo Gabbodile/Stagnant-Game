@@ -7,6 +7,7 @@ public class EventReporter : MonoBehaviour
     public CheckList CL;
     public string EventName;
     public bool isKey;
+    public bool usesEnergy;
 
     public void Interacted()
     {

@@ -4,38 +4,48 @@ using UnityEngine;
 
 public class EnergySystem : MonoBehaviour
 {
-    public int energyLevels;
-    public int LockCheck;
-    public int UnlockCheck;
-    public GameObject[] LockedObjects;
-    public GameObject[] unlockObjects;
     public CheckList CL;
 
+    public int energyLevels;
+    public int LevelA = 5;
+    public int LevelB = 10;
+    public int LevelC = 15;
+    public int LevelD = 20;
 
-   void EnergyCheck()
-   {
-        CL.CalculatePoints();
-        energyLevels = CL.Points;
-   }
+    public GameObject[] ListA;
+    public GameObject[] ListB;
+    public GameObject[] ListC;
+    public GameObject[] ListD;
 
-    public void LockAcivities()
+    public void ELevels()
     {
-        if (energyLevels <= LockCheck)
+        energyLevels = CL.Points;
+        if (energyLevels <= LevelA)
         {
-            for (int i = 0; i < LockedObjects.Length; i++)
+            for (int i = 0; i < ListA.Length; i++)
             {
-                LockedObjects[i].SetActive(false);
+                ListA[i].SetActive(false);
             }
         }
-    }
-
-    public void UnlockActivities()
-    {
-        if (energyLevels >= UnlockCheck)
+        if (energyLevels <= LevelB)
         {
-            for (int i = 0; i < unlockObjects.Length; i++)
+            for (int i = 0; i < ListB.Length; i++)
             {
-                unlockObjects[i].SetActive(false);
+                ListB[i].SetActive(false);
+            }
+        }
+        if (energyLevels <= LevelC)
+        {
+            for (int i = 0; i < ListC.Length; i++)
+            {
+                ListC[i].SetActive(false);
+            }
+        }
+        if (energyLevels <= LevelD)
+        {
+            for (int i = 0; i < ListD.Length; i++)
+            {
+                ListD[i].SetActive(false);
             }
         }
     }

@@ -12,6 +12,7 @@ public class Interact : MonoBehaviour
     [SerializeField] GameObject obObject1 = null;//Empty gameObject
     public Unlock ul;
     public GameManager GM;
+    public CheckList CL;
 
 
     //public Events eventScript;//Refrences the Event Script
@@ -63,7 +64,11 @@ public class Interact : MonoBehaviour
         if (obObject.GetComponent<EventReporter>() != null)
         {
             obObject.GetComponent<EventReporter>().Interacted();//tells the object that it has been interacted with
-            if (obObject.GetComponent<EventReporter>().isKey == true)
+            if (obObject.GetComponent<EventReporter>().usesEnergy == true)
+            {
+                CL.CalculatePoints();
+            }
+                if (obObject.GetComponent<EventReporter>().isKey == true)
             {
                 ul.UnlockCheck();//checks for unlocks
             }

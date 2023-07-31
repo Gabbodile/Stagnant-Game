@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CheckList : MonoBehaviour
 {
+    public EnergySystem ES;
     public int Points;
     public MyStruct[] structArray;
     [System.Serializable]
@@ -25,6 +26,7 @@ public class CheckList : MonoBehaviour
                 Points = Points + structArray[i].pointValue;
             }
         }
+        ES.ELevels();
         StartCoroutine(DefaultPoints());
 
     }
