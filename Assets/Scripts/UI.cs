@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using TMPro;
 using DG.Tweening;
@@ -15,8 +16,8 @@ public class UI : MonoBehaviour
     public GameObject pausePanel;
     public static bool isPaused = false;
     public GameObject Phone;
-    public Vector2 endPoint;
-    public Vector2 startPoint;
+    public Transform endPoint;
+    public Transform startPoint;
     public bool PhoneInUse;
     public void Start()
     {
@@ -73,15 +74,12 @@ public class UI : MonoBehaviour
     }
     public void UsePhone()
     {
-        if (PhoneInUse == true)
-        {
-            startPoint = Phone.transform.position;
-            Phone.transform.DOMove(endPoint, 1f, true);
-        }
-       else if (PhoneInUse == false)
-        {
-            Phone.transform.DOMove(startPoint, 1f, true);
-        }
-        
+            Debug.Log("Phoen Moving");
+            Phone.transform.DOMove(endPoint.position, 1f, true);
     }
+    public void DontUsePhone()
+    {
+        Phone.transform.DOMove(startPoint.position, 1f, true);
+    }
+
 }
