@@ -5,7 +5,6 @@ using UnityEngine;
 public class DestroyObject : MonoBehaviour
 {
     
-    public CheckList checkList;
     public Interact interact;
     public GameObject[] obToDestroy;
     public void Destroy()
