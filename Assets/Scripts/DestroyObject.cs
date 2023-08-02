@@ -7,21 +7,14 @@ public class DestroyObject : MonoBehaviour
     
     public CheckList checkList;
     public Interact interact;
-    public MyStruct[] DestroyArray;
-    [System.Serializable] 
-    public struct MyStruct
-    {
-        public int checkReference;
-        public GameObject obToDestroy;
-    }
+    public GameObject[] obToDestroy;
     public void Destroy()
     {
-        for (int i = 0; i < DestroyArray.Length; i++)
+        for (int i = 0; i < obToDestroy.Length; i++)
         {
-            if (interact.obObject.name == checkList.structArray[DestroyArray[i].checkReference].Event)
+            if (interact.obObject.name == obToDestroy[i].name)
             {
-                DestroyArray[i].obToDestroy.SetActive(false);
-                checkList.structArray[DestroyArray[i].checkReference].Check = true;
+                obToDestroy[i].SetActive(false);
             }
         }
     }
