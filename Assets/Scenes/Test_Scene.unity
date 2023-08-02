@@ -1760,7 +1760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a6c5c7826437747b787ea7396a4e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ES: {fileID: 0}
+  ES: {fileID: 1860353118}
   Points: 0
   structArray:
   - Event: OldMan
