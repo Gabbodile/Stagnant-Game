@@ -13,10 +13,18 @@ public class Interact : MonoBehaviour
     public Unlock unl;
     public GameManager GM;
     public CheckList CL;
+    private bool jumpPressed = false;
+    private bool interactPressed = false;
+    private bool submitPressed = false;
+
+    private static Interact instance;
 
 
     //public Events eventScript;//Refrences the Event Script
-
+    public static Interact GetInstance()
+    {
+        return instance;
+    }
     private void Start()
     {
         //eventScript = FindObjectOfType<Events>();//Find the Event scipt in the scene
@@ -88,5 +96,19 @@ public class Interact : MonoBehaviour
             obObject.GetComponent<DestroyMe>().IhaveBeenDestroyed();//activates the Npc scripts
             obObject = obObject1;//Resets the Object
         }
+    }
+   
+    public bool GetInteractPressed()
+    {
+        bool result = interactPressed;
+        interactPressed = false;
+        return result;
+    }
+
+    public bool GetSubmitPressed()
+    {
+        bool result = submitPressed;
+        submitPressed = false;
+        return result;
     }
 }

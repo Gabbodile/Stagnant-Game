@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Ink.Runtime;
+using System;
 
 public class Inky : MonoBehaviour
 {
+
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject questionsPanel;
@@ -15,7 +18,7 @@ public class Inky : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayName;
 
-
+    public CheckList CL;
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
@@ -26,21 +29,20 @@ public class Inky : MonoBehaviour
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
 
-
+    private static Inky instance;
 
     private const string SPEAKER_TAG = "speaker";
     private const string EMOTE = "emote";
 
-    //needed for freezing player
-    public GameObject player;
-    public GameObject NPC;
-    public Rigidbody2D rB;
-    public GameObject journal;
-
+  
 
     private void Awake()
     {
-      
+        if (instance != null)
+        {
+            Debug.LogWarning("Found more than one Instance of Dialogue Manager");
+        }
+        instance = this;
     }
 
     private void Start()
@@ -48,7 +50,7 @@ public class Inky : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         questionsPanel.SetActive(false);
-        rB = player.GetComponent<Rigidbody2D>();
+       
 
 
         //get the choices
@@ -69,14 +71,21 @@ public class Inky : MonoBehaviour
         {
             return;
         }
-        
+        if (Interact.GetInstance().GetSubmitPressed())
+        {
+            ContinueStory();
+        }
         if (Input.GetKeyDown(KeyCode.Backspace) && dialogueIsPlaying == true)
         {
             ExitDialogueMode();
         }
     }
 
-  
+    public static Inky GetInstance()
+    {
+        return instance;
+    }
+
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         Debug.Log("DialogueMode");
@@ -84,10 +93,8 @@ public class Inky : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         questionsPanel.SetActive(true);
-        NPC.SetActive(true);
-
-
         
+
         ContinueStory();
     }
     private void ContinueStory()
@@ -95,7 +102,14 @@ public class Inky : MonoBehaviour
         if (currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
-
+            for (int i = 0; i < CL.structArray.Length; i++)
+            {
+                if (CL.structArray[i].Event == dialogueText.text)
+                {
+                    CL.structArray[i].Check = true;
+                }
+               
+            }
             DisplayChoices();
 
             HandleTags(currentStory.currentTags);
@@ -114,9 +128,7 @@ public class Inky : MonoBehaviour
         dialoguePanel.SetActive(false);
         questionsPanel.SetActive(false);
         dialogueText.text = "";
-       
-
-        NPC.SetActive(false);
+        
     }
 
     private void DisplayChoices()
@@ -160,6 +172,7 @@ public class Inky : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+       
     }
 
     public void HandleTags(List<string> currentTags)
