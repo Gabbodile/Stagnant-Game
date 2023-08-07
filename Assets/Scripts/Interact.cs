@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interact : MonoBehaviour
 {
@@ -13,12 +14,20 @@ public class Interact : MonoBehaviour
     public Unlock unl;
     public GameManager GM;
     public CheckList CL;
-    private bool jumpPressed = false;
+    
     private bool interactPressed = false;
     private bool submitPressed = false;
 
     private static Interact instance;
 
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("Found more than one Input Manager in the scene.");
+        }
+        instance = this;
+    }
 
     //public Events eventScript;//Refrences the Event Script
     public static Interact GetInstance()
@@ -83,6 +92,7 @@ public class Interact : MonoBehaviour
         }
         if (obObject.GetComponent<NPC>() != null)
         {
+            GetInteractPressed();
             obObject.GetComponent<NPC>().Dialogue();//activates the Npc scripts
             obObject = obObject1;//Resets the Object
         }
@@ -97,7 +107,30 @@ public class Interact : MonoBehaviour
             obObject = obObject1;//Resets the Object
         }
     }
-   
+
+    public void InteractButtonPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            interactPressed = true;
+        }
+        else if (context.canceled)
+        {
+            interactPressed = false;
+        }
+    }
+
+    public void SubmitPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            submitPressed = true;
+        }
+        // else if (context.canceled)
+        //{
+        //  submitPressed = false;
+        // }
+    }
     public bool GetInteractPressed()
     {
         bool result = interactPressed;

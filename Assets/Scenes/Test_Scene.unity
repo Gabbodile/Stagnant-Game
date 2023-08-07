@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 181898543}
   - component: {fileID: 181898542}
   - component: {fileID: 181898545}
+  - component: {fileID: 181898546}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -276,6 +277,88 @@ MonoBehaviour:
   unl: {fileID: 2023239844}
   GM: {fileID: 1860353116}
   CL: {fileID: 1860353115}
+--- !u!114 &181898546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181898541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 20aac46bd658f1a45ae13f3bb69562c4, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 181898545}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 181898545}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 181898545}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b64f28e5-6f0c-4370-9f80-2a9a33c0fe95
+    m_ActionName: game/jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7ea5ec66-e7df-4d26-9425-2b7f30cc5d4b
+    m_ActionName: game/move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ea3a0e61-c665-4f6d-8816-e9ded7c03c37
+    m_ActionName: game/interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5bb69b73-57ad-4641-8a8a-d98e53ab29a6
+    m_ActionName: game/submit[/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: game
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &258621696
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +491,11 @@ Transform:
   m_Father: {fileID: 154141322}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &539356351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 207126706741049441, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+  m_PrefabInstance: {fileID: 1938042557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &568954459 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8687927175425009918, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
@@ -771,6 +859,11 @@ MonoBehaviour:
   EventName: Pie
   isKey: 1
   usesEnergy: 0
+--- !u!1 &941806965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 207126705347084952, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+  m_PrefabInstance: {fileID: 1938042557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &970943140 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4220735326580748447, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
@@ -1134,6 +1227,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1736840658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 207126705070607791, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+  m_PrefabInstance: {fileID: 1938042557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1746358717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,7 +1264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd77532c28ea1d4aab9d5fb206ad1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJson: {fileID: 0}
+  inkJson: {fileID: 4900000, guid: 08a8f2c85783d284da49c11dfcabdeeb, type: 3}
 --- !u!212 &1746358719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1635,6 +1733,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 207126705070607788, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2023239847}
+    - target: {fileID: 207126705070607788, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MakeChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 207126705070607788, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inky, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 207126705347084958, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2023239847}
+    - target: {fileID: 207126705347084958, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MakeChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 207126705347084958, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inky, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 207126705720286523, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
       propertyPath: m_Color.a
       value: 0.3764706
@@ -1650,6 +1772,18 @@ PrefabInstance:
     - target: {fileID: 207126705720286523, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
       propertyPath: m_Color.r
       value: 0.9245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 207126706741049446, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2023239847}
+    - target: {fileID: 207126706741049446, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MakeChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 207126706741049446, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inky, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 207126706776320811, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
       propertyPath: m_Name
@@ -1923,7 +2057,10 @@ MonoBehaviour:
   dialogueText: {fileID: 1938042560}
   displayName: {fileID: 1938042559}
   CL: {fileID: 1860353115}
-  choices: []
+  choices:
+  - {fileID: 539356351}
+  - {fileID: 1736840658}
+  - {fileID: 941806965}
 --- !u!1 &2042522817
 GameObject:
   m_ObjectHideFlags: 0
