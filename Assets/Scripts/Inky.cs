@@ -28,6 +28,8 @@ public class Inky : MonoBehaviour
 
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
+    bool canContinueToNextLine;
+    bool canContinue;
 
     private static Inky instance;
 
@@ -71,13 +73,15 @@ public class Inky : MonoBehaviour
         {
             return;
         }
-        if (Interact.GetInstance().GetSubmitPressed())
+        if (canContinueToNextLine
+            && currentStory.currentChoices.Count == 0
+            && Interact.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
         if (Input.GetKeyDown(KeyCode.Backspace) && dialogueIsPlaying == true)
         {
-            ExitDialogueMode();
+            StartCoroutine(ExitDialogueMode());
         }
     }
 
@@ -93,7 +97,7 @@ public class Inky : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         questionsPanel.SetActive(true);
-        
+        canContinue = true; 
 
         ContinueStory();
     }
@@ -102,33 +106,30 @@ public class Inky : MonoBehaviour
         if (currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
-            for (int i = 0; i < CL.structArray.Length; i++)
-            {
-                if (CL.structArray[i].Event == dialogueText.text)
-                {
-                    CL.structArray[i].Check = true;
-                }
-               
-            }
             DisplayChoices();
-
             HandleTags(currentStory.currentTags);
+            canContinue = true;
         }
         else
         {
-            //ExitDialogueMode();
+            canContinue = false;
+        }
+        if (canContinue == false &&!currentStory.canContinue)
+        {
+            StartCoroutine(ExitDialogueMode());
 
-            Debug.Log("exit cant continue");
+            Debug.Log("exit ");
         }
     }
 
-    private void ExitDialogueMode()
+    private IEnumerator ExitDialogueMode()
     {
+        yield return new WaitForSeconds(0.2f);
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         questionsPanel.SetActive(false);
         dialogueText.text = "";
-        
+        StopCoroutine(ExitDialogueMode());
     }
 
     private void DisplayChoices()
@@ -166,13 +167,13 @@ public class Inky : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
-        //bardSpeak = false;
+        
     }
 
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
-       
+        ContinueStory();
     }
 
     public void HandleTags(List<string> currentTags)
