@@ -1158,11 +1158,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &765732118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4220735326906197394, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
-  m_PrefabInstance: {fileID: 1821194144}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &792014981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,6 +2395,11 @@ Transform:
   m_Father: {fileID: 1443519654}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1581221777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8687927175425009918, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
+  m_PrefabInstance: {fileID: 1821194144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1640009158
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,10 +2518,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 149060988}
   PortraitDisplay: {fileID: 80635262}
-  panel: {fileID: 0}
+  panel: {fileID: 1902484557}
   closePanel: {fileID: 0}
   pausePanel: {fileID: 0}
-  Phone: {fileID: 765732118}
+  Phone: {fileID: 1581221777}
   endPoint: {fileID: 1451795879}
   startPoint: {fileID: 1418865418}
   PhoneInUse: 0
