@@ -8,10 +8,10 @@ public class NPC : MonoBehaviour
     [SerializeField] private TextAsset inkJson;
     public void Dialogue()
     {
-      //if(Interact.GetInstance().GetInteractPressed())
-       // {
-            Inky.GetInstance().EnterDialogueMode(inkJson);
-      //  }
-        
+      
+            //Inky.GetInstance().EnterDialogueMode(inkJson);
+        DialogueManager.GetInstance().EnterDialogueMode(inkJson);
+       
+
     }
 }

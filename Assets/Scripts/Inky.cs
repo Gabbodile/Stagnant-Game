@@ -13,7 +13,6 @@ public class Inky : MonoBehaviour
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject questionsPanel;
-    //[SerializeField] private GameObject journal;
 
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayName;
@@ -33,10 +32,6 @@ public class Inky : MonoBehaviour
 
     private static Inky instance;
 
-    private const string SPEAKER_TAG = "speaker";
-    private const string EMOTE = "emote";
-
-  
 
     private void Awake()
     {
@@ -74,15 +69,16 @@ public class Inky : MonoBehaviour
             return;
         }
         if (canContinueToNextLine
-            && currentStory.currentChoices.Count == 0
-            && Interact.GetInstance().GetSubmitPressed())
+            && currentStory.currentChoices.Count == 0)
         {
             ContinueStory();
+            Debug.Log("can Cotinue");
         }
         if (Input.GetKeyDown(KeyCode.Backspace) && dialogueIsPlaying == true)
         {
             StartCoroutine(ExitDialogueMode());
         }
+        
     }
 
     public static Inky GetInstance()
@@ -103,18 +99,17 @@ public class Inky : MonoBehaviour
     }
     private void ContinueStory()
     {
+        /// Look here for exit bug
         if (currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
             DisplayChoices();
             HandleTags(currentStory.currentTags);
-            canContinue = true;
+            Debug.Log("Continuing");
         }
-        else
-        {
-            canContinue = false;
-        }
-        if (canContinue == false &&!currentStory.canContinue)
+       
+
+        if (currentStory.currentChoices.Count <= 0 && !currentStory.canContinue)
         {
             StartCoroutine(ExitDialogueMode());
 
@@ -144,6 +139,7 @@ public class Inky : MonoBehaviour
             Debug.LogError("More Choices given than are supported by system. Number of choices given:" + currentChoices.Count);
         }
 
+        
         int index = 0;
 
         foreach (Choice choice in currentChoices)
@@ -173,37 +169,12 @@ public class Inky : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+
         ContinueStory();
     }
 
     public void HandleTags(List<string> currentTags)
     {
-        //parse the tag
-        foreach (string tag in currentTags)
-        {
-            string[] splitTag = tag.Split(':');
-            if (splitTag.Length != 2)
-            {
-                Debug.LogError("Tag could not be appropriatly parsed:" + tag);
-            }
-            string tagKey = splitTag[0].Trim();
-            string tagValue = splitTag[1].Trim();
-
-
-            switch (tagKey) //change out for if statement
-            {
-                case SPEAKER_TAG:
-                    displayName.text = tagValue;
-                    Debug.Log("speaker =" + tagValue);
-                    break;
-                case EMOTE:
-                    break;
-
-
-                default:
-                    Debug.LogWarning("Tag came in but is not currently being handled:" + tag);
-                    break;
-            }
-        }
+       //Note to self: removed HandleTags may need to reimpliment
     }
 }
