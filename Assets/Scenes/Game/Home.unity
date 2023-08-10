@@ -1095,9 +1095,11 @@ GameObject:
   m_Component:
   - component: {fileID: 255455893}
   - component: {fileID: 255455892}
-  m_Layer: 0
+  - component: {fileID: 255455894}
+  - component: {fileID: 255455895}
+  m_Layer: 3
   m_Name: Sink_and_Mirror_Bathroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1169,6 +1171,53 @@ Transform:
   m_Father: {fileID: 831907886}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &255455894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255455891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 255455892}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: 
+  nameText: {fileID: 1288289112}
+  namebox: 
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &255455895
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255455891}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.95, y: 9.12}
+    newSize: {x: 2.95, y: 9.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.95, y: 9.12}
+  m_EdgeRadius: 0
 --- !u!1 &296465356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,9 +1659,11 @@ GameObject:
   m_Component:
   - component: {fileID: 363177312}
   - component: {fileID: 363177311}
-  m_Layer: 0
+  - component: {fileID: 363177313}
+  - component: {fileID: 363177314}
+  m_Layer: 3
   m_Name: Hand_Towel_Bathroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1684,6 +1735,53 @@ Transform:
   m_Father: {fileID: 831907886}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &363177313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363177310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 363177311}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: 
+  nameText: {fileID: 1288289112}
+  namebox: 
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &363177314
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363177310}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 1.42}
+    newSize: {x: 0.42, y: 1.42}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 1.42}
+  m_EdgeRadius: 0
 --- !u!1 &424266763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,9 +1794,9 @@ GameObject:
   - component: {fileID: 424266765}
   - component: {fileID: 424266766}
   - component: {fileID: 424266767}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Side_Table_Bedroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1782,12 +1880,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   itemColour: {fileID: 424266765}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  nameText: {fileID: 1288289112}
   textbox: My side table. It has a lot of things on it.
+  nameText: {fileID: 1288289112}
   namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
 --- !u!61 &424266767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1832,7 +1933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &448688115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2039,9 +2140,9 @@ GameObject:
   - component: {fileID: 528515230}
   - component: {fileID: 528515232}
   - component: {fileID: 528515233}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dishes_Bedroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2125,12 +2226,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   itemColour: {fileID: 528515230}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  nameText: {fileID: 1288289112}
   textbox: this is an item
+  nameText: {fileID: 1288289112}
   namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
 --- !u!61 &528515233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2461,9 +2565,11 @@ GameObject:
   m_Component:
   - component: {fileID: 649101997}
   - component: {fileID: 649101998}
-  m_Layer: 0
+  - component: {fileID: 649101999}
+  - component: {fileID: 649102000}
+  m_Layer: 3
   m_Name: Dirty_Dish_1_Kitchen
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2535,6 +2641,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &649101999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649101996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 649101998}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: These are objects I'd have to pick up
+  nameText: {fileID: 1288289112}
+  namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &649102000
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649101996}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.89, y: 3}
+    newSize: {x: 5.89, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.89, y: 3}
+  m_EdgeRadius: 0
 --- !u!1 &678920598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2845,7 +2998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &693539303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3187,9 +3340,11 @@ GameObject:
   m_Component:
   - component: {fileID: 807758262}
   - component: {fileID: 807758263}
-  m_Layer: 0
+  - component: {fileID: 807758264}
+  - component: {fileID: 807758265}
+  m_Layer: 3
   m_Name: Jacket_Kitchen
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3261,6 +3416,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &807758264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807758261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 807758263}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: These are objects I'd have to pick up
+  nameText: {fileID: 1288289112}
+  namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &807758265
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807758261}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.26, y: 8.09}
+    newSize: {x: 5.26, y: 8.09}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.26, y: 8.09}
+  m_EdgeRadius: 0
 --- !u!1 &824330639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,9 +3858,11 @@ GameObject:
   m_Component:
   - component: {fileID: 870197363}
   - component: {fileID: 870197362}
-  m_Layer: 0
+  - component: {fileID: 870197364}
+  - component: {fileID: 870197365}
+  m_Layer: 3
   m_Name: Plunger_Bathroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3730,6 +3934,53 @@ Transform:
   m_Father: {fileID: 831907886}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &870197364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870197361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 870197362}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: 
+  nameText: {fileID: 1288289112}
+  namebox: 
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &870197365
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870197361}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.88, y: 1.86}
+    newSize: {x: 0.88, y: 1.86}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.88, y: 1.86}
+  m_EdgeRadius: 0
 --- !u!1 &923679103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,9 +3991,11 @@ GameObject:
   m_Component:
   - component: {fileID: 923679105}
   - component: {fileID: 923679104}
-  m_Layer: 0
+  - component: {fileID: 923679106}
+  - component: {fileID: 923679107}
+  m_Layer: 3
   m_Name: Toilet_Bathroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3814,6 +4067,53 @@ Transform:
   m_Father: {fileID: 831907886}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923679106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923679103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 923679104}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: 
+  nameText: {fileID: 1288289112}
+  namebox: 
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &923679107
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923679103}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.85, y: 4.49}
+    newSize: {x: 2.85, y: 4.49}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.85, y: 4.49}
+  m_EdgeRadius: 0
 --- !u!1 &930330901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,9 +4473,11 @@ GameObject:
   m_Component:
   - component: {fileID: 957962374}
   - component: {fileID: 957962375}
-  m_Layer: 0
+  - component: {fileID: 957962376}
+  - component: {fileID: 957962377}
+  m_Layer: 3
   m_Name: Grocery_Kitchen
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4247,6 +4549,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &957962376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957962373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 957962375}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: These are objects I'd have to pick up
+  nameText: {fileID: 1288289112}
+  namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &957962377
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957962373}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.21, y: 4.48}
+    newSize: {x: 8.21, y: 4.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.21, y: 4.48}
+  m_EdgeRadius: 0
 --- !u!1 &990046880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4511,9 +4860,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1053036638}
   - component: {fileID: 1053036639}
-  m_Layer: 0
+  - component: {fileID: 1053036640}
+  - component: {fileID: 1053036641}
+  m_Layer: 3
   m_Name: Books_Kitchen
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4585,6 +4936,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1053036640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053036637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 1053036639}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: These are objects I'd have to pick up
+  nameText: {fileID: 1288289112}
+  namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &1053036641
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053036637}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.88, y: 3.11}
+    newSize: {x: 3.88, y: 3.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.88, y: 3.11}
+  m_EdgeRadius: 0
 --- !u!1 &1113704491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,9 +4993,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1113704492}
   - component: {fileID: 1113704493}
-  m_Layer: 0
+  - component: {fileID: 1113704494}
+  - component: {fileID: 1113704495}
+  m_Layer: 3
   m_Name: Dirty_Dish_2_Kitchen
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4669,6 +5069,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1113704494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113704491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 1113704493}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: These are objects I'd have to pick up
+  nameText: {fileID: 1288289112}
+  namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &1113704495
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113704491}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.7, y: 2.33}
+    newSize: {x: 4.7, y: 2.33}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.7, y: 2.33}
+  m_EdgeRadius: 0
 --- !u!1 &1130647245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4821,9 +5268,9 @@ GameObject:
   - component: {fileID: 1176351236}
   - component: {fileID: 1176351237}
   - component: {fileID: 1176351238}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothes_Pile1_Bedroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4907,12 +5354,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   itemColour: {fileID: 1176351236}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  nameText: {fileID: 1288289112}
   textbox: this is an item
+  nameText: {fileID: 1288289112}
   namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
 --- !u!61 &1176351238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4949,9 +5399,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1201564581}
   - component: {fileID: 1201564582}
-  m_Layer: 0
+  - component: {fileID: 1201564583}
+  - component: {fileID: 1201564584}
+  m_Layer: 3
   m_Name: Dirty_Dishes_Kitchen
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5023,6 +5475,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1201564583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201564580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 1201564582}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: These are objects I'd have to pick up
+  nameText: {fileID: 1288289112}
+  namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &1201564584
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201564580}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.24, y: 3.32}
+    newSize: {x: 4.24, y: 3.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.24, y: 3.32}
+  m_EdgeRadius: 0
 --- !u!1 &1218437532
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,7 +6395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1406751169
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6066,7 +6565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1411460494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6350,9 +6849,9 @@ GameObject:
   - component: {fileID: 1560430134}
   - component: {fileID: 1560430135}
   - component: {fileID: 1560430136}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Laundry_Bedroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6436,12 +6935,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   itemColour: {fileID: 1560430134}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  nameText: {fileID: 1288289112}
   textbox: I should pick up my clothes, huh?
+  nameText: {fileID: 1288289112}
   namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
 --- !u!61 &1560430136
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6522,9 +7024,9 @@ GameObject:
   - component: {fileID: 1639608474}
   - component: {fileID: 1639608476}
   - component: {fileID: 1639608477}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothes_Pile2_Bedroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6608,12 +7110,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   itemColour: {fileID: 1639608474}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  nameText: {fileID: 1288289112}
   textbox: this is an item
+  nameText: {fileID: 1288289112}
   namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
 --- !u!61 &1639608477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7773,9 +8278,9 @@ GameObject:
   - component: {fileID: 1916226082}
   - component: {fileID: 1916226084}
   - component: {fileID: 1916226085}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Laptop_Bedroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7859,12 +8364,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   itemColour: {fileID: 1916226082}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  nameText: {fileID: 1288289112}
   textbox: this is an item
+  nameText: {fileID: 1288289112}
   namebox: Matt
+  choices: {fileID: 0}
+  choiceActive: 0
 --- !u!61 &1916226085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7901,9 +8409,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1917333332}
   - component: {fileID: 1917333331}
-  m_Layer: 0
+  - component: {fileID: 1917333333}
+  - component: {fileID: 1917333334}
+  m_Layer: 3
   m_Name: Shower_Bathroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7975,6 +8485,53 @@ Transform:
   m_Father: {fileID: 831907886}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917333333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917333330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 1917333331}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: 
+  nameText: {fileID: 1288289112}
+  namebox: 
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &1917333334
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917333330}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.15, y: 10.8}
+    newSize: {x: 6.15, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.15, y: 10.8}
+  m_EdgeRadius: 0
 --- !u!1 &1959173124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8122,9 +8679,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1976631889}
   - component: {fileID: 1976631888}
-  m_Layer: 0
+  - component: {fileID: 1976631890}
+  - component: {fileID: 1976631891}
+  m_Layer: 3
   m_Name: Toilet_paper_Bathroom
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8196,6 +8755,53 @@ Transform:
   m_Father: {fileID: 831907886}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1976631890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976631887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  itemColour: {fileID: 1976631888}
+  dialogueBox: {fileID: 1902484557}
+  dialogueText: {fileID: 149060988}
+  textbox: 
+  nameText: {fileID: 1288289112}
+  namebox: 
+  choices: {fileID: 0}
+  choiceActive: 0
+--- !u!61 &1976631891
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976631887}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.98, y: 1.42}
+    newSize: {x: 0.98, y: 1.42}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 1.42}
+  m_EdgeRadius: 0
 --- !u!1 &2132546476
 GameObject:
   m_ObjectHideFlags: 0

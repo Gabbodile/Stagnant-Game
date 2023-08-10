@@ -32,8 +32,8 @@ public class GameBehaviour<T> : GameBehaviour where T : GameBehaviour
             _instance = this as T;
             if (dontDestroy) DontDestroyOnLoad(gameObject);
         }
-        else
-            Destroy(gameObject);
+        //else
+           // Destroy(gameObject);
     }
     //
     // Instantiate singleton

@@ -5,6 +5,11 @@ using TMPro;
 
 public class TimeChange : MonoBehaviour
 {
+
+    /// <summary>
+    /// This is a temporary script that changes the text in the beginning scene.
+    /// </summary>
+    
     public TMP_Text time;
     public void SleepIn()
     {
