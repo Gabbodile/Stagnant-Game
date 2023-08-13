@@ -17,6 +17,8 @@ public class Inky : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayName;
 
+    public TextAsset inkJson;
+    public Story currentStory;
     public CheckList CL;
 
     [Header("Choices UI")]
@@ -25,7 +27,6 @@ public class Inky : MonoBehaviour
 
 
 
-    private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
     bool canContinueToNextLine;
     bool canContinue;
@@ -47,7 +48,10 @@ public class Inky : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         questionsPanel.SetActive(false);
-       
+        DummyDialogue(inkJson);
+        currentStory.BindExternalFunction("Report", (string reportName) => {
+            Debug.Log(name);
+        });
 
 
         //get the choices
@@ -85,7 +89,11 @@ public class Inky : MonoBehaviour
     {
         return instance;
     }
-
+    public void DummyDialogue(TextAsset inkJSON)
+    {
+        Debug.Log("DummyMode");
+        currentStory = new Story(inkJSON.text);
+    }
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         Debug.Log("DialogueMode");
@@ -93,7 +101,11 @@ public class Inky : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         questionsPanel.SetActive(true);
-        canContinue = true; 
+        canContinue = true;
+
+        currentStory.BindExternalFunction("Report", (string reportName) => {
+            Debug.Log(name);
+        });
 
         ContinueStory();
     }

@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd77532c28ea1d4aab9d5fb206ad1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJson: {fileID: 0}
+  inkJson: {fileID: 4900000, guid: 038e44fce35f3244da5f581072f133a4, type: 3}
 --- !u!212 &841675700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _CL1: {fileID: 0}
   Lock: {fileID: 0}
-  key1: 0
+  key1: 1
 --- !u!1 &1512153412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,8 +1242,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1746358720}
   - component: {fileID: 1746358719}
-  - component: {fileID: 1746358718}
   - component: {fileID: 1746358721}
+  - component: {fileID: 1746358723}
   - component: {fileID: 1746358722}
   m_Layer: 0
   m_Name: OldMan
@@ -1252,19 +1252,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1746358718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746358717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd77532c28ea1d4aab9d5fb206ad1a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inkJson: {fileID: 4900000, guid: 08a8f2c85783d284da49c11dfcabdeeb, type: 3}
 --- !u!212 &1746358719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1374,6 +1361,19 @@ MonoBehaviour:
   EventName: OldMan
   isKey: 1
   usesEnergy: 0
+--- !u!114 &1746358723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746358717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd77532c28ea1d4aab9d5fb206ad1a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkJson: {fileID: 4900000, guid: 079f20fe1ac7c6e4e8ca73a004f7185d, type: 3}
 --- !u!1 &1853764334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,6 +2060,7 @@ MonoBehaviour:
   questionsPanel: {fileID: 1938042558}
   dialogueText: {fileID: 1938042560}
   displayName: {fileID: 1938042559}
+  inkJson: {fileID: 4900000, guid: 1c1fe6b74a66fc4419cd1cd0b4d32d41, type: 3}
   CL: {fileID: 1860353115}
   choices:
   - {fileID: 539356351}
