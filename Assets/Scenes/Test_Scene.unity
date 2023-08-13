@@ -2509,6 +2509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Phone
       objectReference: {fileID: 0}
+    - target: {fileID: 4220735326906197394, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4220735327297466309, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
       propertyPath: ui
       value: 

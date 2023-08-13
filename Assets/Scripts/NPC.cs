@@ -9,8 +9,8 @@ public class NPC : MonoBehaviour
     public void Dialogue()
     {
       
-            //Inky.GetInstance().EnterDialogueMode(inkJson);
-        DialogueManager.GetInstance().EnterDialogueMode(inkJson);
+            Inky.GetInstance().EnterDialogueMode(inkJson);
+       // DialogueManager.GetInstance().EnterDialogueMode(inkJson);
        
 
     }

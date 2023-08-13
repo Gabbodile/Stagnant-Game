@@ -93,8 +93,10 @@ public class Inky : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         questionsPanel.SetActive(true);
-        canContinue = true; 
-
+        canContinue = true;
+        currentStory.BindExternalFunction("logEvent", (string name) => {
+            Debug.Log(name);
+        });
         ContinueStory();
     }
     private void ContinueStory()
