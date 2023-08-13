@@ -8,11 +8,12 @@ TagManager:
   - Drag
   - NPC
   - Door
+  - Props
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Props
   - Water
   - UI
   - 
