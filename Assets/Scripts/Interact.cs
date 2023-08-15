@@ -29,15 +29,12 @@ public class Interact : MonoBehaviour
         instance = this;
     }
 
-    //public Events eventScript;//Refrences the Event Script
+    //public Events eventScript;
     public static Interact GetInstance()
     {
         return instance;
     }
-    private void Start()
-    {
-        //eventScript = FindObjectOfType<Events>();//Find the Event scipt in the scene
-    }
+   
     void Update()
     {
         if (Input.GetMouseButtonDown(0))//Mouse Input
@@ -92,7 +89,6 @@ public class Interact : MonoBehaviour
         }
         if (obObject.GetComponent<NPC>() != null)
         {
-            GetInteractPressed();
             obObject.GetComponent<NPC>().Dialogue();//activates the Npc scripts
             obObject = obObject1;//Resets the Object
         }
@@ -108,40 +104,5 @@ public class Interact : MonoBehaviour
         }
     }
 
-    public void InteractButtonPressed(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            interactPressed = true;
-        }
-        else if (context.canceled)
-        {
-            interactPressed = false;
-        }
-    }
-
-    public void SubmitPressed(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            submitPressed = true;
-        }
-        // else if (context.canceled)
-        //{
-        //  submitPressed = false;
-        // }
-    }
-    public bool GetInteractPressed()
-    {
-        bool result = interactPressed;
-        interactPressed = false;
-        return result;
-    }
-
-    public bool GetSubmitPressed()
-    {
-        bool result = submitPressed;
-        submitPressed = false;
-        return result;
-    }
+    
 }

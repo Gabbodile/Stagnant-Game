@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class DisableOnDialogue : MonoBehaviour
 {
-    [SerializeField] private TextAsset inkJson;
     public Collider2D collider2d;
 
     private void FixedUpdate()
@@ -18,10 +17,5 @@ public class NPC : MonoBehaviour
             collider2d.enabled = true;
         }
 
-    }
-    public void Dialogue()
-    {
-        DialogueManager.GetInstance().EnterDialogueMode(inkJson);
-        InputManager.GetInstance().GetInteractPressed();
     }
 }

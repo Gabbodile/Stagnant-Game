@@ -1,7 +1,6 @@
 EXTERNAL logEvent(eventLog)
 
-Hello can you Help Me with Laundry?
- ~ logEvent("Agreed_Laundry")
+Hello can you Help Me with Laundry? #speaker: Old Man Jenkins #portrait: Old_Man_Jenkins_Croc
  * Yes ->yes
  * No ->no
  
