@@ -24,10 +24,23 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     public TMP_Text nameText;
     public string namebox = "";
 
+    //bool boxText = false;
 
     void Start()
     {
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if (dialogueBox.activeInHierarchy == true)
+        {
+            this.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        }
+        else if (dialogueBox.activeInHierarchy == false)
+        {
+            this.gameObject.layer = LayerMask.NameToLayer("Props");
+        }
     }
 
     private void OnMouseOver()
@@ -45,5 +58,6 @@ public class ItemGlow : GameBehaviour<ItemGlow>
         dialogueBox.SetActive(true);
         nameText.text = namebox;
         dialogueText.text = textbox;
+        //boxText = true;
     }
 }
