@@ -1520,7 +1520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &444905044
 Transform:
   m_ObjectHideFlags: 0
@@ -3752,7 +3752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1114828939
 Transform:
   m_ObjectHideFlags: 0
@@ -5691,15 +5691,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ce22ff5b778974e8a7da5b67516ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 149060988}
-  PortraitDisplay: {fileID: 80635262}
-  panel: {fileID: 1902484557}
-  closePanel: {fileID: 0}
   pausePanel: {fileID: 1794792958}
   Phone: {fileID: 1581221777}
   endPoint: {fileID: 1451795879}
   startPoint: {fileID: 1418865418}
   PhoneInUse: 0
+  nextLevel: 
 --- !u!1 &1665799145
 GameObject:
   m_ObjectHideFlags: 0

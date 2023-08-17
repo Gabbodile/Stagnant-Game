@@ -15,6 +15,8 @@ public class UI : MonoBehaviour
     public Transform endPoint;
     public Transform startPoint;
     public bool PhoneInUse;
+
+    public string nextLevel;
    
 
     public void Start()
@@ -72,6 +74,13 @@ public class UI : MonoBehaviour
         Phone.transform.DOMove(startPoint.position, 1f, true);
     }
 
-    
+    public void Level()
+    {
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(nextLevel);
+    }
 
 }
