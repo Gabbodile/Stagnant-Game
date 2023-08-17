@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-
     [SerializeField] private TextAsset inkJson;
+    public Collider2D collider2d;
+
+    private void FixedUpdate()
+    {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            collider2d.enabled = false;
+        }
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            collider2d.enabled = true;
+        }
+
+    }
     public void Dialogue()
     {
-      //if(Interact.GetInstance().GetInteractPressed())
-       // {
-            Inky.GetInstance().EnterDialogueMode(inkJson);
-      //  }
-        
+        DialogueManager.GetInstance().EnterDialogueMode(inkJson);
+        InputManager.GetInstance().GetInteractPressed();
     }
 }
