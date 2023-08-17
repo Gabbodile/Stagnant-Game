@@ -6,7 +6,15 @@ public class NPC : MonoBehaviour
 {
     [SerializeField] private TextAsset inkJson;
     public Collider2D collider2d;
+    public bool playOnStart;
 
+    private void Start()
+    {
+        if(playOnStart == true)
+        {
+            Dialogue();
+        }
+    }
     private void FixedUpdate()
     {
         if (DialogueManager.GetInstance().dialogueIsPlaying)

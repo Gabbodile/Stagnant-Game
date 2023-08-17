@@ -185,6 +185,17 @@
                     "action": "submit",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57c29d79-eae3-4d1a-ab4c-ba5e4d5708be",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
