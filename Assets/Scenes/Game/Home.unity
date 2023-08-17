@@ -295,7 +295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &80635261
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1073,7 +1073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &198569659
 Transform:
   m_ObjectHideFlags: 0
@@ -2102,7 +2102,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: b7dfcfde1084add46ad81db8dc29d187, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: 
+  textbox: Face towel, hand towel... Same difference.
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &363177314
@@ -2803,7 +2803,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 739e276584fd6f64ab709b71de13c9ae, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: this is an item
+  textbox: This is my growing collection of plates. I think this is a new stack record.
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &528515233
@@ -3525,7 +3525,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 59313002625c48b49a1b0d94dc464a40, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: These are objects I'd have to pick up
+  textbox: Was this yesterday's dinner or three days ago? I can't remember.
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &649102000
@@ -4093,7 +4093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: -95.00003}
+  m_AnchoredPosition: {x: 727, y: -95.00003}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700699474
@@ -4370,7 +4370,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 8acbe6700de442b46a1bd43a15c4149a, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: These are objects I'd have to pick up
+  textbox: I could wear this for one more day... Maybe a few more.
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &807758265
@@ -5886,8 +5886,8 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 7acde752bfedfbc4db2c61515c256e38, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: I could use this to make breakfast. I must've forgotten to put it away
-    last night...
+  textbox: Gos, who would put trash on the table? Oh wait. I'm the only one living
+    here. Whoops.
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &957962377
@@ -6387,7 +6387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1010763282
 Transform:
   m_ObjectHideFlags: 0
@@ -6728,7 +6728,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: fd66e2b4b3d85db4281e1e41fb6dfd23, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: These are objects I'd have to pick up
+  textbox: Do books even belong in the kitchen?
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!114 &1053036642
@@ -7263,7 +7263,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 952e526b99cd55e46866cc80bd8f5ef3, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: These are objects I'd have to pick up
+  textbox: A second dish for my imaginary friend.
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &1113704495
@@ -7573,7 +7573,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 907b62529fe3cd843b0c3cfab1f16308, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: this is an item
+  textbox: I wonder how many times I can wear this until people notice? Maybe a week?
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &1176351238
@@ -7908,7 +7908,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 848736049995f8d4fa571a4a64daa779, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: These are objects I'd have to pick up
+  textbox: Ugh, I'd do it later. It won't hurt to leave them for another day.
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &1201564584
@@ -9001,7 +9001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1342768496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10507,7 +10507,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 9ba78da0efda405448d93cd4f4fcef85, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: this is an item
+  textbox: -sniff- eh, it smells clean enough
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &1639608477
@@ -11829,7 +11829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1902484558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11998,7 +11998,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: af2697ed009f674408a4e4be1ecda7e9, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: this is an item
+  textbox: Ugh... What is this shit on my computer?
   nameText: {fileID: 1288289112}
   namebox: Matt
 --- !u!60 &1916226085
