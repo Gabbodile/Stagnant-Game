@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ItemGlow : GameBehaviour<ItemGlow>
 {
 
     /// <summary>
-    /// This script allows people to hover over interactable items as well as change what the character thinks about each item.
+    /// This script allows people to hover over interactable items as well as change what the character thinks about each item when clicked.
     /// </summary>
-    
-    public Renderer itemColour;
-    
+
+    private SpriteRenderer spriteRender;
+    public Sprite unselected;
+    public Sprite selected;
+
     [Header("Dialogue Box")]
     public GameObject dialogueBox;
     public TMP_Text dialogueText;
@@ -21,30 +24,33 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     public TMP_Text nameText;
     public string namebox = "";
 
-    [Header("Choices")]
-    public GameObject choices;
-    public bool choiceActive;
+    //bool boxText = false;
 
     void Start()
     {
-        itemColour = gameObject.GetComponent<Renderer>();
+        spriteRender = gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        if (choiceActive == true)
-            choices.SetActive(true);
-
+        if (dialogueBox.activeInHierarchy == true)
+        {
+            this.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        }
+        else if (dialogueBox.activeInHierarchy == false)
+        {
+            this.gameObject.layer = LayerMask.NameToLayer("Props");
+        }
     }
 
     private void OnMouseOver()
     {
-        itemColour.material.color = Color.yellow;
+        spriteRender.sprite = selected;
     }
 
     private void OnMouseExit()
     {
-        itemColour.material.color = Color.white;
+        spriteRender.sprite = unselected;
     }
 
     private void OnMouseDown()
@@ -52,5 +58,6 @@ public class ItemGlow : GameBehaviour<ItemGlow>
         dialogueBox.SetActive(true);
         nameText.text = namebox;
         dialogueText.text = textbox;
+        //boxText = true;
     }
 }
