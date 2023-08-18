@@ -24,6 +24,7 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     public TMP_Text nameText;
     public string namebox = "";
 
+    public bool donttalking;
     //bool boxText = false;
 
     void Start()
@@ -55,9 +56,12 @@ public class ItemGlow : GameBehaviour<ItemGlow>
 
     private void OnMouseDown()
     {
-        dialogueBox.SetActive(true);
-        nameText.text = namebox;
-        dialogueText.text = textbox;
-        //boxText = true;
+        if (donttalking == false)
+        {
+            dialogueBox.SetActive(true);
+            nameText.text = namebox;
+            dialogueText.text = textbox;
+            //boxText = true;
+        }
     }
 }

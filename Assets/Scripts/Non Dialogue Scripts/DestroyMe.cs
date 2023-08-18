@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class DestroyMe : MonoBehaviour
 {
-    public DestroyObject DO;
-    void Start()
-    {
-        DO = FindObjectOfType<DestroyObject>();
-    }
+    public GameObject thisObject;
     public void IhaveBeenDestroyed()
     {
-        DO.Destroy();
+        thisObject.SetActive(false);
     }
 }

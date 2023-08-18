@@ -11,7 +11,7 @@ public class Interact : MonoBehaviour
 
     [SerializeField] public GameObject obObject = null;//Empty gameObject
     [SerializeField] GameObject obObject1 = null;//Empty gameObject
-    public Unlock unl;
+    //public Unlock unl;
     public GameManager GM;
     public CheckList CL;
     
@@ -84,7 +84,7 @@ public class Interact : MonoBehaviour
             }
                 if (obObject.GetComponent<EventReporter>().isKey == true)
             {
-                unl.UnlockCheck();//checks for unlocks
+                //unl.UnlockCheck();//checks for unlocks
             }
         }
         if (obObject.GetComponent<NPC>() != null)
