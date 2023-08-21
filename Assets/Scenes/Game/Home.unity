@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: God, I should clean up my room...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5886,7 +5886,7 @@ MonoBehaviour:
   selected: {fileID: 21300000, guid: 7acde752bfedfbc4db2c61515c256e38, type: 3}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
-  textbox: Gos, who would put trash on the table? Oh wait. I'm the only one living
+  textbox: Gosh, who would put trash on the table? Oh wait. I'm the only one living
     here. Whoops.
   nameText: {fileID: 1288289112}
   namebox: Matt
@@ -8517,7 +8517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Matt
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9001,7 +9001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1342768496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9079,6 +9079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49173215dfc3f24781a9e38578705f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayTime: {fileID: 1688314431}
   time: {fileID: 693539304}
 --- !u!1 &1362115433
 GameObject:
@@ -10631,6 +10632,7 @@ GameObject:
   - component: {fileID: 1640009160}
   - component: {fileID: 1640009159}
   - component: {fileID: 1640009163}
+  - component: {fileID: 1640009164}
   m_Layer: 5
   m_Name: --------- UI -----------
   m_TagString: Untagged
@@ -10743,6 +10745,20 @@ MonoBehaviour:
   startPoint: {fileID: 1418865418}
   PhoneInUse: 0
   nextLevel: Office
+--- !u!114 &1640009164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640009158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49173215dfc3f24781a9e38578705f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTime: {fileID: 1688314431}
+  time: {fileID: 693539304}
 --- !u!1 &1665799145
 GameObject:
   m_ObjectHideFlags: 0
@@ -11644,11 +11660,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4220735326906197393, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 90
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4220735326906197393, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -235
+      value: -230
       objectReference: {fileID: 0}
     - target: {fileID: 4220735326906197393, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
