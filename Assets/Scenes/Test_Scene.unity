@@ -805,6 +805,7 @@ GameObject:
   - component: {fileID: 841675699}
   - component: {fileID: 841675698}
   - component: {fileID: 841675701}
+  - component: {fileID: 841675702}
   m_Layer: 0
   m_Name: Pie
   m_TagString: NPC
@@ -936,6 +937,18 @@ MonoBehaviour:
   EventName: Pie
   isKey: 1
   usesEnergy: 0
+--- !u!114 &841675702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841675696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6339b8023a5698c40a15d4f3f90bc648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &970943140 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4220735326580748447, guid: 1e2a1bfbfb4aaae4fb520626192d4b5c, type: 3}
@@ -1244,6 +1257,8 @@ MonoBehaviour:
   Lock: {fileID: 1445020216}
   key1: 0
   key2: 2
+  Lock1: 0
+  Lock2: 0
 --- !u!114 &1445020221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1262,6 +1277,10 @@ MonoBehaviour:
   key2: 0
   key3: 0
   key4: 0
+  Lock1: 0
+  Lock2: 0
+  Lock3: 0
+  Lock4: 0
 --- !u!114 &1445020222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1279,6 +1298,9 @@ MonoBehaviour:
   key1: 0
   key2: 0
   key3: 0
+  Lock1: 0
+  Lock2: 0
+  Lock3: 0
 --- !u!114 &1445020223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,6 +1316,7 @@ MonoBehaviour:
   _CL1: {fileID: 0}
   Lock: {fileID: 0}
   key1: 0
+  Lock1: 0
 --- !u!1 &1464929405
 GameObject:
   m_ObjectHideFlags: 0

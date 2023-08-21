@@ -5,29 +5,120 @@ using UnityEngine;
 
 public class Unlock : GameBehaviour<Unlock>
 {
-    public Unlock1Key[] oneKey;
-    public Unlock2Key[] twoKey;
-    public Unlock3Key[] threeKey;
-    public Unlock4Key[] fourKey;
+    public CheckList _CL1; // refrences the checklist
+    public GameObject Lock;//The Object you want to activate
 
+    //Select how many Locks you want
+    public bool oneLock;
+    public bool twoLock;
+    public bool threeLock;
+    public bool fourLock;
 
-    public void UnlockCheck()
+    //The Locks
+    private bool Lock1;
+    private bool Lock2;
+    private bool Lock3;
+    private bool Lock4;
+
+    //Reffrences the Events in the Checklist
+    public int key1, key2, key3, key4;
+
+    public void UnlockCheck() //Directs the program depending on number of locks
     {
-        for (int i = 0; i < oneKey.Length; i++)
+        if (oneLock == true) // goes to one lock
         {
-            oneKey[i].UnlockThing1();
+            UnlockThing1();
         }
-        for (int j = 0; j < twoKey.Length; j++)
+        if (twoLock == true) //goes to two lock
         {
-            twoKey[j].UnlockThing2();
+            UnlockThing2();
         }
-        for (int k = 0; k < threeKey.Length; k++)
+        if (threeLock == true) // goes to three lock
         {
-            threeKey[k].UnlockThing3();
+            UnlockThing3();
         }
-        for (int l = 0; l < fourKey.Length; l++)
+        if (fourLock == true) // goes to four lock
         {
-            fourKey[l].UnlockThing4();
+            UnlockThing4();
+        }
+    }
+
+    public void UnlockThing1()
+    {
+        if (_CL1.structArray[key1].Check == true) // checks if event 1 has happened
+        {
+            Lock1 = true;// unlocks the first lock
+        }
+        if (Lock1 == true) //Checks if the locks are open
+        {
+            Lock.gameObject.SetActive(true);//activates the object
+        }
+    }
+
+    public void UnlockThing2()
+    {
+        if (_CL1.structArray[key1].Check == true)// checks if event 1 has happened
+        {
+            Lock1 = true; //unlocks the first lock
+        }
+
+        if (_CL1.structArray[key2].Check == true)// checks if event 2 has happened
+        {
+            Lock2 = true;//unlocks the Second lock
+        }
+
+        if (Lock1 == true && Lock2 == true)//Checks if the locks are open
+        {
+            Lock.gameObject.SetActive(true);//activates the object
+        }
+    }
+
+    public void UnlockThing3()
+    {
+        if (_CL1.structArray[key1].Check == true)// checks if event 1 has happened
+        {
+            Lock1 = true;//unlocks the first lock
+        }
+
+        if (_CL1.structArray[key2].Check == true)// checks if event 2 has happened
+        {
+            Lock2 = true;//unlocks the Second lock
+        }
+        if (_CL1.structArray[key3].Check == true)// checks if event 3 has happened
+        {
+            Lock3 = true;//unlocks the Third lock
+        }
+
+
+        if (Lock1 == true && Lock2 == true && Lock3 == true)//Checks if the locks are open
+        {
+            Lock.gameObject.SetActive(true);//activates the object
+        }
+    }
+
+    public void UnlockThing4()
+    {
+        if (_CL1.structArray[key1].Check == true)// checks if event 1 has happened
+        {
+            Lock1 = true;//unlocks the first lock
+        }
+
+        if (_CL1.structArray[key2].Check == true)// checks if event 2 has happened
+        {
+            Lock2 = true;//unlocks the Second lock
+        }
+        if (_CL1.structArray[key3].Check == true)// checks if event 3 has happened
+        {
+            Lock3 = true;//unlocks the third lock
+        }
+        if (_CL1.structArray[key4].Check == true)// checks if event 4 has happened
+        {
+            Lock4 = true;//unlocks the fourth lock
+        }
+
+        if (Lock1 == true && Lock2 == true && Lock3 == true && Lock4 == true)//Checks if the locks are open
+        {
+            Lock.gameObject.SetActive(true);//activates the object
         }
     }
 
