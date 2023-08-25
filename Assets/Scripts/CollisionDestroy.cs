@@ -6,6 +6,17 @@ public class CollisionDestroy : MonoBehaviour
 {
     public GameObject[] objectsToDestroy;
 
+    public void EnableLaundry()
+    {
+        Debug.Log("LaundryEnabled1");
+        for (int i = 0; i < objectsToDestroy.Length; i++)
+        {
+            objectsToDestroy[i].gameObject.tag = "Drag";
+            objectsToDestroy[i].GetComponent<ItemGlow>().donttalking = true;
+            Debug.Log("LaundryEnabled");
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Collided");

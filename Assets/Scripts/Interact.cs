@@ -102,6 +102,12 @@ public class Interact : MonoBehaviour
             obObject.GetComponent<DestroyMe>().IhaveBeenDestroyed();//activates the Npc scripts
             obObject = obObject1;//Resets the Object
         }
+        if (obObject.GetComponent<CollisionDestroy>() != null)
+        {
+            obObject.GetComponent<CollisionDestroy>().EnableLaundry();
+            Debug.Log("LaundryEnabled2");
+            obObject = obObject1;//Resets the Object
+        }
     }
 
     

@@ -30,6 +30,7 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     void Start()
     {
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
+        
     }
 
     private void Update()
@@ -62,6 +63,11 @@ public class ItemGlow : GameBehaviour<ItemGlow>
             nameText.text = namebox;
             dialogueText.text = textbox;
             //boxText = true;
+        }
+        if (this.gameObject.GetComponent<CollisionDestroy>() != null)
+        {
+            this.gameObject.GetComponent<CollisionDestroy>().EnableLaundry();
+            Debug.Log("ItemGlow Enable Laundry");
         }
     }
 }
