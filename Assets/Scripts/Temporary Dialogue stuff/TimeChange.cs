@@ -12,6 +12,7 @@ public class TimeChange : MonoBehaviour
 
     public TMP_Text displayTime;
     public TMP_Text time;
+    public TMP_Text thoughts;
 
     private void Start()
     {
@@ -20,7 +21,7 @@ public class TimeChange : MonoBehaviour
 
     public void SleepIn()
     {
-        time.text = ("7:30AM");
+        time.text = ("7:30 AM");
         displayTime.text = ("7:30 AM");
     }
 
@@ -32,7 +33,7 @@ public class TimeChange : MonoBehaviour
 
     public void SleepFinal()
     {
-        time.text = ("... Shit I'm Late!");
+        time.text = ("9:00 AM");
         displayTime.text = ("9:00 AM");
     }
 }
