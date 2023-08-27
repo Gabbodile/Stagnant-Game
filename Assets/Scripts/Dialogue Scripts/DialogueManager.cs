@@ -124,6 +124,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("cant continue");
             StartCoroutine(ExitDialogueMode());
         }
     }

@@ -14,6 +14,7 @@ public class Interact : MonoBehaviour
     //public Unlock unl;
     public GameManager GM;
     public CheckList CL;
+    public LocksStorage LS;
     
     private bool interactPressed = false;
     private bool submitPressed = false;
@@ -81,11 +82,14 @@ public class Interact : MonoBehaviour
             if (obObject.GetComponent<EventReporter>().usesEnergy == true)
             {
                 CL.CalculatePoints();
+                //obObject = obObject1;//Resets the Object
             }
                 if (obObject.GetComponent<EventReporter>().isKey == true)
             {
-                //unl.UnlockCheck();//checks for unlocks
+                LS.CheckLocks(obObject);
+                //obObject = obObject1;//Resets the Object
             }
+            
         }
         if (obObject.GetComponent<NPC>() != null)
         {
