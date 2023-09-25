@@ -7,6 +7,7 @@ public class CheckList : MonoBehaviour
     public EnergySystem ES;
     public int Points;
     public MyStruct[] structArray;
+   
     [System.Serializable]
     public struct MyStruct
     {
@@ -15,7 +16,7 @@ public class CheckList : MonoBehaviour
         public int pointValue;
     }
 
-
+    
    
     public void CalculatePoints()
     {

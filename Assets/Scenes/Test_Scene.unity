@@ -357,6 +357,7 @@ MonoBehaviour:
   obObject1: {fileID: 1037917332}
   GM: {fileID: 1860353116}
   CL: {fileID: 1860353115}
+  LS: {fileID: 2023239849}
 --- !u!114 &181898546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,12 +1254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4241ae35d61aae343ba8ae4fb58bf35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _CL1: {fileID: 1860353115}
-  Lock: {fileID: 1445020216}
-  key1: 0
-  key2: 2
-  Lock1: 0
-  Lock2: 0
 --- !u!114 &1445020221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,16 +1266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c8998a432162f428eb6293833ca7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _CL1: {fileID: 0}
-  Lock: {fileID: 0}
-  key1: 0
-  key2: 0
-  key3: 0
-  key4: 0
-  Lock1: 0
-  Lock2: 0
-  Lock3: 0
-  Lock4: 0
 --- !u!114 &1445020222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1293,14 +1278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387c0e15bab577c4f9750d6eb31f9b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _CL1: {fileID: 0}
-  Lock: {fileID: 0}
-  key1: 0
-  key2: 0
-  key3: 0
-  Lock1: 0
-  Lock2: 0
-  Lock3: 0
 --- !u!114 &1445020223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,10 +1290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62bbbbd7ec44fbf489c2e8f8947d2ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _CL1: {fileID: 0}
-  Lock: {fileID: 0}
-  key1: 0
-  Lock1: 0
 --- !u!1 &1464929405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1682,6 @@ GameObject:
   - component: {fileID: 1746358719}
   - component: {fileID: 1746358718}
   - component: {fileID: 1746358721}
-  - component: {fileID: 1746358722}
   m_Layer: 0
   m_Name: OldMan
   m_TagString: NPC
@@ -1825,22 +1797,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.2, y: 8.31}
   m_EdgeRadius: 0
---- !u!114 &1746358722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746358717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88232fa4864bce3419df5b96089798d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CL: {fileID: 1860353115}
-  EventName: OldMan
-  isKey: 1
-  usesEnergy: 0
 --- !u!1 &1831079157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,6 +2683,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df5138a0099c8349a0da22514ada24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2023239849 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 522946799, guid: 3ecac4bb16aca954faba5e5dfbd5dc4f, type: 3}
+  m_PrefabInstance: {fileID: 3239845909099311253}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad86f721b5e1b14fb100bf200eed94e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2027835614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,6 +3295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 522946799, guid: 3ecac4bb16aca954faba5e5dfbd5dc4f, type: 3}
+      propertyPath: locks.Array.data[0]
+      value: 
+      objectReference: {fileID: 841675696}
     - target: {fileID: 3239845908149813297, guid: 3ecac4bb16aca954faba5e5dfbd5dc4f, type: 3}
       propertyPath: twoKey.Array.data[0]
       value: 
@@ -3437,6 +3408,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3729944616300293396, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
+      propertyPath: structArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729944616300293396, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
+      propertyPath: structArray.Array.data[1].Event
+      value: OldMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729944616300293396, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
+      propertyPath: structArray.Array.data[1].pointValue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: m_RootOrder
       value: 0

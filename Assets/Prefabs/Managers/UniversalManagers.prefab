@@ -50,13 +50,7 @@ MonoBehaviour:
   ES: {fileID: 3729944616300293393}
   Points: 0
   structArray:
-  - Event: OldMan
-    Check: 1
-    pointValue: 0
-  - Event: Laundry
-    Check: 0
-    pointValue: 0
-  - Event: Pie
+  - Event: ClearDish
     Check: 0
     pointValue: 1
 --- !u!114 &3729944616300293395
