@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
+    public GameObject choiceUI;
 
     private Story currentStory;
 
@@ -162,6 +163,8 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayChoices()
     {
+        Debug.Log("There is some choices to be made");
+        choiceUI.SetActive(true);
         List<Choice> currentChoices = currentStory.currentChoices;
 
         //defensive check tp make sure number of choices is supported
@@ -185,6 +188,8 @@ public class DialogueManager : MonoBehaviour
             choices[i].gameObject.SetActive(false);
         }
         StartCoroutine(SelectFirstChoice());
+
+        
     }
 
     private IEnumerator SelectFirstChoice()
