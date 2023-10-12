@@ -1,8 +1,9 @@
+EXTERNAL logEvent(eventLog)
 Sup?
 #speaker: Laid back #portrait: Laid_Back
 
-* [can you get me a snack?] -> snack
-* [How are you going?] -> coworker_interaction
+** can you get me a snack? -> snack
+** How are you going? -> coworker_interaction
 
 === snack ===
 You forgot your wallet again?

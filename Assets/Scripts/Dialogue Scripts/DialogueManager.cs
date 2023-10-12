@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject choiceUI;
 
     private Story currentStory;
+    List<Choice> currentChoices;
 
     public bool dialogueIsPlaying { get; private set; }
 
@@ -72,6 +73,7 @@ public class DialogueManager : MonoBehaviour
         //handles continueing to the next line of dialogue
         if (InputManager.GetInstance().GetSubmitPressed() )
         {
+            print("start to story");
             ContinueStory();
         }
     }
@@ -81,6 +83,8 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
+
+        print(currentStory.currentText);
 
         //Reset Portrait and Name Tag'
         displayNameText.text = "???";
@@ -116,6 +120,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
+            print("can continue");
             //sets text for current line
             dialogueText.text = currentStory.Continue();
             //displays choices if any
@@ -165,7 +170,12 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("There is some choices to be made");
         choiceUI.SetActive(true);
-        List<Choice> currentChoices = currentStory.currentChoices;
+        currentChoices = currentStory.currentChoices;
+
+        print(currentChoices.Count);
+        print("Choices exist " + currentStory.currentChoices);
+
+
 
         //defensive check tp make sure number of choices is supported
         if (currentChoices.Count > choices.Length)
@@ -187,7 +197,7 @@ public class DialogueManager : MonoBehaviour
         {
             choices[i].gameObject.SetActive(false);
         }
-        StartCoroutine(SelectFirstChoice());
+        //StartCoroutine(SelectFirstChoice());
 
         
     }
@@ -202,6 +212,9 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
+        print("Choice index is " + choiceIndex);
+        print(currentChoices[choiceIndex]);
         currentStory.ChooseChoiceIndex(choiceIndex);
+        DisplayChoices();
     }
 }

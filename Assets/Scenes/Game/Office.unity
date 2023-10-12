@@ -2000,7 +2000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd77532c28ea1d4aab9d5fb206ad1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkFile: {fileID: 4900000, guid: 60acd2f5d58e5964bb29067e9346ce62, type: 3}
+  inkFile: {fileID: 4900000, guid: 3acc20bd9b6d7ab42bced2231c719f76, type: 3}
   collider2d: {fileID: 794675094}
   playOnStart: 0
   dialogueBox: {fileID: 1212167620}
