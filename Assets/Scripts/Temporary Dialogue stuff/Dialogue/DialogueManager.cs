@@ -74,11 +74,15 @@ public class DialogueManager : MonoBehaviour
         for(int i = 0; i < _choices.Count; i++)
         {
             //make button. Replace with actual buttons
-            GameObject temp = Instantiate(customButton, optionPanel.transform);
-            temp.transform.GetChild(0).GetComponent<Text>().text = _choices[i].text;
-            temp.AddComponent<Selectable>();
-            temp.GetComponent<Selectable>().element = _choices[i];
-            temp.GetComponent<Button>().onClick.AddListener(() => { temp.GetComponent<Selectable>().Decide(); });
+            //GameObject temp = Instantiate(customButton, optionPanel.transform);
+            //temp.transform.GetChild(0).GetComponent<Text>().text = _choices[i].text;
+            //temp.AddComponent<Selectable>();
+            //temp.GetComponent<Selectable>().element = _choices[i];
+            //temp.GetComponent<Button>().onClick.AddListener(() => { temp.GetComponent<Selectable>().Decide(); });
+
+            print(_choices);
+
+
         }
 
         optionPanel.SetActive(true);
