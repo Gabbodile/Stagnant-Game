@@ -26,10 +26,12 @@ public class ItemGlow : GameBehaviour<ItemGlow>
 
     public bool donttalking;
     //bool boxText = false;
+    private int startingLayer;
 
     void Start()
     {
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
+        startingLayer = gameObject.layer;
         
     }
 
@@ -41,7 +43,7 @@ public class ItemGlow : GameBehaviour<ItemGlow>
         }
         else if (dialogueBox.activeInHierarchy == false)
         {
-            this.gameObject.layer = LayerMask.NameToLayer("Props");
+            this.gameObject.layer = startingLayer;
         }
     }
 
@@ -63,11 +65,6 @@ public class ItemGlow : GameBehaviour<ItemGlow>
             nameText.text = namebox;
             dialogueText.text = textbox;
             //boxText = true;
-        }
-        if (this.gameObject.GetComponent<CollisionDestroy>() != null)
-        {
-            this.gameObject.GetComponent<CollisionDestroy>().EnableLaundry();
-            Debug.Log("ItemGlow Enable Laundry");
         }
     }
 }

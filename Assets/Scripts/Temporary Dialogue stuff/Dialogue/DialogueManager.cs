@@ -7,157 +7,220 @@ using Ink.Runtime;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TMP_Text nameText;
-    public TMP_Text dialogueText;
+    [Header("Dialouge UI")]
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI displayNameText;
+    [SerializeField] private Animator portraitAnimator;
 
-    [Header("Inky")]
-    public TextAsset inkFile;
-    public GameObject customButton;
-    public GameObject optionPanel;
-   
-    public bool isTalking = false;
+    [Header("Choices UI")]
+    [SerializeField] private GameObject[] choices;
+    private TextMeshProUGUI[] choicesText;
 
-    static Story story;
-    //Text nametag;
-    //Text message;
-    List<string> tags;
-    static Choice choiceSelected;
+    private Story currentStory;
+
+    public bool dialogueIsPlaying { get; private set; }
+    private bool choicesAreActive;
+
+    private static DialogueManager instance;
+
+    private const string SPEAKER_TAG = "speaker";
+    private const string PORTRAIT_TAG = "portrait";
 
 
-    private Queue<string> sentences;
 
-    void Start()
+    private void Awake()
     {
-        sentences = new Queue<string>();
+        if (instance != null)
+        {
+            Debug.LogWarning("Found more than one Dialouge Manager in the scene");
+        }
+        instance = this;
+    }
 
-        story = new Story(inkFile.text);
-        tags = new List<string>();
-        choiceSelected = null;
+    public static DialogueManager GetInstance()
+    {
+        return instance;
+    }
+
+    private void Start()
+    {
+        dialogueIsPlaying = false;
+        choicesAreActive = false;
+        dialoguePanel.SetActive(false);
+
+        // get all of the choices text
+        choicesText = new TextMeshProUGUI[choices.Length];
+        int index = 0;
+        foreach (GameObject choice in choices)
+        {
+            choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+            index++;
+        }
     }
 
     private void Update()
     {
-        if (story.canContinue)
+        // return right away if dialogue isn't playing
+        if (!dialogueIsPlaying)
         {
-            AdvanceDialogue();
-
-            if (story.currentChoices.Count != 0)
-                StartCoroutine(ShowChoices());
+            return;
         }
-        else
-            EndDialogue();
-    }
 
-    void AdvanceDialogue()
-    {
-        string currentSentence = story.Continue();
-        //ParseTags();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(currentSentence));
-    }
-
-    IEnumerator TypeSentence(string sentence)
-    {
-        dialogueText.text = " ";
-        foreach(char letter in sentence.ToCharArray())
+        // handle continuing to the next line in the dialogue when you left click
+        if (Input.GetMouseButtonDown(0))
         {
-            dialogueText.text += letter;
-            yield return null;
+            ContinueStory();
         }
     }
 
-    IEnumerator ShowChoices()
+    public void EnterDialogueMode(TextAsset inkJSON)
     {
-        Debug.Log("There are some choices to be made");
-        List<Choice> _choices = story.currentChoices;
+        currentStory = new Story(inkJSON.text);
+        dialogueIsPlaying = true;
+        dialoguePanel.SetActive(true);
 
-        for(int i = 0; i < _choices.Count; i++)
+        BindInkExternalFunctions();
+        
+        // reset portrait and speaker
+        displayNameText.text = "???";
+        portraitAnimator.Play("Default");
+
+        ContinueStory();
+    }
+
+    private IEnumerator ExitDialogueMode()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        UnbindInkExternalFunctions();
+
+        dialogueIsPlaying = false;
+        dialoguePanel.SetActive(false);
+        dialogueText.text = "";
+    }
+
+    private void ContinueStory()
+    {
+        if (currentStory.canContinue)
         {
-            //make button. Replace with actual buttons
-            //GameObject temp = Instantiate(customButton, optionPanel.transform);
-            //temp.transform.GetChild(0).GetComponent<Text>().text = _choices[i].text;
-            //temp.AddComponent<Selectable>();
-            //temp.GetComponent<Selectable>().element = _choices[i];
-            //temp.GetComponent<Button>().onClick.AddListener(() => { temp.GetComponent<Selectable>().Decide(); });
+            // set text for the current dialogue line
+            dialogueText.text = currentStory.Continue();
+            // display choices, if any, for this dialogue line
+            DisplayChoices();
+            if (choices[0].activeSelf == true)
+            {
+                choicesAreActive = true;
+            }
+            // handle tags
+            HandleTags(currentStory.currentTags);
+        }
+        else if (!choicesAreActive)
+        {
+            StartCoroutine(ExitDialogueMode());
+        }
+    }
 
-            print(_choices);
+    private void HandleTags(List<string> currentTags)
+    {
+        // loop through each tag and handle it accordingly
+        foreach (string tag in currentTags)
+        {
+            // parse the tag
+            string[] splitTag = tag.Split(":");
+            if (splitTag.Length != 2)
+            {
+                Debug.LogError("Tag could not be appropriatley parsed: " + tag);
+            }
+            string tagKey = splitTag[0].Trim();
+            string tagValue = splitTag[1].Trim();
 
+            // handle the tag
+            switch (tagKey)
+            {
+                case SPEAKER_TAG:
+                    displayNameText.text = tagValue;
+                    break;
+                case PORTRAIT_TAG:
+                    portraitAnimator.Play(tagValue);
+                    break;
+                default:
+                    Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
+                    break;
+            }
+        }
+    }
 
+    private void DisplayChoices()
+    {
+        List<Choice> currentChoices = currentStory.currentChoices;
+
+        // defensive check to make sure UI can support the number of choices coming in
+        if (currentChoices.Count > choices.Length)
+        {
+            Debug.LogError("More choices were given than the UI can support. Number of choices given: " + currentChoices.Count);
         }
 
-        optionPanel.SetActive(true);
-        yield return new WaitUntil(() => { return choiceSelected != null; });
-        AdvanceFromDecision();
-    }
 
-    public static void SetDecision(object element)
-    {
-        choiceSelected = (Choice)element;
-        story.ChooseChoiceIndex(choiceSelected.index);
-    }
-
-    void AdvanceFromDecision()
-    {
-        optionPanel.SetActive(false);
-        for(int i = 0; i < optionPanel.transform.childCount; i++)
+        // loop through all choice buttons in UI and display them according to the current choices in the INK story
+        int index = 0;
+        // enable and initialize the choices up to the amount of choices for this line of dialogue
+        foreach(Choice choice in currentChoices)
         {
-            Destroy(optionPanel.transform.GetChild(i).gameObject);
+            choices[index].gameObject.SetActive(true);
+            choicesText[index].text = choice.text;
+            index++;
         }
-        choiceSelected = null;
-        AdvanceDialogue();
+        // go through the remaining choices the UI supports and make sure they're hidden
+        for (int i = index; i < choices.Length; i++)
+        {
+            choices[i].gameObject.SetActive(false);
+        }
     }
 
-
-    //void ParseTags()
-    //{
-    //    tags = story.currentTags;
-    //    foreach(string t in tags)
-    //    {
-    //        string prefix = t.Split(' ')[0];
-    //        string param = t.Split(' ')[1];
-
-    //        switch (prefix.ToLower())
-    //        {
-    //            case "anim":
-    //                SetAnimation(param);
-    //                break;
-    //            case "color":
-    //                SetTextColor(param);
-    //                break;
-    //        }
-    //    }
-    //}
-
-    public void EndDialogue()
+    public void MakeChoice(int choiceIndex)
     {
-        Debug.Log("End convo");
+        currentStory.ChooseChoiceIndex(choiceIndex);
+        ContinueStory();
+        choicesAreActive = false;
     }
 
-    //public void StartDialogue(Dialogue dialogue)
-    //{
-    //    nameText.text = dialogue.name;
 
-    //    sentences.Clear();
-
-    //    foreach(string sentence in dialogue.sentences)
-    //    {
-    //        sentences.Enqueue(sentence);
-    //    }
-
-    //    DisplayNextSentence();
-    //}
-
-    //public void DisplayNextSentence()
-    //{
-    //    if(sentences.Count == 0)
-    //    {
-    //        EndDialogue();
-    //        return;
-    //    }
-
-    //    string sentence = sentences.Dequeue();
-    //    dialogueText.text = sentence;
-    //}
+    public void CloseDialogueButton()
+    {
+        StartCoroutine(ExitDialogueMode());
+    }
 
 
+
+    public void TestDialougeTriggerScript(TextAsset inkJSON)
+    {
+        Debug.Log(inkJSON.text);
+    }
+
+    #region Bind and Unbind Ink External Functions
+    /// <summary>
+    /// I tried placing this stuff into a seperate script but it didn't work
+    /// </summary>
+
+    private void BindInkExternalFunctions()
+    {
+        currentStory.BindExternalFunction("goodChoice", (int increaseValue) =>
+        {
+            LoopAndChoices.GetInstance().IncreaseGoodChoices(increaseValue);
+        });
+
+        currentStory.BindExternalFunction("badChoice", (int increaseValue) =>
+        {
+            LoopAndChoices.GetInstance().IncreaseBadChoices(increaseValue);
+        });
+    }
+
+    private void UnbindInkExternalFunctions()
+    {
+        currentStory.UnbindExternalFunction("goodChoice");
+        currentStory.UnbindExternalFunction("badChoice");
+    }
+
+    #endregion
 }

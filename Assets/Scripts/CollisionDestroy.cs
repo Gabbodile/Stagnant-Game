@@ -11,13 +11,13 @@ public class CollisionDestroy : MonoBehaviour
         Debug.Log("LaundryEnabled1");
         for (int i = 0; i < objectsToDestroy.Length; i++)
         {
-            objectsToDestroy[i].gameObject.tag = "Drag";
-            objectsToDestroy[i].GetComponent<ItemGlow>().donttalking = true;
+            //objectsToDestroy[i].gameObject.tag = "Drag";  //literally useless now
+            objectsToDestroy[i].GetComponent<ItemGlow>().donttalking = true;    //needs to be reworked as part of loop system
             Debug.Log("LaundryEnabled");
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Collided");
 
@@ -29,5 +29,5 @@ public class CollisionDestroy : MonoBehaviour
                 collision.gameObject.SetActive(false);
             }
         }
-    }
+    }*/
 }

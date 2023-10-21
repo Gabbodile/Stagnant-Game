@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3729944616300293395}
   - component: {fileID: 3729944616300293394}
   - component: {fileID: 3729944616300293393}
+  - component: {fileID: 1297621958}
   m_Layer: 0
   m_Name: UniversalManagers
   m_TagString: Untagged
@@ -101,3 +102,18 @@ MonoBehaviour:
   ListB: []
   ListC: []
   ListD: []
+--- !u!114 &1297621958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729944616300293399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5ab5b39e6b18c4fa03dec7e66f6fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loop: 0
+  goodChoices: 0
+  badChoices: 0

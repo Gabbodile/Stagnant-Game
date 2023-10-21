@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - Door
   - Props
+  - Laundry
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - Props
   - Water
   - UI
-  - 
-  - 
+  - ClothesPile
+  - Laundry
   - 
   - 
   - 

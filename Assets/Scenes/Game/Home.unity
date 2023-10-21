@@ -1691,7 +1691,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424266763}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
   m_Name: 
@@ -2841,7 +2841,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1342768499}
         m_TargetAssemblyTypeName: TimeChange, Assembly-CSharp
-        m_MethodName: SleepInAgain
+        m_MethodName: SleepIn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4414,7 +4414,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1342768499}
         m_TargetAssemblyTypeName: TimeChange, Assembly-CSharp
-        m_MethodName: SleepFinal
+        m_MethodName: SleepIn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6177,7 +6177,9 @@ GameObject:
   - component: {fileID: 1176351237}
   - component: {fileID: 1176351238}
   - component: {fileID: 1176351239}
-  m_Layer: 3
+  - component: {fileID: 1176351240}
+  - component: {fileID: 1176351241}
+  m_Layer: 6
   m_Name: Clothes_Pile1_Bedroom
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -6387,6 +6389,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1176351240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176351234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b08434ecc5cbb4594d669c74c97c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+--- !u!114 &1176351241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176351234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTag: Laundry
 --- !u!1 &1191863496
 GameObject:
   m_ObjectHideFlags: 0
@@ -8230,9 +8258,9 @@ GameObject:
   - component: {fileID: 1560430135}
   - component: {fileID: 1560430136}
   - component: {fileID: 1560430137}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Laundry_Bedroom
-  m_TagString: Props
+  m_TagString: Laundry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8434,10 +8462,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1560430132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c573335986aa041b2eda938e11602d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d48ee96e46a78e45a7cb476ab799c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToDestroy:
+  startingLoop: 1
+  clothesPiles:
   - {fileID: 1176351234}
   - {fileID: 1639608473}
 --- !u!1 &1571394509
@@ -8625,7 +8654,9 @@ GameObject:
   - component: {fileID: 1639608476}
   - component: {fileID: 1639608477}
   - component: {fileID: 1639608478}
-  m_Layer: 3
+  - component: {fileID: 1639608479}
+  - component: {fileID: 1639608480}
+  m_Layer: 6
   m_Name: Clothes_Pile2_Bedroom
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -8849,6 +8880,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1639608479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639608473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b08434ecc5cbb4594d669c74c97c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+--- !u!114 &1639608480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639608473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTag: Laundry
 --- !u!1 &1640009158
 GameObject:
   m_ObjectHideFlags: 0
@@ -8977,6 +9034,7 @@ MonoBehaviour:
   startPoint: {fileID: 4220735326102259519}
   PhoneInUse: 0
   nextLevel: Office
+  increaseLoop: 0
 --- !u!114 &1640009164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9089,14 +9147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e0a14c1e1604048b036350ba7fb21f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obName: 
-  dragObject: {fileID: 1096468304}
-  dragObject1: {fileID: 1096468304}
-  obObject: {fileID: 178686576}
-  obObject1: {fileID: 178686576}
-  GM: {fileID: 1750955811}
-  CL: {fileID: 1750955810}
-  LS: {fileID: 0}
 --- !u!1 &1688314429
 GameObject:
   m_ObjectHideFlags: 0
@@ -9273,6 +9323,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297621958, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
+      propertyPath: loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -9323,28 +9377,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
---- !u!114 &1750955810 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3729944616300293396, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
-  m_PrefabInstance: {fileID: 1750955809}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97a6c5c7826437747b787ea7396a4e68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1750955811 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3729944616300293395, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
-  m_PrefabInstance: {fileID: 1750955809}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 764724d1605e6924c884bdc912415373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1794792958 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1991747563428502654, guid: af1579aaf6d673f4f84895a7e86fa8e4, type: 3}

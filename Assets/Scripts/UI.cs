@@ -17,6 +17,8 @@ public class UI : MonoBehaviour
     public bool PhoneInUse;
 
     public string nextLevel;
+
+    public bool increaseLoop;
    
 
     public void Start()
@@ -81,6 +83,15 @@ public class UI : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(nextLevel);
+    }
+
+    public void Loop()
+    {
+        if (increaseLoop)
+        {
+            LoopAndChoices.GetInstance().IncreaseLoop();
+            Debug.Log(LoopAndChoices.GetInstance().loop);
+        }
     }
 
 }

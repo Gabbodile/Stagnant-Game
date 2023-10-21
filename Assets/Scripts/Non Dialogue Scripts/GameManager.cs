@@ -5,6 +5,8 @@ public enum PlayerState{GOOD, NUETRAL, BAD }
 public class GameManager : GameBehaviour<GameManager> 
 {
     [SerializeField] public int LoopNumber;
+    
+
     public void LoopCalculator()
     {
         LoopNumber = LoopNumber + 1;

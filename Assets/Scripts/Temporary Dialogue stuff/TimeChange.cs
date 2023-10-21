@@ -5,11 +5,11 @@ using TMPro;
 
 public class TimeChange : MonoBehaviour
 {
-
+    #region Old Version
     /// <summary>
     /// This is a temporary script that changes the text in the beginning scene.
     /// </summary>
-
+    /*
     public TMP_Text displayTime;
     public TMP_Text time;
     public TMP_Text thoughts;
@@ -35,5 +35,31 @@ public class TimeChange : MonoBehaviour
     {
         time.text = ("9:00 AM");
         displayTime.text = ("9:00 AM");
+    }*/
+    #endregion
+
+    #region New Version
+    /// <summary>
+    /// This is the script that changes the text in the beginning scene.
+    /// </summary>
+
+    public TMP_Text displayTime;
+    public TMP_Text time;
+    public TMP_Text thoughts;
+    private string[] times = { "7:00 AM", "7:30 AM", "8:00 AM", "9:00 AM" };
+    private int currentTime = 0;
+
+    private void Start()
+    {
+        displayTime.text = times[currentTime];
+        currentTime++;
     }
+
+    public void SleepIn()
+    {
+        time.text = times[currentTime];
+        displayTime.text = times[currentTime];
+        currentTime++;
+    }
+    #endregion
 }
