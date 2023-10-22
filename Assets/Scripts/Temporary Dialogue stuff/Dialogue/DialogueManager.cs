@@ -68,7 +68,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         // handle continuing to the next line in the dialogue when you left click
-        if (Input.GetMouseButtonDown(0))
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    ContinueStory();
+        //}
+
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             ContinueStory();
         }
