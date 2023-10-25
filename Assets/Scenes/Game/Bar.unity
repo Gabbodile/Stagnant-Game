@@ -1390,6 +1390,7 @@ GameObject:
   - component: {fileID: 310558628}
   - component: {fileID: 310558630}
   - component: {fileID: 310558629}
+  - component: {fileID: 310558631}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1455,6 +1456,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310558627}
   m_CullTransparentMesh: 1
+--- !u!95 &310558631
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310558627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7090830e74b17a4494f9e9e0d3a4e1c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &350007199
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,6 +3567,7 @@ GameObject:
   - component: {fileID: 926971039}
   - component: {fileID: 926971038}
   - component: {fileID: 926971037}
+  - component: {fileID: 926971041}
   m_Layer: 0
   m_Name: Cathy
   m_TagString: Untagged
@@ -3565,7 +3587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059cf0f296dc6444eab8968097765c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 0}
+  inkJSON: {fileID: 4900000, guid: e586f88c74e361f4899385730e031232, type: 3}
 --- !u!60 &926971038
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3755,6 +3777,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &926971041
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926971036}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7090830e74b17a4494f9e9e0d3a4e1c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &930330901
 GameObject:
   m_ObjectHideFlags: 0
