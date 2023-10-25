@@ -2097,7 +2097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059cf0f296dc6444eab8968097765c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: 55117bbc60be10349affa40f0d1e8d05, type: 3}
+  inkJSON: {fileID: 4900000, guid: 7cbb055a3aba0b143bbd255ca9ebf3f9, type: 3}
 --- !u!1 &824330639
 GameObject:
   m_ObjectHideFlags: 0
