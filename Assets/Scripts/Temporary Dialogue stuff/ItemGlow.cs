@@ -11,28 +11,25 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     /// This script allows people to hover over interactable items as well as change what the character thinks about each item when clicked.
     /// </summary>
 
+    [Header("Sprites")]
     private SpriteRenderer spriteRender;
     public Sprite unselected;
     public Sprite selected;
+    public Sprite available;
 
     [Header("Dialogue Box")]
     public GameObject dialogueBox;
-    public TMP_Text dialogueText;
-    public string textbox = "";
-   
-    [Header("Name Box")]
-    public TMP_Text nameText;
-    public string namebox = "";
 
     public bool donttalking;
-    //bool boxText = false;
     private int startingLayer;
+    
+    public bool availibility = false;
 
     void Start()
     {
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
         startingLayer = gameObject.layer;
-        
+
     }
 
     private void Update()
@@ -49,22 +46,14 @@ public class ItemGlow : GameBehaviour<ItemGlow>
 
     private void OnMouseOver()
     {
-        spriteRender.sprite = selected;
+        if (availibility == false)
+            spriteRender.sprite = selected;
+        else
+            spriteRender.sprite = available;
     }
 
     private void OnMouseExit()
     {
         spriteRender.sprite = unselected;
-    }
-
-    private void OnMouseDown()
-    {
-        if (donttalking == false)
-        {
-            dialogueBox.SetActive(true);
-            nameText.text = namebox;
-            dialogueText.text = textbox;
-            //boxText = true;
-        }
     }
 }

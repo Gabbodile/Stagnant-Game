@@ -31,6 +31,7 @@ public class LoopAndChoices : MonoBehaviour
     public void IncreaseLoop()
     {
         loop++;
+        Debug.Log("Loop increased");
     }
 
     public void IncreaseGoodChoices(int _increaseValue)
