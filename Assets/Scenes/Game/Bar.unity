@@ -4206,6 +4206,17 @@ Transform:
   m_Father: {fileID: 1559237487}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1370741347 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1297621958, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
+  m_PrefabInstance: {fileID: 1229807234}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5ab5b39e6b18c4fa03dec7e66f6fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1386476589
 GameObject:
   m_ObjectHideFlags: 0
@@ -4885,7 +4896,7 @@ MonoBehaviour:
   startPoint: {fileID: 1418865418}
   PhoneInUse: 0
   nextLevel: Home
-  increaseLoop: 0
+  increaseLoop: 1
 --- !u!1 &1651395185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8626353751189423111, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
@@ -5933,7 +5944,7 @@ PrefabInstance:
     - target: {fileID: 7066896513072836090, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1640009163}
+      objectReference: {fileID: 1370741347}
     - target: {fileID: 7066896513072836090, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -5944,11 +5955,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836090, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Loop
+      value: IncreaseLoop
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836090, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UI, Assembly-CSharp
+      value: LoopAndChoices, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836090, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
