@@ -43,6 +43,7 @@ public class ItemGlow : GameBehaviour<ItemGlow>
 
         }
 
+        //If dialogue active then it will make sure you dont click on random things
         if (dialogueBox.activeInHierarchy == true)
         {
             this.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
