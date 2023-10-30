@@ -11,6 +11,10 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     /// This script allows people to hover over interactable items as well as change what the character thinks about each item when clicked.
     /// </summary>
 
+    [Header("Loop Check")]
+    public bool availibility = false;
+    public int loopAvailable = 0;
+
     [Header("Sprites")]
     private SpriteRenderer spriteRender;
     public Sprite unselected;
@@ -23,17 +27,22 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     public bool donttalking;
     private int startingLayer;
     
-    public bool availibility = false;
+    
 
     void Start()
     {
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
         startingLayer = gameObject.layer;
-
+        
     }
 
     private void Update()
     {
+        if (_LOOP.loop == loopAvailable)
+        {
+
+        }
+
         if (dialogueBox.activeInHierarchy == true)
         {
             this.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
@@ -44,15 +53,15 @@ public class ItemGlow : GameBehaviour<ItemGlow>
         }
     }
 
-    private void OnMouseOver()
+    public void OnMouseOver()
     {
         if (availibility == false)
-            spriteRender.sprite = selected;
-        else
             spriteRender.sprite = available;
+        else
+            spriteRender.sprite = selected;
     }
 
-    private void OnMouseExit()
+    public void OnMouseExit()
     {
         spriteRender.sprite = unselected;
     }

@@ -9,6 +9,7 @@ public class GameBehaviour : MonoBehaviour
    // protected static EventReporter _ER { get { return EventReporter.Instance; } }
     protected static Unlock _UL { get { return Unlock.Instance; } }
     //protected static DialogueManager _DM { get { return DialogueManager.Instance; } }
+    protected static LoopAndChoices _LOOP { get { return LoopAndChoices.Instance; } }
 
 
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoopAndChoices : MonoBehaviour
+public class LoopAndChoices : GameBehaviour<LoopAndChoices>
 {
     /// <summary>
     /// Holds the values for the current loop, and the number of good and bad choices the player has made
@@ -14,7 +14,15 @@ public class LoopAndChoices : MonoBehaviour
 
     private static LoopAndChoices instance;
 
-    private void Awake()
+    //private void Awake()
+    //{
+    //    if (instance != null)
+    //    {
+    //        Debug.LogWarning("Found more than one Loop and Choices Manager in the scene");
+    //    }
+    //    instance = this;
+    //}
+    private void Start()
     {
         if (instance != null)
         {
