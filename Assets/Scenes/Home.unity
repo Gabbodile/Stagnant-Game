@@ -1026,12 +1026,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 3c5746b3c225a1c4097f715e10fbeea8, type: 3}
   selected: {fileID: 21300000, guid: 05e91e1598318f5498b3fd1079127f69, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Despite everything its still me
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &255455895
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1519,12 +1521,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 3117e8408e86e3546aa2d1fea7742269, type: 3}
   selected: {fileID: 21300000, guid: b7dfcfde1084add46ad81db8dc29d187, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Face towel, hand towel... Same difference.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &363177314
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1615,7 +1619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &423747817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1629,13 +1633,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1235813342}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 15, y: 0}
+  m_SizeDelta: {x: 150, y: 88}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &423747818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,8 +1662,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kitchen
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbfe98cc432c1f642a897511e6ce7bcf, type: 2}
+  m_sharedMaterial: {fileID: -3008085020412810850, guid: dbfe98cc432c1f642a897511e6ce7bcf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1683,8 +1687,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1834,12 +1838,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: eb33ba3d197160348b0d921c118e2ef7, type: 3}
   selected: {fileID: 21300000, guid: 1b51588b67835ca4988afb7ac0e5404a, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: My side table. It has a lot of things on it.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &424266767
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2283,12 +2289,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 7331c3fcdb949f440a17e0d1b60ac8b8, type: 3}
   selected: {fileID: 21300000, guid: 739e276584fd6f64ab709b71de13c9ae, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: This is my growing collection of plates. I think this is a new stack record.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &528515233
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2799,12 +2807,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 1c7b7d92ed310a044bc4e4451087a07f, type: 3}
   selected: {fileID: 21300000, guid: 59313002625c48b49a1b0d94dc464a40, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Was this yesterday's dinner or three days ago? I can't remember.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &649102000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3541,12 +3551,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 8bf85401788adc14494a43b2434ad58c, type: 3}
   selected: {fileID: 21300000, guid: 8acbe6700de442b46a1bd43a15c4149a, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: I could wear this for one more day... Maybe a few more.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &807758265
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3854,9 +3866,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c573335986aa041b2eda938e11602d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToDestroy:
-  - {fileID: 1176351234}
-  - {fileID: 1639608473}
 --- !u!60 &819359065
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4148,12 +4157,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: fe2048936c38db043b85833eff654396, type: 3}
   selected: {fileID: 21300000, guid: 56595a36fa1ceae45be0c37c5953703b, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: I did clean the toilet. I'm not that gross
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &870197365
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4246,8 +4257,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5874e2e23e4046f4eba2bc7f16bc6e54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loop: 0
-  loopNumber: {fileID: 446482993}
 --- !u!1 &923679103
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,12 +4358,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: ffc295839886f4c46977f3014726aaf3, type: 3}
   selected: {fileID: 21300000, guid: eca11c37fb9a8c8419d0e8894f114a6d, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: -Flushing noises-
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &923679107
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4972,6 +4983,7 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: fd5e84c44a4bc9449a89a9bc8cf59219, type: 3}
   selected: {fileID: 21300000, guid: 7acde752bfedfbc4db2c61515c256e38, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Gosh, who would put trash on the table? Oh wait. I'm the only one living
@@ -4979,6 +4991,7 @@ MonoBehaviour:
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &957962377
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5815,12 +5828,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 3ed1deffc2d04c04b99e8e5e5041c07e, type: 3}
   selected: {fileID: 21300000, guid: fd66e2b4b3d85db4281e1e41fb6dfd23, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Do books even belong in the kitchen?
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!114 &1053036642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6387,12 +6402,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 726375882acac444b963de79f8da569f, type: 3}
   selected: {fileID: 21300000, guid: 952e526b99cd55e46866cc80bd8f5ef3, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: A second dish for my imaginary friend.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &1113704495
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6572,12 +6589,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: aa9a5e3392e57804d90c9ee0235dbdcc, type: 3}
   selected: {fileID: 21300000, guid: 907b62529fe3cd843b0c3cfab1f16308, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: I wonder how many times I can wear this until people notice? Maybe a week?
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &1176351238
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6955,12 +6974,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 4ef4d63345fda72478ebe9807720ae0c, type: 3}
   selected: {fileID: 21300000, guid: 848736049995f8d4fa571a4a64daa779, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Ugh, I'd do it later. It won't hurt to leave them for another day.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &1201564584
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7102,14 +7123,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5950523552559463110}
+  - {fileID: 8462472437476662941}
   - {fileID: 423747817}
   m_Father: {fileID: 2144398610}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 780, y: -19.3686}
-  m_SizeDelta: {x: 160, y: 88.7372}
+  m_AnchoredPosition: {x: 747.60767, y: -19.3686}
+  m_SizeDelta: {x: 224.784, y: 88.737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235813343
 MonoBehaviour:
@@ -7133,8 +7156,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.9523172, b: 0.68301886, a: 1}
+    m_PressedColor: {r: 1, g: 0.9648032, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7223,8 +7246,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8b68348f8d8bff0468ae5255872a3efa, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 3552cc959ec1abf4dae7fc561aeec557, type: 3}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7659,7 +7682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1342768496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8530,12 +8553,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: e2189f6e9fb806945b3edfe9551a82d8, type: 3}
   selected: {fileID: 21300000, guid: cbc26b61a7564c4478db579a9c06a784, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: I should pick up my clothes, huh?
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &1560430136
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8928,12 +8953,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: a38a8f131f44ca74688f4196845a3370, type: 3}
   selected: {fileID: 21300000, guid: 9ba78da0efda405448d93cd4f4fcef85, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: -sniff- eh, it smells clean enough
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &1639608477
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9211,13 +9238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ce22ff5b778974e8a7da5b67516ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePanel: {fileID: 1794792958}
-  Phone: {fileID: 8687927174946529118}
-  endPoint: {fileID: 4220735325711845366}
-  startPoint: {fileID: 4220735326102259519}
-  PhoneInUse: 0
-  nextLevel: Office
-  increaseLoop: 0
 --- !u!114 &1640009164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9560,11 +9580,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
---- !u!1 &1794792958 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1991747563428502654, guid: af1579aaf6d673f4f84895a7e86fa8e4, type: 3}
-  m_PrefabInstance: {fileID: 136256653}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1794792961 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1991747563428502625, guid: af1579aaf6d673f4f84895a7e86fa8e4, type: 3}
@@ -9681,12 +9696,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 7177f64a470963144a6acb591b731b31, type: 3}
   selected: {fileID: 21300000, guid: af2697ed009f674408a4e4be1ecda7e9, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Ugh... What is this shit on my computer?
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &1916226085
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9829,12 +9846,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 16f0e48b11b813d4caee223f37d22b8d, type: 3}
   selected: {fileID: 21300000, guid: a574e10d2c9f2b1418e50fc3954502ec, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Probably gross but I should really shower...
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!65 &1917333334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10220,12 +10239,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: 5a9156e24375dc34397b371dd07aaebc, type: 3}
   selected: {fileID: 21300000, guid: a8dfb817f90919b4cbe1c142066bd44a, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: Does it go over or under...? I dont know. I don't care.
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!60 &1976631891
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10338,12 +10359,14 @@ MonoBehaviour:
   dontDestroy: 0
   unselected: {fileID: 21300000, guid: b0247807aaefb9643a09ed937a041f41, type: 3}
   selected: {fileID: 21300000, guid: 81e56c4732a6b2d4ea5e593f33a1e9c8, type: 3}
+  unavailable: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   textbox: I think my teeth can wait another day
   nameText: {fileID: 1288289112}
   namebox: Matt
   donttalking: 0
+  availability: 0
 --- !u!212 &2021784847
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10514,6 +10537,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1720, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &645320846525380768
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012384997721230832}
+  m_CullTransparentMesh: 1
+--- !u!222 &906703982274246863
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7768505638290922159}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2430940929320595303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10627,16 +10666,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ec630add204b48909aeb00d97a459, type: 3}
---- !u!224 &4220735325711845366 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8108177868663740966, guid: bcceb747a641d6449baa40ee4910dac1, type: 3}
-  m_PrefabInstance: {fileID: 5338200122987486672}
+--- !u!114 &3691540094127063875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &4220735326102259519 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8108177869611014895, guid: bcceb747a641d6449baa40ee4910dac1, type: 3}
-  m_PrefabInstance: {fileID: 5338200122987486672}
+  m_GameObject: {fileID: 4012384997721230832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 149eefd4144e9ff4ea462df185ca44ee, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4012384997721230832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8462472437476662941}
+  - component: {fileID: 645320846525380768}
+  - component: {fileID: 3691540094127063875}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!224 &4220735326309749297 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8108177869131157473, guid: bcceb747a641d6449baa40ee4910dac1, type: 3}
@@ -10747,6 +10824,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcceb747a641d6449baa40ee4910dac1, type: 3}
+--- !u!224 &5950523552559463110
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7768505638290922159}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235813342}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000034332275}
+  m_SizeDelta: {x: 160, y: 88.7372}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &7066896512028998636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10848,8 +10945,71 @@ PrefabInstance:
       objectReference: {fileID: 1640009163}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
---- !u!1 &8687927174946529118 stripped
+--- !u!1 &7768505638290922159
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3640226842343572110, guid: bcceb747a641d6449baa40ee4910dac1, type: 3}
-  m_PrefabInstance: {fileID: 5338200122987486672}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5950523552559463110}
+  - component: {fileID: 906703982274246863}
+  - component: {fileID: 8148418493964313787}
+  m_Layer: 5
+  m_Name: Highlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8148418493964313787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7768505638290922159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.14117648}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f2261a0f733daf845868dac89f03f053, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!224 &8462472437476662941
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012384997721230832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235813342}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.36849}
+  m_SizeDelta: {x: 73.299, y: 88.737}
+  m_Pivot: {x: 1, y: 0.5}
