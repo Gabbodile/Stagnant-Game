@@ -28,13 +28,26 @@ public class GameManager : GameBehaviour<GameManager>
 
         if(Input.GetKeyDown(KeyCode.Escape) && isPlaying) 
         {
-            
+            OnPause();
+            gameState = GameState.Paused;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPlaying)
+        {
+            OnResume();
+            gameState = GameState.Playing;
         }
     }
 
-    public void OnPaused()
+    public void OnPause()
     {
-        
+        _UI.OnPause();
+        //add other stuff like sound cues/timescale changes/other here
+    }
+
+    public void OnResume()
+    {
+        _UI.OnResume();
+        //add other stuff like sound cues/timescale changes/other here
     }
 
     public void LoopCalculator()

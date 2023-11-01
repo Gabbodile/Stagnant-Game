@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UIManager : GameBehaviour<UIManager>
 {
     public GameObject PausePanel;
     
@@ -21,5 +22,10 @@ public class UIManager : MonoBehaviour
     public void OnPause()
     {
         PausePanel.SetActive(true);
+    }
+
+    public void OnResume()
+    {
+        PausePanel.SetActive(false);
     }
 }
