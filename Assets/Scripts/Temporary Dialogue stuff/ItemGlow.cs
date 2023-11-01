@@ -27,6 +27,12 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     public bool donttalking;
     //bool boxText = false;
     private int startingLayer;
+<<<<<<< Updated upstream
+=======
+
+    public LoopAndChoices _LOOP;
+    
+>>>>>>> Stashed changes
 
     void Start()
     {
@@ -37,6 +43,15 @@ public class ItemGlow : GameBehaviour<ItemGlow>
 
     private void Update()
     {
+<<<<<<< Updated upstream
+=======
+        //if (_LOOP.loop == loopAvailable)
+        //{
+
+        //}
+
+        //If dialogue active then it will make sure you dont click on random things
+>>>>>>> Stashed changes
         if (dialogueBox.activeInHierarchy == true)
         {
             this.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
