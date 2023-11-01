@@ -41,13 +41,20 @@ public class GameManager : GameBehaviour<GameManager>
     public void OnPause()
     {
         _UI.OnPause();
+        gameState = GameState.Paused;
         //add other stuff like sound cues/timescale changes/other here
     }
 
     public void OnResume()
     {
         _UI.OnResume();
+        gameState = GameState.Playing;
         //add other stuff like sound cues/timescale changes/other here
+    }
+
+    public void OnGameExit()
+    {
+        Application.Quit();
     }
 
     public void LoopCalculator()
