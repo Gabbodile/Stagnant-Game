@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0f753f3f12b0a1445a31a01ea81774de
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Trigram
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ccec690bb20f0c54b9ab53938194c470, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
