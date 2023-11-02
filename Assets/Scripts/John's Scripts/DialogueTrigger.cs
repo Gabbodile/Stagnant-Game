@@ -2,29 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger : GameBehaviour
 {
     /// <summary>
     /// This script will hold each NPC's indivitual inkJSON file and will trigger dialouge with them when they are clicked on
     /// </summary>
 
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
+    [SerializeField] public TextAsset inkJSON;
+    public bool disabled;
 
 
     private void OnMouseDown()
     {
-        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        if (!_DM.dialogueIsPlaying && !disabled)
         {
-            // made it a coroutine to prevent dialogue skipping the first line
-            StartCoroutine(StartDialogue());
+            _DM.EnterDialogueMode(inkJSON);
         }
-    }
-
-    private IEnumerator StartDialogue()
-    {
-        yield return new WaitForSeconds(0.1f);
-
-        DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
     }
 }

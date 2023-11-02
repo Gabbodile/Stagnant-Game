@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Ink.Runtime;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : GameBehaviour<DialogueManager>
 {
     [Header("Dialouge UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -17,31 +17,31 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
-    private Story currentStory;
+    public Story currentStory;
 
     public bool dialogueIsPlaying { get; private set; }
     private bool choicesAreActive;
 
-    private static DialogueManager instance;
+    //private static DialogueManager instance;
 
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
 
 
-
     private void Awake()
     {
-        if (instance != null)
-        {
-            Debug.LogWarning("Found more than one Dialouge Manager in the scene");
-        }
-        instance = this;
+        //if (instance != null)
+        //{
+        //    Debug.LogWarning("Found more than one Dialouge Manager in the scene");
+        //}
+        //instance = this;
+        Instantiate();
     }
 
-    public static DialogueManager GetInstance()
-    {
-        return instance;
-    }
+    //public static DialogueManager GetInstance()
+    //{
+    //    return instance;
+    //}
 
     private void Start()
     {
@@ -86,7 +86,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
 
         BindInkExternalFunctions();
-        
+
         // reset portrait and speaker
         displayNameText.text = "???";
         portraitAnimator.Play("Default");
@@ -212,12 +212,12 @@ public class DialogueManager : MonoBehaviour
     {
         currentStory.BindExternalFunction("goodChoice", (int increaseValue) =>
         {
-            LoopAndChoices.GetInstance().IncreaseGoodChoices(increaseValue);
+            _LOOP.IncreaseGoodChoices(increaseValue);
         });
 
         currentStory.BindExternalFunction("badChoice", (int increaseValue) =>
         {
-            LoopAndChoices.GetInstance().IncreaseBadChoices(increaseValue);
+            _LOOP.IncreaseBadChoices(increaseValue);
         });
     }
 
