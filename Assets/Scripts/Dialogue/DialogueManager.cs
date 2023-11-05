@@ -75,7 +75,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         //    ContinueStory();
         //}
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             ContinueStory();
         }
