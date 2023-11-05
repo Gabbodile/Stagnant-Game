@@ -1,4 +1,4 @@
-#speaker:Matt #portrait:Matt
+#speaker:Dillon #portrait:Laid_Back
 // if its first passing of the game, he will just fall back asleep after clicking the alarm clock.
 ... Its 7AM. I think it would be okay to fall back asleep.
 
