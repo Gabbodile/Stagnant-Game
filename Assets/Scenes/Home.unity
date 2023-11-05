@@ -1435,7 +1435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &341447803
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4487,10 +4487,10 @@ RectTransform:
   m_Father: {fileID: 1616054933}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 159.2905, y: -98.83333}
+  m_SizeDelta: {x: 318.581, y: 97.666664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &875459214
 MonoBehaviour:
@@ -7627,6 +7627,7 @@ GameObject:
   - component: {fileID: 1235813345}
   - component: {fileID: 1235813344}
   - component: {fileID: 1235813343}
+  - component: {fileID: 1235813346}
   m_Layer: 5
   m_Name: Kitchen
   m_TagString: Untagged
@@ -7787,6 +7788,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235813341}
   m_CullTransparentMesh: 1
+--- !u!114 &1235813346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235813341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d724818e912a643b22f8b7b5b56c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  buttonIcon: {fileID: 3691540094127063875}
+  buttonText: {fileID: 423747818}
+  bedroomIcon: {fileID: 21300000, guid: cbf71545011c9904e958a781f4fb4aa0, type: 3}
+  kitchenIcon: {fileID: 21300000, guid: 149eefd4144e9ff4ea462df185ca44ee, type: 3}
+  bathroomIcon: {fileID: 21300000, guid: c956523a40cab7342bb788c81af4b3c8, type: 3}
+  officeIcon: {fileID: 21300000, guid: 8ef15f715bb1ada4d91711a08204b2ee, type: 3}
+  barIcon: {fileID: 21300000, guid: cbf71545011c9904e958a781f4fb4aa0, type: 3}
+  carIcon: {fileID: 21300000, guid: c956523a40cab7342bb788c81af4b3c8, type: 3}
 --- !u!114 &1288289112 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2430940928460264511, guid: a72ec630add204b48909aeb00d97a459, type: 3}
@@ -8245,7 +8267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f85fdc4f97fe87a4bbabc51fd37281b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71a9026b38b556c45b6887897f181989, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8731,10 +8753,10 @@ RectTransform:
   m_Father: {fileID: 1616054933}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 159.2905, y: -394.16666}
+  m_SizeDelta: {x: 318.581, y: 97.666664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1428382689
 MonoBehaviour:
@@ -9219,10 +9241,10 @@ RectTransform:
   m_Father: {fileID: 1616054933}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 159.2905, y: -246.49998}
+  m_SizeDelta: {x: 318.581, y: 97.666664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513114999
 MonoBehaviour:
@@ -10553,7 +10575,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
