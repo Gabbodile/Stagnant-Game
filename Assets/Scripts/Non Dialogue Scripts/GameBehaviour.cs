@@ -8,9 +8,8 @@ public class GameBehaviour : MonoBehaviour
     protected static GameManager _GM { get { return GameManager.Instance; } }
    // protected static EventReporter _ER { get { return EventReporter.Instance; } }
     //protected static Unlock _UL { get { return Unlock.Instance; } }
-    //protected static DialogueManager _DM { get { return DialogueManager.Instance; } }
+    protected static DialogueManager _DM { get { return DialogueManager.Instance; } }
     protected static LoopAndChoices _LOOP { get { return LoopAndChoices.Instance; } }
-    protected static UIManager _UI { get { return UIManager.Instance; } }
 
 
 }

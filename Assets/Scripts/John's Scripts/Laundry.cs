@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laundry : GameBehaviour
+public class Laundry : MonoBehaviour
 {
     /// <summary>
     /// Manages all the clothes pile objects in the scene
@@ -16,7 +16,7 @@ public class Laundry : GameBehaviour
     private void OnMouseDown()
     {
         // enables laundry after the first loop
-        if (startingLoop > _LOOP.loop)
+        if (startingLoop > LoopAndChoices.GetInstance().loop)
             return;
 
         for (int i = 0; i < clothesPiles.Length; i++)

@@ -17,7 +17,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
-    public Story currentStory;
+    private Story currentStory;
 
     public bool dialogueIsPlaying { get; private set; }
     private bool choicesAreActive;
@@ -28,6 +28,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
     private const string PORTRAIT_TAG = "portrait";
 
 
+
     private void Awake()
     {
         //if (instance != null)
@@ -35,6 +36,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         //    Debug.LogWarning("Found more than one Dialouge Manager in the scene");
         //}
         //instance = this;
+
         Instantiate();
     }
 
@@ -73,7 +75,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         //    ContinueStory();
         //}
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             ContinueStory();
         }
@@ -86,7 +88,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         dialoguePanel.SetActive(true);
 
         BindInkExternalFunctions();
-
+        
         // reset portrait and speaker
         displayNameText.text = "???";
         portraitAnimator.Play("Default");
@@ -212,12 +214,12 @@ public class DialogueManager : GameBehaviour<DialogueManager>
     {
         currentStory.BindExternalFunction("goodChoice", (int increaseValue) =>
         {
-            _LOOP.IncreaseGoodChoices(increaseValue);
+            LoopAndChoices.GetInstance().IncreaseGoodChoices(increaseValue);
         });
 
         currentStory.BindExternalFunction("badChoice", (int increaseValue) =>
         {
-            _LOOP.IncreaseBadChoices(increaseValue);
+            LoopAndChoices.GetInstance().IncreaseBadChoices(increaseValue);
         });
     }
 
