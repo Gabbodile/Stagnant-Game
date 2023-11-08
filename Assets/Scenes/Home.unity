@@ -173,8 +173,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 14, y: 19.45}
-    newSize: {x: 14, y: 19.45}
+    oldSize: {x: 11.12, y: 15.88}
+    newSize: {x: 11.12, y: 15.88}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -223,15 +223,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e30fb9c3f7f824499f70adee6b45fd0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b015f25241841442a6c545ee396b7ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 14, y: 19.45}
+  m_Size: {x: 11.12, y: 15.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &33292552
@@ -242,7 +242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33292548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6929269, y: -1.1209662, z: 4.326938}
+  m_LocalPosition: {x: 1.6929269, y: -1.1209662, z: -1}
   m_LocalScale: {x: 0.098439, y: 0.098439, z: 0.098439}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059cf0f296dc6444eab8968097765c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: 46b02bd299a2f6e47b87f938aac952ee, type: 3}
+  inkJSON: {fileID: 4900000, guid: 201b1115630027640aa54873ed6aa201, type: 3}
   disabled: 0
 --- !u!1 &45821381
 GameObject:
@@ -278,7 +278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &45821382
 Transform:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1297621958, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1297621958, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: dontDestroy
@@ -740,11 +740,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
-  availibility: 1
+  availibility: 0
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: a38a8f131f44ca74688f4196845a3370, type: 3}
-  selected: {fileID: 21300000, guid: 9ba78da0efda405448d93cd4f4fcef85, type: 3}
-  available: {fileID: 0}
+  selected: {fileID: 21300000, guid: ba12310301bfd3b4dbf361ce40bb9f30, type: 3}
+  available: {fileID: 21300000, guid: e4da25b3827dba44eb34929d0e4b42e3, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &109628113
@@ -1176,7 +1176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &419126495
 Transform:
   m_ObjectHideFlags: 0
@@ -1631,11 +1631,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
-  availibility: 1
-  loopAvailable: 0
+  availibility: 0
+  loopAvailable: 3
   unselected: {fileID: 21300000, guid: 7331c3fcdb949f440a17e0d1b60ac8b8, type: 3}
-  selected: {fileID: 21300000, guid: 739e276584fd6f64ab709b71de13c9ae, type: 3}
-  available: {fileID: 0}
+  selected: {fileID: 21300000, guid: bd8757148635d4244860dab9eed2369c, type: 3}
+  available: {fileID: 21300000, guid: 1c4842c03403180469f20f6a2696a716, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &486094286
@@ -3582,7 +3582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
-  availibility: 1
+  availibility: 0
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: aa9a5e3392e57804d90c9ee0235dbdcc, type: 3}
   selected: {fileID: 21300000, guid: 907b62529fe3cd843b0c3cfab1f16308, type: 3}
@@ -3699,7 +3699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910673576
@@ -5662,8 +5662,8 @@ MonoBehaviour:
   availibility: 1
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: eb33ba3d197160348b0d921c118e2ef7, type: 3}
-  selected: {fileID: 21300000, guid: 1b51588b67835ca4988afb7ac0e5404a, type: 3}
-  available: {fileID: 0}
+  selected: {fileID: 21300000, guid: d2baa826185c0b049897299baf6f1dc2, type: 3}
+  available: {fileID: 21300000, guid: 2bbc4a7dfd0c8204186e24822e69f8d1, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &1329168785
@@ -5904,9 +5904,6 @@ GameObject:
   - component: {fileID: 1407360747}
   - component: {fileID: 1407360752}
   - component: {fileID: 1407360751}
-  - component: {fileID: 1407360750}
-  - component: {fileID: 1407360749}
-  - component: {fileID: 1407360748}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -5935,112 +5932,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1407360748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407360746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 6e7fdb6c5374ccf478d060e72a4f1dc4, type: 3}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1407360751}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 138094603}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: EnterDialogueMode
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 4900000, guid: 4aaad17aecd9f774ca66c6a3e71e82d2, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.TextAsset, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!60 &1407360749
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407360746}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
---- !u!114 &1407360750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407360746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dontDestroy: 0
-  availibility: 1
-  loopAvailable: 0
-  unselected: {fileID: 21300000, guid: 18067d403c3feec49b0f9a86ed54aa21, type: 3}
-  selected: {fileID: 21300000, guid: 6e7fdb6c5374ccf478d060e72a4f1dc4, type: 3}
-  available: {fileID: 21300000, guid: 37ba560feea47944e95af906f34aace2, type: 3}
-  dialogueBox: {fileID: 1055867295}
-  donttalking: 0
 --- !u!114 &1407360751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8302,8 +8193,8 @@ MonoBehaviour:
   availibility: 1
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: e2189f6e9fb806945b3edfe9551a82d8, type: 3}
-  selected: {fileID: 21300000, guid: cbc26b61a7564c4478db579a9c06a784, type: 3}
-  available: {fileID: 0}
+  selected: {fileID: 21300000, guid: b1f523de33497544aa49cb24abfe5b92, type: 3}
+  available: {fileID: 21300000, guid: a0d85e642fc089f42934a808ba7364cf, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &1954220683
