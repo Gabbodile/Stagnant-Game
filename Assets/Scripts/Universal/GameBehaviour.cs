@@ -6,11 +6,9 @@ public class GameBehaviour : MonoBehaviour
     //Project Specific
     // protected static *ManagerName* *_MN* { get { return *ManagerName*.Instance; } }
     protected static GameManager _GM { get { return GameManager.Instance; } }
-   // protected static EventReporter _ER { get { return EventReporter.Instance; } }
-    //protected static Unlock _UL { get { return Unlock.Instance; } }
     protected static DialogueManager _DM { get { return DialogueManager.Instance; } }
     protected static LoopAndChoices _LOOP { get { return LoopAndChoices.Instance; } }
-
+    protected static ItemGlow _Glow { get { return ItemGlow.Instance; } }
 
 }
     

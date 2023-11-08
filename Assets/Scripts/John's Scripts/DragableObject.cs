@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragableObject : MonoBehaviour
+public class DragableObject : GameBehaviour<DragableObject>
 {
     private bool dragging = false;
     private Vector3 offset;
