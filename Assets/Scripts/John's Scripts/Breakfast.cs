@@ -9,6 +9,6 @@ public class Breakfast : MonoBehaviour
     private void OnMouseDown()
     {
         nextSceneButton.SetActive(true);
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 }

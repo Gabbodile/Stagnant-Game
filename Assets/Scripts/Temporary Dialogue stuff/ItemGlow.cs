@@ -40,7 +40,7 @@ public class ItemGlow : GameBehaviour<ItemGlow>
     {
         if (_LOOP.loop == loopAvailable)
         {
-
+            availibility = true;
         }
 
         //If dialogue active then it will make sure you dont click on random things
