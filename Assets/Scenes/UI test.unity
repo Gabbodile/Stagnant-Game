@@ -1159,16 +1159,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 3c5746b3c225a1c4097f715e10fbeea8, type: 3}
   selected: {fileID: 21300000, guid: 05e91e1598318f5498b3fd1079127f69, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Despite everything its still me
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &255455895
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1731,16 +1728,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 3117e8408e86e3546aa2d1fea7742269, type: 3}
   selected: {fileID: 21300000, guid: b7dfcfde1084add46ad81db8dc29d187, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Face towel, hand towel... Same difference.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &363177314
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2048,16 +2042,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: eb33ba3d197160348b0d921c118e2ef7, type: 3}
   selected: {fileID: 21300000, guid: 1b51588b67835ca4988afb7ac0e5404a, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: My side table. It has a lot of things on it.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &424266767
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2499,16 +2490,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 7331c3fcdb949f440a17e0d1b60ac8b8, type: 3}
   selected: {fileID: 21300000, guid: 739e276584fd6f64ab709b71de13c9ae, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: This is my growing collection of plates. I think this is a new stack record.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &528515233
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3017,16 +3005,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 1c7b7d92ed310a044bc4e4451087a07f, type: 3}
   selected: {fileID: 21300000, guid: 59313002625c48b49a1b0d94dc464a40, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Was this yesterday's dinner or three days ago? I can't remember.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &649102000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3761,16 +3746,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 8bf85401788adc14494a43b2434ad58c, type: 3}
   selected: {fileID: 21300000, guid: 8acbe6700de442b46a1bd43a15c4149a, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: I could wear this for one more day... Maybe a few more.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &807758265
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4367,16 +4349,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: fe2048936c38db043b85833eff654396, type: 3}
   selected: {fileID: 21300000, guid: 56595a36fa1ceae45be0c37c5953703b, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: I did clean the toilet. I'm not that gross
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &870197365
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4702,16 +4681,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: ffc295839886f4c46977f3014726aaf3, type: 3}
   selected: {fileID: 21300000, guid: eca11c37fb9a8c8419d0e8894f114a6d, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: -Flushing noises-
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &923679107
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5327,17 +5303,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: fd5e84c44a4bc9449a89a9bc8cf59219, type: 3}
   selected: {fileID: 21300000, guid: 7acde752bfedfbc4db2c61515c256e38, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Gosh, who would put trash on the table? Oh wait. I'm the only one living
-    here. Whoops.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &957962377
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6271,16 +6243,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 3ed1deffc2d04c04b99e8e5e5041c07e, type: 3}
   selected: {fileID: 21300000, guid: fd66e2b4b3d85db4281e1e41fb6dfd23, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Do books even belong in the kitchen?
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!114 &1053036642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6845,16 +6814,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 726375882acac444b963de79f8da569f, type: 3}
   selected: {fileID: 21300000, guid: 952e526b99cd55e46866cc80bd8f5ef3, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: A second dish for my imaginary friend.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &1113704495
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7110,16 +7076,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: aa9a5e3392e57804d90c9ee0235dbdcc, type: 3}
   selected: {fileID: 21300000, guid: 907b62529fe3cd843b0c3cfab1f16308, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: I wonder how many times I can wear this until people notice? Maybe a week?
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &1176351238
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7495,16 +7458,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 4ef4d63345fda72478ebe9807720ae0c, type: 3}
   selected: {fileID: 21300000, guid: 848736049995f8d4fa571a4a64daa779, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Ugh, I'd do it later. It won't hurt to leave them for another day.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &1201564584
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8303,7 +8263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1342768496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8881,6 +8841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9355d9b5b5f34c34cb923adacf28fd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   dialoguePanel: {fileID: 1902484557}
   dialogueText: {fileID: 149060988}
   displayNameText: {fileID: 1288289112}
@@ -9575,16 +9536,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: e2189f6e9fb806945b3edfe9551a82d8, type: 3}
   selected: {fileID: 21300000, guid: cbc26b61a7564c4478db579a9c06a784, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: I should pick up my clothes, huh?
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &1560430136
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10081,16 +10039,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: a38a8f131f44ca74688f4196845a3370, type: 3}
   selected: {fileID: 21300000, guid: 9ba78da0efda405448d93cd4f4fcef85, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: -sniff- eh, it smells clean enough
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &1639608477
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11039,16 +10994,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 7177f64a470963144a6acb591b731b31, type: 3}
   selected: {fileID: 21300000, guid: af2697ed009f674408a4e4be1ecda7e9, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Ugh... What is this shit on my computer?
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &1916226085
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11189,16 +11141,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 16f0e48b11b813d4caee223f37d22b8d, type: 3}
   selected: {fileID: 21300000, guid: a574e10d2c9f2b1418e50fc3954502ec, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Probably gross but I should really shower...
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!65 &1917333334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11582,16 +11531,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: 5a9156e24375dc34397b371dd07aaebc, type: 3}
   selected: {fileID: 21300000, guid: a8dfb817f90919b4cbe1c142066bd44a, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: Does it go over or under...? I dont know. I don't care.
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!60 &1976631891
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11713,16 +11659,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
   unselected: {fileID: 21300000, guid: b0247807aaefb9643a09ed937a041f41, type: 3}
   selected: {fileID: 21300000, guid: 81e56c4732a6b2d4ea5e593f33a1e9c8, type: 3}
-  unavailable: {fileID: 0}
+  available: {fileID: 0}
   dialogueBox: {fileID: 1902484557}
-  dialogueText: {fileID: 149060988}
-  textbox: I think my teeth can wait another day
-  nameText: {fileID: 1288289112}
-  namebox: Matt
   donttalking: 0
-  availability: 0
 --- !u!212 &2021784847
 SpriteRenderer:
   m_ObjectHideFlags: 0
