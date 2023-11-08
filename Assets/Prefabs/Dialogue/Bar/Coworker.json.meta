@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Dialogue/Bar/Coworker.json.meta
 guid: 25e24b7829aa99e479580aec07fe8548
+=======
+guid: 55c02b8b6d2c7a64b96928d85e55e054
+>>>>>>> parent of 057db04 (what is happening):Assets/Prefabs/Bar/Coworker.json.meta
 TextScriptImporter:
   externalObjects: {}
   userData: 

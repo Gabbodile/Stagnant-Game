@@ -20,7 +20,7 @@ well, you can go get your own snack.
 * [how are you?] -> coworker_interaction
 
 === coworker_interaction ===
-I'm pretty good. Just chilling really.
+I'm pretty good. Just the same old thing.
 But hey, how's it going with your partner? Still mad at you?
 
 * [Not yet] -> continue

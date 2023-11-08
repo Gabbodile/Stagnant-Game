@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Dialogue/Bar/BarChick.json.meta
 guid: cf1c3083416a6904d80bb708430e67ba
+=======
+guid: d46ba94d2b6a8a541a85bde954f9073c
+>>>>>>> parent of 057db04 (what is happening):Assets/Prefabs/Bar/BarChick.json.meta
 TextScriptImporter:
   externalObjects: {}
   userData: 
