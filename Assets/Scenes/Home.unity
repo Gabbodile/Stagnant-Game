@@ -3015,7 +3015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deleteThistm: {fileID: 789734699}
   wakeup: {fileID: 2066706690}
-  alarmClock: {fileID: 1407360746}
+  alarmClock: {fileID: 578960090}
   sleep: {fileID: 1757461485}
 --- !u!114 &789734702
 MonoBehaviour:
