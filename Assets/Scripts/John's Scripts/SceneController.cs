@@ -11,6 +11,8 @@ public class SceneController : GameBehaviour<SceneController>
         SceneManager.LoadScene(_sceneName);
     }
 
+
+
     // Will increase the loop the gamme is on
     public void Loop()
     {
