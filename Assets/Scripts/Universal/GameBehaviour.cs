@@ -9,6 +9,7 @@ public class GameBehaviour : MonoBehaviour
     protected static DialogueManager _DM { get { return DialogueManager.Instance; } }
     protected static LoopAndChoices _LOOP { get { return LoopAndChoices.Instance; } }
     protected static ItemGlow _Glow { get { return ItemGlow.Instance; } }
+    protected static SceneController _SC { get { return SceneController.Instance; } }
 
 }
     

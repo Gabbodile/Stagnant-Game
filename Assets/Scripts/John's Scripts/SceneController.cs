@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : GameBehaviour<SceneController>
 {
+    public string sceneName;
+    
     // Will change the scene to the string passed in
     public void ChangeScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
     }
 
-
+    public void LoadBedroom()
+    {
+        SceneManager.LoadScene("Bedroom");
+    }
 
     // Will increase the loop the gamme is on
     public void Loop()
