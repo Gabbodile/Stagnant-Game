@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 public enum ButtonType { Bedroom, Kitchen, Bathroom, Office, Bar, Car}
-public class ButtonStylist : MonoBehaviour
+public class ButtonStylist : GameBehaviour
 {
 
     public ButtonType buttonType;
@@ -54,16 +54,19 @@ public class ButtonStylist : MonoBehaviour
             case ButtonType.Office:
                 buttonIcon.sprite = officeIcon;
                 buttonText.text = "Office";
+                _SC.ChangeScene("Office");
                 break;
 
             case ButtonType.Bar:
                 buttonIcon.sprite = barIcon;
                 buttonText.text = "Bar";
+                _SC.ChangeScene("Bar");
                 break;
 
             case ButtonType.Car:
                 buttonIcon.sprite = carIcon;
                 buttonText.text = "Car";
+                _SC.ChangeScene("Car");
                 break;
         }
     }
