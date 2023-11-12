@@ -1,3 +1,4 @@
+INCLUDE GlobalFunction.ink
 Sup? #speaker: Laid back #portrait: Laid_Back
 
 * can you get me a snack? -> snack

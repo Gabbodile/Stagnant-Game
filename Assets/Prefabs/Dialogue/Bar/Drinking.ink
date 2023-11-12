@@ -1,0 +1,1 @@
+EXTERNAL consumed(increaseConsumption)
