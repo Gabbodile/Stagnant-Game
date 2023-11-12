@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public enum ButtonType { Bedroom, Kitchen, Bathroom, Office, Bar, Car}
 public class ButtonStylist : GameBehaviour
@@ -19,6 +20,13 @@ public class ButtonStylist : GameBehaviour
     public Sprite officeIcon;
     public Sprite barIcon;
     public Sprite carIcon;
+
+    public GameObject[] houseRooms;
+    public GameObject[] officeRooms;
+    public GameObject[] barRooms;
+
+    public Image fadeScreen;
+    public GameObject fader;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +52,7 @@ public class ButtonStylist : GameBehaviour
             case ButtonType.Kitchen:
                 buttonIcon.sprite = kitchenIcon;
                 buttonText.text = "Kitchen";
+
                 break;
 
             case ButtonType.Bathroom:

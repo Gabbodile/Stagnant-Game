@@ -2400,6 +2400,7 @@ RectTransform:
   - {fileID: 1924896325}
   - {fileID: 910673575}
   - {fileID: 1055867288}
+  - {fileID: 1675377031}
   - {fileID: 1468824200}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -7507,7 +7508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1828448619463482162, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1828448619463482162, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8378,6 +8379,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674341134}
   m_CullTransparentMesh: 1
+--- !u!1 &1675377030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675377031}
+  - component: {fileID: 1675377033}
+  - component: {fileID: 1675377032}
+  - component: {fileID: 1675377034}
+  m_Layer: 5
+  m_Name: ScreenFade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1675377031
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675377030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682407128}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1675377032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675377030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1675377033
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675377030}
+  m_CullTransparentMesh: 1
+--- !u!114 &1675377034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675377030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a159c6e13f8f6524a92f210f5ba18e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeScreen: {fileID: 1675377032}
+  fader: {fileID: 1675377030}
 --- !u!1001 &1677248273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9289,6 +9381,7 @@ MonoBehaviour:
   officeIcon: {fileID: 21300000, guid: 8ef15f715bb1ada4d91711a08204b2ee, type: 3}
   barIcon: {fileID: 21300000, guid: cbf71545011c9904e958a781f4fb4aa0, type: 3}
   carIcon: {fileID: 21300000, guid: c956523a40cab7342bb788c81af4b3c8, type: 3}
+  Rooms: []
 --- !u!114 &1995850865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10715,6 +10808,7 @@ MonoBehaviour:
   phoneMenu: {fileID: 3640226842670047650}
   phoneConent: {fileID: 8169148621057247921}
   isActive: 0
+  isHovered: 0
 --- !u!65 &3640226842670047652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10761,6 +10855,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &3729599617982296945
 MonoBehaviour:
   m_ObjectHideFlags: 0
