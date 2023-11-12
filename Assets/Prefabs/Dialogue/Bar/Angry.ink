@@ -3,7 +3,7 @@
 
 The fuck you want?!
 
-* [just going through. Sorry]
+* [just going through. Sorry] -> endConvo
 * [Are you good?] -> IDontNeedYourPity
 * [- puts up fists -] -> Fight
 
@@ -17,7 +17,7 @@ What you think? Get out of here.
 === UnsolicitedAdvice ===
 Huh? What are you on about?
 
-* [Want to talk about it?] -> 
+* [Want to talk about it?] -> NoOffence
 * [Nevermind] -> endConvo
 
 === what ===
@@ -33,7 +33,7 @@ yeah, no offence but it'd be real fucking weird to just tell a stranger all my p
 Fucking creepy kinda.
 
 * [I dont mean to be creepy] -> why
-* [You're right] -> why
+* [You're right. Just thought to check] -> ImNiceGuy
 
 === Boredom ===
 You think this is some form of entertainment?
@@ -43,23 +43,25 @@ I could fuck you up you know?
 * [Yeah, I know] -> ImNiceGuy
 * [I'm sure you could] -> why
 * [nah.]
-    The fuck you mean 'nah'? You dont think I could?! -> Fight
+    The fuck you mean 'nah'? You dont think I could?! -> DONE
 
 === ImNiceGuy ===
 ...
 
-You really would come up to some random guy just to be nice?
+You really would come up to some random guy like me just to be nice?
 
-Fucking weirdo. But I appreciate it, dude.
+Fucking weirdo. 
+
+But I appreciate it, dude.
 
 ->DONE 
+=== why===
+then why tf are you here?
 
-=== why ===
-Then why tf you here?
-
-* [you right, i'll leave you to it.]
-        yeah, scram. fucking weird... -> DONE
-* [Just wanted to be nice] -> ImNiceGuy
+* [Just thought it would be nice] -> ImNiceGuy
+* [I actually dont know] 
+    Then scram. I dont want you here. -> DONE
+* [Conversation.] -> ImNiceGuy
 
 === Fight ===
 Bro what the fuck?
