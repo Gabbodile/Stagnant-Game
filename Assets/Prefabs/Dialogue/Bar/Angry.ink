@@ -1,3 +1,4 @@
+
 #speaker:Angy Man #portrait:Barret
 
 The fuck you want?!
@@ -15,7 +16,9 @@ What you think? Get out of here.
 
 === UnsolicitedAdvice ===
 Huh? What are you on about?
--> DONE
+
+* [Want to talk about it?] -> 
+* [Nevermind] -> endConvo
 
 === what ===
 Whats in it for you?
@@ -29,12 +32,18 @@ yeah, no offence but it'd be real fucking weird to just tell a stranger all my p
 
 Fucking creepy kinda.
 
--> DONE
+* [I dont mean to be creepy] -> why
+* [You're right] -> why
 
 === Boredom ===
 You think this is some form of entertainment?
 
--> DONE
+I could fuck you up you know?
+
+* [Yeah, I know] -> ImNiceGuy
+* [I'm sure you could] -> why
+* [nah.]
+    The fuck you mean 'nah'? You dont think I could?! -> Fight
 
 === ImNiceGuy ===
 ...
@@ -44,6 +53,13 @@ You really would come up to some random guy just to be nice?
 Fucking weirdo. But I appreciate it, dude.
 
 ->DONE 
+
+=== why ===
+Then why tf you here?
+
+* [you right, i'll leave you to it.]
+        yeah, scram. fucking weird... -> DONE
+* [Just wanted to be nice] -> ImNiceGuy
 
 === Fight ===
 Bro what the fuck?
@@ -63,5 +79,5 @@ Big mistake little man.
 === endConvo ===
 Hmph.
     
-Thats what I fucking thought.
+Thats what I fucking thought. Beat it.
 -> DONE
