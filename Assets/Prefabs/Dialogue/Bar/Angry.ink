@@ -35,14 +35,13 @@ Sticking your nose in someone else's business instead of just minding your own..
 * [Yeah sorry, I just thought I should check.] -> ImNiceGuy
 
 === Boredom ===
-You think this is some form of entertainment?
+You think this is some kind of entertainment?
 
 I could fuck you up you know?
 
-* [Yeah, I know] -> ImNiceGuy
 * [I'm sure you could] -> why
-* [nah.]
-    The fuck you mean 'nah'? You dont think I could?! -> DONE
+* [Nah.]
+    The fuck you mean 'nah'? You don't think I could?! -> Fight
 
 === ImNiceGuy ===
 ...
@@ -57,7 +56,7 @@ Damn, I haven't laughed like this in a long time...you got a name? Let me buy yo
 * [ It's Matt. I appreciate the offer but I'll be alright, I'm glad I could help out though, take care. ] -> LeaveAngryBar 
 
 === HeBuyDrinkForU ===
- Good to meet ya Matt, I'm Angry Bar Dude
+ Good to meet ya Matt, I'm Angry Bar Dude.
 
 ->DONE 
 
