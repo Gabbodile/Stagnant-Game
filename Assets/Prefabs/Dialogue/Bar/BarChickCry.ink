@@ -4,12 +4,12 @@
 * [ - Ignore her - ] ->NotTalkToCry
 
  === NotTalkToCry ===
+ #speaker:Cathy #portrait:Cathy
  None of my business, I'll leave her be. 
  
  ->DillonCatchesYa
  
  === TalkCryGirl === 
- #speaker:Cathy #portrait:Cathy
  ...Oh-sorry, I just-I didn't see you there. 
   Did you need something?
  
@@ -166,12 +166,29 @@ I'm scared of overthinking every little thing and not being able to live my life
 === Dissapoint ===
 ... 
 That's alright, sorry it's not your problem to solve. I'm sure the answer will come to me eventually.
-FIXING STUFF 
-->DONE
+
+* [Good luck] ->EndConvoCathyButSober
+* [Actually, I think I might know of something you can do.] ->ExplainAdvice
+
+=== EndConvoCathyButSober ===
+Thanks
+
+[ - Leave - ] ->DONE 
 
 === ExplainAdvice ===
-FIXING STUFF 
-->DONE 
+What do you mean?
+
+[Well we're human beings, being afraid of the consequences of a bad decision is completely normal, we don't live forever so we don't wanna mess up. But if you never take any chances, you'll never get to experience what life truely has to offer. Maybe take up a job that requires you to do more decision making so you can get used to it.] ->NeverThought
+
+=== NeverThought ===
+I guess you're right, yeah. I think I'll give that a try, thanks Matt.
+
+* [No propblem, I should head off soon. It was nice chatting with you] ->Same 
+
+=== Same ===
+Same to you.
+
+* [ - Leave - ] ->DONE 
 
 === DillonCatchesYa ===
 Sill fixing this up but basically Matt done messed up and buddy bro collects ya and drives you home
