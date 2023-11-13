@@ -28,17 +28,13 @@ But hey, how's it going with your partner? Still mad at you?
 * [I don't know] -> continue
 
 === continue ===
-Eh, they’ll get over it eventually. Not your fault that you just need the time to get 
-ready, y’know? If they were half as understanding, they’d give you the time to recover 
-and get back to it when you’re ready. Isn’t that what love is?
+Eh, they’ll get over it eventually. Not your fault that you just need the time to get ready, y’know? If they were half as understanding, they’d give you the time to recover and get back to it when you’re ready. Isn’t that what love is?
 
 * [I guess...] -> thats_the_spirit
 * [...] -> awkward
 
 === thats_the_spirit ===
-Thats the spirit. Hey, I got an idea that might cheer you up, why not get a drink
-after this? The bar’s close and you look like you need to loosen up. And you owe me a
-drink anyway so perfect opportunity.
+Thats the spirit. Hey, I got an idea that might cheer you up, why not get a drink after this? The bar’s close and you look like you need to loosen up. And you owe me a drink anyway so perfect opportunity.
 
 * [I dont know...] -> okay
 * [Sure] -> sure
@@ -46,10 +42,7 @@ drink anyway so perfect opportunity.
 === awkward ===
 ... oooookay then.
 
-Actually, I got an idea that might cheer you up, why not get a drink after this? The 
-bar’s close and you look like you need to loosen up. And you owe me a drink anyway so 
-perfect opportunity.
-
+Actually, I got an idea that might cheer you up, why not get a drink after this? The bar’s close and you look like you need to loosen up. And you owe me a drink anyway so perfect opportunity.
 What do you say?
 
 * [I dont know...] -> okay
