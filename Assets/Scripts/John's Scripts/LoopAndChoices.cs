@@ -13,9 +13,12 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public int badChoices;
 
     [Header("Choice Bools")]
+    //Check for certain things to happen
     public bool hasShowered;
     public bool hasEaten;
     public bool hasLaundry;
+    public bool Late;
+    public bool Dressed;
 
 
     private static LoopAndChoices instance;

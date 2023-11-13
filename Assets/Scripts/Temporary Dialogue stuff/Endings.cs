@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Endings : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //Check loop
+    //Vanessa available
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //hasgonebathroom?
+    //Hastalkedtocrying?
+    //if hasgonebathroom OR Hastalkedtocrying
+    //Check ending
+
+    //switch ending   
+    //good ending = this many points
+    //bad ending = this many points
 }
