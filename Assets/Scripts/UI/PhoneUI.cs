@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Ink.Runtime;
 
 public class PhoneUI : MonoBehaviour
 {
     public GameObject phoneMenu;
+    public Animator anim;
     public GameObject phoneConent;
+    public GameObject resetPoint;
+    public GameObject targetPoint;
     public bool isActive;
     public bool isHovered;
+    public float timeElapsed;
+    public float lerpDuration = 2;
+    public float valueToLerp;
     
     // Start is called before the first frame update
     void Start()
@@ -21,43 +28,75 @@ public class PhoneUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        anim = phoneMenu.GetComponent<Animator>();
     }
 
 
 
     public void ActivatePhone()
     {
-        if(!isActive)
+        if (!isActive)
         {
-            phoneMenu.transform.DOMoveY(100, 1);
+            //phoneMenu.transform.DOMove(new Vector2(targetPoint), 1);
+            Vector2 reset = resetPoint.transform.position;
+            Vector2 target = targetPoint.transform.position;
+            phoneMenu.transform.position = Vector2.Lerp(reset, target, 1);
+            //phoneMenu.transform.position = target;
             isActive = true;
             phoneConent.SetActive(true);
+            anim.SetTrigger("Active");
 
         }
         else
         {
-            phoneMenu.transform.DOMoveY(-70, 1);
+            Vector2 reset = resetPoint.transform.position;
+            Vector2 target = targetPoint.transform.position;
+            phoneMenu.transform.position = Vector2.Lerp(target, reset, Time.deltaTime * 2f);
+            phoneMenu.transform.position = reset;
             isActive = false;
             phoneConent.SetActive(false);
+            anim.SetTrigger("Deactivate");
         }
     }
 
-    public void HoverPhone()
+    public void StartPhone()
     {
-        if (!isHovered)
-        {
-            phoneMenu.transform.DOMoveY(30, 1);
-            isHovered = true;
-            phoneConent.SetActive(true);
+        StartCoroutine(OpenPhone());
+    }
 
+    public IEnumerator OpenPhone()
+    {
+        if(!isActive)
+        {
+            timeElapsed = 0;
+            if (timeElapsed < lerpDuration)
+            {
+                Vector2 reset = resetPoint.transform.position;
+                Vector2 target = targetPoint.transform.position;
+                timeElapsed += Time.deltaTime;
+                phoneMenu.transform.position = Vector2.Lerp(reset, target, timeElapsed / lerpDuration);
+                phoneConent.SetActive(true);
+                yield return null;
+            }
+            phoneMenu.transform.position = targetPoint.transform.position;
+            yield return null;
+        }
+        else
+        {
+            timeElapsed = 0;
+            if (timeElapsed < lerpDuration)
+            {
+                Vector2 reset = resetPoint.transform.position;
+                Vector2 target = targetPoint.transform.position;
+                timeElapsed += Time.deltaTime;
+                phoneMenu.transform.position = Vector2.Lerp(target, reset, timeElapsed / lerpDuration);
+                phoneConent.SetActive(false);
+                yield return null;
+            }
+            phoneMenu.transform.position = resetPoint.transform.position;
+            yield return null;
         }
         
-        if(isHovered && !isActive)
-        {
-            phoneMenu.transform.DOMoveY(-70, 1);
-            isHovered = false;
-            phoneConent.SetActive(false);
-        }
     }
+
 }
