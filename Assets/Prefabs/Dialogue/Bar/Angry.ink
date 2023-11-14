@@ -1,78 +1,87 @@
 
 #speaker:Angy Man #portrait:Barret
 
-The fuck you want?!
+The fuck are you looking at?!
 
-* [just going through. Sorry] -> endConvo
-* [Are you good?] -> IDontNeedYourPity
-* [- puts up fists -] -> Fight
+* [Nothing, sorry. Just passing through.] -> endConvo
+* [Are you alright?] -> IDontNeedYourPity
+* [ Obviously you, asshole.] -> Fight
 
 === IDontNeedYourPity ===
-What you think? Get out of here.
+What do you think? Get out of here.
 
-* [You dont need to be tough all the time] -> UnsolicitedAdvice
-* [Want to talk about it?] -> what
+* [Did you...want to talk about it?] -> what
 * [I'll leave you to it] -> endConvo
 
-=== UnsolicitedAdvice ===
-Huh? What are you on about?
-
-* [Want to talk about it?] -> NoOffence
-* [Nevermind] -> endConvo
-
 === what ===
-Whats in it for you?
+- Scoffs - Talk about it? What are you, my therapist? What's in it for you?
 
-* [You dont have to tell me] -> NoOffence
+* [Nothing, sorry, I just thought I'd ask.] -> NoOffence
 * [I dunno. Boredom] -> Boredom
-* [Just thought it would be nice] -> ImNiceGuy
+* [Nothing, just thought it would be nice.] -> ImNiceGuy
+* [Sorry, it's none of my business, I'll let you be.] -> PolitelyEndConvo
+
+=== PolitelyEndConvo ===
+ Whatever.
+ 
+ ->DONE
 
 === NoOffence ===
-yeah, no offence but it'd be real fucking weird to just tell a stranger all my problems. 
+Heh...yeah no offence but it's a little weird to just spill my guts out to some stranger. 
 
-Fucking creepy kinda.
+Sticking your nose in someone else's business instead of just minding your own...
 
-* [I dont mean to be creepy] -> why
-* [You're right. Just thought to check] -> ImNiceGuy
+* [Sorry I didn't mean to pry.] -> why
+* [Yeah sorry, I just thought I should check.] -> ImNiceGuy
 
 === Boredom ===
-You think this is some form of entertainment?
+You think this is some kind of entertainment?
 
 I could fuck you up you know?
 
-* [Yeah, I know] -> ImNiceGuy
 * [I'm sure you could] -> why
-* [nah.]
-    The fuck you mean 'nah'? You dont think I could?! -> DONE
+* [Nah.]
+    The fuck you mean 'nah'? You don't think I could?! -> Fight
 
 === ImNiceGuy ===
 ...
 
 You really would come up to some random guy like me just to be nice?
 
-Fucking weirdo. 
+Heh you must be all kinds of crazy, man. 
+- Laughs to himself -
+Damn, I haven't laughed like this in a long time...you got a name? Let me buy you a drink.
 
-But I appreciate it, dude.
+* [ Thanks, it's Matt ] -> HeBuyDrinkForU 
+* [ It's Matt. I appreciate the offer but I'll be alright, I'm glad I could help out though, take care. ] -> LeaveAngryBar 
+
+=== HeBuyDrinkForU ===
+ Good to meet ya Matt, I'm Angry Bar Dude.
 
 ->DONE 
-=== why===
-then why tf are you here?
 
-* [Just thought it would be nice] -> ImNiceGuy
+=== LeaveAngryBar ===
+ No worries Matt, have a good one. 
+ 
+ ->DONE 
+
+=== why===
+Then why are you still in here?
+
+* [Because I want to help, it couldn't hurt to at least let me try right?] -> ImNiceGuy
 * [I actually dont know] 
-    Then scram. I dont want you here. -> DONE
-* [Conversation.] -> ImNiceGuy
+    Then scram. I don't want you buzzing about in my ear. -> DONE
 
 === Fight ===
-Bro what the fuck?
+You looking for a fucking fight punk!?
 
-You're looking for a fight?
 
-* [Sorry, my mistake] -> endConvo
-* [- Throw a punch -] -> buhBye
+* [Sorry, nevermind.] -> endConvo
+* [I don't know, are you!? - Throw a punch -] -> buhBye
 
-=== buhBye ===
-Big mistake little man.
+=== buhBye === 
+- Laughs- 
+Big mistake buddy.
 
 -> DONE
 
