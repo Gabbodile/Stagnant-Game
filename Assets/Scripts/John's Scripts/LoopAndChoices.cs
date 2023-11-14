@@ -11,6 +11,7 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public int loop;
     public int goodChoices;
     public int badChoices;
+    public int drinksConsumed;
 
     [Header("Choice Bools")]
     //Check for certain things to happen
@@ -61,4 +62,11 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     {
         badChoices += _increaseValue;
     }
+    
+    public void DrinksConsumed(int _increaseValue)
+    {
+        drinksConsumed += _increaseValue;
+    }
+
+
 }
