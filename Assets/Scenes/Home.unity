@@ -1314,7 +1314,7 @@ MonoBehaviour:
   availibility: 1
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: d0e58ec876d70a843b123d08881c3dcd, type: 3}
-  selected: {fileID: 21300000, guid: c7c4266da7f958441bfd9d6d3316445d, type: 3}
+  selected: {fileID: 21300000, guid: bb6e6378d78e74445ad459e89158c445, type: 3}
   available: {fileID: 21300000, guid: 7e368a10751b54648a673d68dc6cf317, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
@@ -2510,8 +2510,8 @@ MonoBehaviour:
   availibility: 0
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: fe2048936c38db043b85833eff654396, type: 3}
-  selected: {fileID: 21300000, guid: 56595a36fa1ceae45be0c37c5953703b, type: 3}
-  available: {fileID: 21300000, guid: 56595a36fa1ceae45be0c37c5953703b, type: 3}
+  selected: {fileID: 21300000, guid: dfe213ba758a6754ea15e4e9406c0475, type: 3}
+  available: {fileID: 21300000, guid: 4d4b4cb578f5e534ab3de983004547c2, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &734355088
@@ -3335,8 +3335,8 @@ MonoBehaviour:
   availibility: 0
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: 5a9156e24375dc34397b371dd07aaebc, type: 3}
-  selected: {fileID: 21300000, guid: a8dfb817f90919b4cbe1c142066bd44a, type: 3}
-  available: {fileID: 21300000, guid: a8dfb817f90919b4cbe1c142066bd44a, type: 3}
+  selected: {fileID: 21300000, guid: 9f281124dbbbd1645835ee466e3b2ec4, type: 3}
+  available: {fileID: 21300000, guid: 28debd52dfd12da45929978357e05ad2, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &883396511
@@ -3546,7 +3546,7 @@ MonoBehaviour:
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: ffc295839886f4c46977f3014726aaf3, type: 3}
   selected: {fileID: 21300000, guid: eca11c37fb9a8c8419d0e8894f114a6d, type: 3}
-  available: {fileID: 21300000, guid: eca11c37fb9a8c8419d0e8894f114a6d, type: 3}
+  available: {fileID: 21300000, guid: b656d93b70eb0cb4d9470de60bca45fa, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &899122847
@@ -5435,6 +5435,7 @@ GameObject:
   - component: {fileID: 1233397370}
   - component: {fileID: 1233397374}
   - component: {fileID: 1233397373}
+  - component: {fileID: 1233397375}
   m_Layer: 3
   m_Name: Shower_Bathroom
   m_TagString: Props
@@ -5486,8 +5487,8 @@ MonoBehaviour:
   availibility: 0
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: 16f0e48b11b813d4caee223f37d22b8d, type: 3}
-  selected: {fileID: 21300000, guid: a574e10d2c9f2b1418e50fc3954502ec, type: 3}
-  available: {fileID: 21300000, guid: a574e10d2c9f2b1418e50fc3954502ec, type: 3}
+  selected: {fileID: 21300000, guid: 6a5edb2260241dc428d90afe7014c818, type: 3}
+  available: {fileID: 21300000, guid: 095b11aa5d1521944985dbd2a373d3ee, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &1233397372
@@ -5554,6 +5555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71c1fc9d2652cf4fbfdb116f250f0b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showerNoise: {fileID: 8300000, guid: 86a7976305707f94ab9f80bf23836602, type: 3}
 --- !u!114 &1233397374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5568,6 +5570,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSON: {fileID: 4900000, guid: f7b95f5f070a69a49863c5041c50a0a0, type: 3}
   disabled: 0
+--- !u!82 &1233397375
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233397368}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 86a7976305707f94ab9f80bf23836602, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1273974963
 GameObject:
   m_ObjectHideFlags: 0
@@ -7470,8 +7568,8 @@ MonoBehaviour:
   availibility: 0
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: 3117e8408e86e3546aa2d1fea7742269, type: 3}
-  selected: {fileID: 21300000, guid: b7dfcfde1084add46ad81db8dc29d187, type: 3}
-  available: {fileID: 21300000, guid: b7dfcfde1084add46ad81db8dc29d187, type: 3}
+  selected: {fileID: 21300000, guid: e819a6b17f250ca478adbdbee0f24b77, type: 3}
+  available: {fileID: 21300000, guid: 0722b289948837643ade61bce3e51df2, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &1613054318
@@ -9567,8 +9665,8 @@ MonoBehaviour:
   availibility: 0
   loopAvailable: 0
   unselected: {fileID: 21300000, guid: 3c5746b3c225a1c4097f715e10fbeea8, type: 3}
-  selected: {fileID: 21300000, guid: 05e91e1598318f5498b3fd1079127f69, type: 3}
-  available: {fileID: 21300000, guid: 05e91e1598318f5498b3fd1079127f69, type: 3}
+  selected: {fileID: 21300000, guid: 44c0b58b0dd24fd4eae8995046b7907d, type: 3}
+  available: {fileID: 21300000, guid: 004a067b121b6c443be95562890f7bed, type: 3}
   dialogueBox: {fileID: 1055867295}
   donttalking: 0
 --- !u!212 &2138285586

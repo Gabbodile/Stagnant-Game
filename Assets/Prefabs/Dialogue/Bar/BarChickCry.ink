@@ -4,7 +4,7 @@
 * [ - Ignore her - ] ->NotTalkToCry
 
  === NotTalkToCry ===
- #speaker:Cathy #portrait:Cathy
+ #speaker:Bar Chick #portrait:Cathy
  None of my business, I'll leave her be. 
  
  ->DillonCatchesYa
@@ -132,6 +132,7 @@ It's nice to meet another fan of the series
 
 
 === DoneAskingHobbies ===
+ #speaker:Cathy #portrait:Cathy
 Thanks for helping me calm down...I'm Cathy by the way, what about you?
 
 * [Matt, I'm glad I could help] ->SmileCathy
