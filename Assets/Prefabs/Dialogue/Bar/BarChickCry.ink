@@ -9,8 +9,11 @@
  
  ->DillonCatchesYa
  
+
  === TalkCryGirl === 
- ...Oh-sorry, I just-I didn't see you there. 
+  #speaker:Cathy #portrait:Cathy 
+ 
+  ...Oh-sorry, I just-I didn't see you there. 
   Did you need something?
  
  * [I know it's not my business but did something happen? You seem to be crying a lot.] ->DeflectQuestion
@@ -69,8 +72,8 @@ Oh yeah, that's a good one too - smiles -
 === EveryoneOppinionMean ===
 Everyone has their own oppinion, it's just something I enjoy
 
-[Fair enough] ->AskingHobbies2
-[I guess so yeah...] ->AskingHobbies2
+* [Fair enough] ->AskingHobbies2
+* [I guess so yeah...] ->AskingHobbies2
 
 === AskingHobbies2 ===
 
@@ -78,6 +81,7 @@ Everyone has their own oppinion, it's just something I enjoy
 * [What kinds of plants have you grown?] ->AskGardening
 * [What sorts of books do you read?] ->AskReading
 * [ - Finish asking about Hobbies -] ->DoneAskingHobbies
+
 === AskGardening ===
 Oh not too many, just a few house plants, it's a more recent hobby I got into. Last week I managed to make it to 5 weeks without accidentally forgetting to water them. 
 It's not much but I'm making progress at least - she laughs to herself -
@@ -117,12 +121,12 @@ I've been really getting into the Five days at Benny's series lately, I love the
 === Spooked ===
 Well I suppose it's not for everyone, that's why people have made so many different genres to choose from
 
-[Yeah] ->AskingHobbies2
+* [Yeah] ->AskingHobbies2
 
 === NicetomeetFan ===
 It's nice to meet another fan of the series
 
-[Likewise] ->AskingHobbies2
+* [Likewise] ->AskingHobbies2
 
 === HappyAboutReading ===
 - She smiles -
@@ -140,9 +144,9 @@ Thanks for helping me calm down...I'm Cathy by the way, what about you?
 === SmileCathy ===
 - She smiles then looks away -
 I really appreciate your help but...I feel like I'm still at square one. I'm no longer drinking my sorrows but I don't know where to go from here. 
-With my Life that is...
+With my life that is...
 
-[What do you mean?] ->QuestionCathy
+* [What do you mean?] ->QuestionCathy
 
 === QuestionCathy ===
 I was once engaged to the love of my life but when it came to making the big decisions, I always hesitated, even the small decisions. 
@@ -174,12 +178,12 @@ That's alright, sorry it's not your problem to solve. I'm sure the answer will c
 === EndConvoCathyButSober ===
 Thanks
 
-[ - Leave - ] ->DONE 
+* [ - Leave - ] ->DONE 
 
 === ExplainAdvice ===
 What do you mean?
 
-[Well we're human beings, being afraid of the consequences of a bad decision is completely normal, we don't live forever so we don't wanna mess up. But if you never take any chances, you'll never get to experience what life truely has to offer. Maybe take up a job that requires you to do more decision making so you can get used to it.] ->NeverThought
+* [Well we're human beings, being afraid of the consequences of a bad decision is completely normal, we don't live forever so we don't wanna mess up. But if you never take any chances, you'll never get to experience what life truely has to offer. Maybe take up a job that requires you to do more decision making so you can get used to it.] ->NeverThought
 
 === NeverThought ===
 I guess you're right, yeah. I think I'll give that a try, thanks Matt.
@@ -192,5 +196,51 @@ Same to you.
 * [ - Leave - ] ->DONE 
 
 === DillonCatchesYa ===
-Sill fixing this up but basically Matt done messed up and buddy bro collects ya and drives you home
-->DONE
+#speaker:Matt portrait:Matt 
+ - Stumbling - 
+ 
+ #speaker:Dillon #portrait:Dillon
+ Yo Matt, I was wondering where you got off to.
+ Woa easy there bud, you're not looking so good... I think it's time to go home.
+ 
+ * [Pfshhhh I'm fiiine...] ->HeDefNotFine 
+ * [Yeah...I'm not feeling that - retches - ] ->Yeesh
+ 
+  === Yeesh ===
+  Take it easy Matt, deep breaths. The car's not too far away.
+  
+  * [ - Follow Dillon - ] ->DONE 
+  
+  //go to car ride
+ 
+ 
+  === HeDefNotFine === 
+  What do you mean "fine"? You can barely keep yourself standing. 
+  Come on'bud, let's get you home.
+  
+ * [You're not my dad, you can't tell me what to do] ->CarryBoi
+ * [ - sigh and follow Dillon - ] ->Attaboy
+
+ === CarryBoi ===
+ Matt, really? - He picks up a drunk Matt and carries him over his shoulders -
+ There we go. The car isn't too far, you'll be alright.
+ 
+ ->DONE 
+ 
+ //go to car ride
+
+ === Attaboy ===
+ Atta boy, come here -He puts his arm over Matt's shoulder to lean against -
+ 
+ ->DONE 
+ 
+ //go to car ride
+
+
+
+
+
+
+
+
+
