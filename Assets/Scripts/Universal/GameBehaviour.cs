@@ -8,6 +8,7 @@ public class GameBehaviour : MonoBehaviour
     protected static GameManager _GM { get { return GameManager.Instance; } }
     protected static DialogueManager _DM { get { return DialogueManager.Instance; } }
     protected static LoopAndChoices _LOOP { get { return LoopAndChoices.Instance; } }
+    protected static TimeChange _TIME { get { return TimeChange.Instance; } }
     protected static ItemGlow _Glow { get { return ItemGlow.Instance; } }
 
 }

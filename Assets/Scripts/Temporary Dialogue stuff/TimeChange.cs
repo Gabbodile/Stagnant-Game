@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TimeChange : MonoBehaviour
+public class TimeChange : GameBehaviour<TimeChange>
 {
     #region Old Version
     /// <summary>
@@ -43,14 +43,16 @@ public class TimeChange : MonoBehaviour
     /// This is the script that changes the text in the beginning scene.
     /// </summary>
 
+    public GameObject background;
     public TMP_Text displayTime;
     public TMP_Text time;
     public TMP_Text thoughts;
     private string[] times = { "7:00 AM", "7:30 AM", "8:00 AM", "9:00 AM" };
-    private int currentTime = 0;
+    public int currentTime = 0;
 
     private void Start()
     {
+        background.SetActive(false);
         displayTime.text = times[currentTime];
         currentTime++;
     }
