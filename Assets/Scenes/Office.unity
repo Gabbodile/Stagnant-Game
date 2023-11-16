@@ -860,7 +860,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.94, y: 8.31}
+    oldSize: {x: 4.06, y: 8.78}
     newSize: {x: 4.06, y: 5.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   unselected: {fileID: 21300000, guid: 98e770750a5543a428c7d96b813c69df, type: 3}
   selected: {fileID: 21300000, guid: 04d5a43b60aaf5245a89c5cb1355f28a, type: 3}
   available: {fileID: 21300000, guid: 04d5a43b60aaf5245a89c5cb1355f28a, type: 3}
-  dialogueBox: {fileID: 0}
+  dialogueBox: {fileID: 1173057573}
   donttalking: 0
 --- !u!1 &350007199
 GameObject:
@@ -4053,10 +4053,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49173215dfc3f24781a9e38578705f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   background: {fileID: 0}
   displayTime: {fileID: 0}
   time: {fileID: 693539304}
   thoughts: {fileID: 0}
+  currentTime: 0
 --- !u!1 &1362115433
 GameObject:
   m_ObjectHideFlags: 0
@@ -6029,6 +6031,7 @@ GameObject:
   - component: {fileID: 1999398788}
   - component: {fileID: 1999398787}
   - component: {fileID: 1999398786}
+  - component: {fileID: 1999398789}
   m_Layer: 0
   m_Name: Laid_Back
   m_TagString: Untagged
@@ -6082,7 +6085,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.25, y: 10.8}
+    oldSize: {x: 5.48, y: 10.8}
     newSize: {x: 4.06, y: 5.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6350,6 +6353,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1999398789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999398784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a317484f5e0f04eb2fbef0ed405025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  availibility: 0
+  loopAvailable: 0
+  unselected: {fileID: 21300000, guid: f0be7e95a2fa88a41ad567c375ccf8bc, type: 3}
+  selected: {fileID: 21300000, guid: 9d279995b672bf4429257070f9a99bc9, type: 3}
+  available: {fileID: 21300000, guid: 9d279995b672bf4429257070f9a99bc9, type: 3}
+  dialogueBox: {fileID: 1173057573}
+  donttalking: 0
 --- !u!1 &2058342427 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8626353750730057736, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
