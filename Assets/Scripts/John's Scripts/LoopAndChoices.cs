@@ -20,6 +20,7 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public bool hasLaundry;
     public bool Late;
     public bool Dressed;
+    public bool Bathroom;
 
 
     private static LoopAndChoices instance;

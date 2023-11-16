@@ -1,17 +1,17 @@
 ...Was this girl always here?#speaker:Matt #portrait:Matt
 
 * [Are you okay?] ->TalkCryGirl
-* [ - Ignore her - ] ->NotTalkToCry
+* [* Ignore her *] ->NotTalkToCry
 
  === NotTalkToCry ===
- #speaker:Bar Chick #portrait:Cathy
+ #speaker:Matt #portrait:Matt
  None of my business, I'll leave her be. 
  
  ->DillonCatchesYa
  
 
  === TalkCryGirl === 
-  #speaker:Cathy #portrait:Cathy 
+ #speaker:Bar Chick #portrait:Cathy
  
   ...Oh-sorry, I just-I didn't see you there. 
   Did you need something?
@@ -49,7 +49,7 @@ Like hobbies and stuff?
 - She sits up and stops crying -
 Well...I like playing videogames and gardening...reading in the park is fun too.
 
-* [- Ask about hobbies - ] ->AskingHobbies1
+* [-Ask about hobbies-] ->AskingHobbies1
 
 === AskingHobbies1 ===
 
@@ -65,7 +65,7 @@ I like to play first person shooters, Boom Killer is my favourite but I also lik
 * [Kinda basic not gonna lie] ->EveryoneOppinionMean
 
 === GettingAlong ===
-Oh yeah, that's a good one too - smiles -
+Oh yeah, that's a good one too -smiles-
 
 ->AskingHobbies2
 
@@ -78,9 +78,9 @@ Everyone has their own oppinion, it's just something I enjoy
 === AskingHobbies2 ===
 
 * [What kind of videogames do you play?] ->AskingGaming
-* [What kinds of plants have you grown?] ->AskGardening
+//* [What kinds of plants have you grown?] ->AskGardening
 * [What sorts of books do you read?] ->AskReading
-* [ - Finish asking about Hobbies -] ->DoneAskingHobbies
+* [*Finish asking about Hobbies*] ->DoneAskingHobbies
 
 === AskGardening ===
 Oh not too many, just a few house plants, it's a more recent hobby I got into. Last week I managed to make it to 5 weeks without accidentally forgetting to water them. 
@@ -98,7 +98,7 @@ Hey, I did say it was a recent hobby, I'm still learning
 === FunnyBadJoke ===
 - Laughing - Okay that was funny but it's still bad.
 
-* [ - Laugh along - ] ->AskingHobbies2
+* [*Laugh along*] ->AskingHobbies2
 * [I'm trying my best here] ->Appreciative 
 
 === Appreciative ===
@@ -178,7 +178,7 @@ That's alright, sorry it's not your problem to solve. I'm sure the answer will c
 === EndConvoCathyButSober ===
 Thanks
 
-* [ - Leave - ] ->DONE 
+* [*Leave*] ->DONE 
 
 === ExplainAdvice ===
 What do you mean?
@@ -188,28 +188,28 @@ What do you mean?
 === NeverThought ===
 I guess you're right, yeah. I think I'll give that a try, thanks Matt.
 
-* [No propblem, I should head off soon. It was nice chatting with you] ->Same 
+* [No problem, I should head off soon. It was nice chatting with you] ->Same 
 
 === Same ===
 Same to you.
 
-* [ - Leave - ] ->DONE 
+* [*Leave* ] ->DONE 
 
 === DillonCatchesYa ===
-#speaker:Matt portrait:Matt 
+#speaker:Matt #portrait:Matt 
  - Stumbling - 
  
- #speaker:Dillon #portrait:Dillon
+ #speaker:Dillon #portrait:Laid_Back
  Yo Matt, I was wondering where you got off to.
  Woa easy there bud, you're not looking so good... I think it's time to go home.
  
  * [Pfshhhh I'm fiiine...] ->HeDefNotFine 
- * [Yeah...I'm not feeling that - retches - ] ->Yeesh
+ * [Yeah...I'm not feeling that *retches* ] ->Yeesh
  
   === Yeesh ===
   Take it easy Matt, deep breaths. The car's not too far away.
   
-  * [ - Follow Dillon - ] ->DONE 
+  * [*Follow Dillon*] ->DONE 
   
   //go to car ride
  
@@ -219,10 +219,13 @@ Same to you.
   Come on'bud, let's get you home.
   
  * [You're not my dad, you can't tell me what to do] ->CarryBoi
- * [ - sigh and follow Dillon - ] ->Attaboy
+ * [*sigh and follow Dillon*] ->Attaboy
 
  === CarryBoi ===
- Matt, really? - He picks up a drunk Matt and carries him over his shoulders -
+ Matt, really? 
+ 
+ -He picks up a drunk Matt and carries him over his shoulders-
+ 
  There we go. The car isn't too far, you'll be alright.
  
  ->DONE 
@@ -230,7 +233,7 @@ Same to you.
  //go to car ride
 
  === Attaboy ===
- Atta boy, come here -He puts his arm over Matt's shoulder to lean against -
+ Atta boy, come here -He puts his arm over Matt's shoulder to lean against-
  
  ->DONE 
  

@@ -13,7 +13,7 @@ public class DialogueTrigger : GameBehaviour
     public bool disabled;
 
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if (!_DM.dialogueIsPlaying && !disabled)
         {
