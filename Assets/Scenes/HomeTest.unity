@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneButton: {fileID: 1363316682}
+  choices: {fileID: 0}
+  secondChoice: {fileID: 0}
 --- !u!61 &33292550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2464,6 +2466,7 @@ GameObject:
   - component: {fileID: 682407126}
   - component: {fileID: 682407125}
   - component: {fileID: 682407129}
+  - component: {fileID: 682407131}
   - component: {fileID: 682407130}
   m_Layer: 5
   m_Name: --------- UI -----------
@@ -2583,12 +2586,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682407123}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6fe9753efdd5a94792c42493ac92886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 879064522}
+  pauseMenu: {fileID: 1122944732}
+--- !u!114 &682407131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682407123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe4efe5a1a58a643a04ecb002cb4d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  PausePanel: {fileID: 1122944732}
 --- !u!1 &683784109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,11 +3492,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &879064522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1991747563428502654, guid: af1579aaf6d673f4f84895a7e86fa8e4, type: 3}
-  m_PrefabInstance: {fileID: 1025619962}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &883396507
 GameObject:
   m_ObjectHideFlags: 0
@@ -4260,9 +4272,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49173215dfc3f24781a9e38578705f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
+  background: {fileID: 0}
   displayTime: {fileID: 0}
   time: {fileID: 1674341136}
   thoughts: {fileID: 0}
+  currentTime: 0
 --- !u!114 &910673577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5430,6 +5445,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1122944732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1828448619463482163, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+  m_PrefabInstance: {fileID: 1468824199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1166757152
 GameObject:
   m_ObjectHideFlags: 0
@@ -5890,6 +5910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71c1fc9d2652cf4fbfdb116f250f0b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showerNoise: {fileID: 0}
 --- !u!114 &1233397374
 MonoBehaviour:
   m_ObjectHideFlags: 0
