@@ -178,8 +178,19 @@ That's alright, sorry it's not your problem to solve. I'm sure the answer will c
 === EndConvoCathyButSober ===
 Thanks
 
-* [*Leave*] ->DONE 
+* [*Leave*] ->DillonFindsYa 
 
+ === DillonFindsYa ===
+ Hey bud, I've been looking for ya. Guess who just showed up?
+ 
+ * [Who?] ->Seenfound 
+ * [...] ->Seenfound
+
+ === Seenfound ===
+ Go on, have a look.
+ 
+ ->DONE
+ 
 === ExplainAdvice ===
 What do you mean?
 
@@ -193,7 +204,7 @@ I guess you're right, yeah. I think I'll give that a try, thanks Matt.
 === Same ===
 Same to you.
 
-* [*Leave* ] ->DONE 
+* [*Leave* ] ->DillonFindsYa 
 
 === DillonCatchesYa ===
 #speaker:Matt #portrait:Matt 
