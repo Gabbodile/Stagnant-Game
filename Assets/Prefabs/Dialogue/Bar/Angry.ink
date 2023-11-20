@@ -18,7 +18,6 @@ What do you think? Get out of here.
 
 * [Nothing, sorry, I just thought I'd ask.] -> NoOffence
 * [I dunno. Boredom] -> Boredom
-* [Nothing, just thought it would be nice.] -> ImNiceGuy
 * [Sorry, it's none of my business, I'll let you be.] -> PolitelyEndConvo
 
 === PolitelyEndConvo ===
@@ -32,7 +31,7 @@ Heh...yeah no offence but it's a little weird to just spill my guts out to some 
 Sticking your nose in someone else's business instead of just minding your own...
 
 * [Sorry I didn't mean to pry.] -> why
-* [Yeah sorry, I just thought I should check.] -> ImNiceGuy
+* [Yeah sorry, I just thought it would be nice to check.] -> ImNiceGuy
 
 === Boredom ===
 You think this is some kind of entertainment?
@@ -46,7 +45,7 @@ I could fuck you up you know?
 === ImNiceGuy ===
 ...
 
-You really would come up to some random guy like me just to be nice?
+You really would come up to some random guy like me...just to be nice?
 
 Heh you must be all kinds of crazy, man. 
 - Laughs to himself -
@@ -68,9 +67,15 @@ Damn, I haven't laughed like this in a long time...you got a name? Let me buy yo
 === why===
 Then why are you still in here?
 
-* [Because I want to help, it couldn't hurt to at least let me try right?] -> ImNiceGuy
-* [I actually dont know] 
+* [Because you look like you could do with having someone to talk to.] -> ButWhy
+* [I actually don't know] 
     Then scram. I don't want you buzzing about in my ear. -> DONE
+
+ === ButWhy ===
+ And why would you wanna do that? Cause it's the "Nice" thing to do?
+ 
+ * [Well...Yeah.] ->ImNiceGuy
+ * [Yes actually.] ->ImNiceGuy
 
 === Fight ===
 You looking for a fucking fight punk!?
