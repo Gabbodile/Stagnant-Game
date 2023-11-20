@@ -13,6 +13,7 @@ public class PhoneUI : MonoBehaviour
     public GameObject targetPoint;
     public bool isActive;
     public bool isHovered;
+    public bool hasClicked;
     public float timeElapsed;
     public float lerpDuration = 2;
     public float valueToLerp;
@@ -22,6 +23,7 @@ public class PhoneUI : MonoBehaviour
     {
         isActive = false;
         isHovered = false;
+        hasClicked = false;
         phoneConent.SetActive(false);
     }
 
@@ -62,6 +64,41 @@ public class PhoneUI : MonoBehaviour
     public void StartPhone()
     {
         StartCoroutine(OpenPhone());
+    }
+
+    public void OnClickPhone()
+    {
+        if (!isActive)
+        {
+            anim.SetTrigger("Active");
+            hasClicked = true;
+            isActive = true;
+
+        }
+        else
+        {
+            anim.SetTrigger("Deactivate");
+            hasClicked = false;
+            isActive = false;
+        }
+    }
+
+    public void OnHoverPhone()
+    {
+        if (!hasClicked && !isHovered)
+        {
+            anim.SetTrigger("Hovering");
+            isHovered = true;
+        }
+    }
+
+    public void OnExitPhone()
+    {
+        if (!hasClicked)
+        {
+            anim.SetTrigger("Exit");
+            isHovered = false;
+        }
     }
 
     public IEnumerator OpenPhone()
