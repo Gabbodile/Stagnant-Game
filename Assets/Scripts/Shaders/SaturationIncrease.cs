@@ -17,7 +17,6 @@ public class SaturationIncrease : GameBehaviour<SaturationIncrease>
 
     private void Start()
     {
-        IncreaseSaturation();
 
     }
 
