@@ -21,6 +21,9 @@ public class SceneController : GameBehaviour<SceneController>
     // Will increase the loop the gamme is on
     public void Loop()
     {
+        //increase saturation
+        _SI.IncreaseSaturation();
+
         _LOOP.IncreaseLoop();
         Debug.Log(_LOOP.loop);
     }
