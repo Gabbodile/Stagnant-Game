@@ -1,5 +1,5 @@
 #speaker:Vanessa #portrait:Vanessa
-Matt? - she looks you up at down and seems disgusted by your state - 
+Matt? - she looks you up and down and seems disgusted by your state - 
 Heh, just as I began to THINK that I could talk to you to sort things out, you're busy making an absolute fool of yourself, once again...
 I don't know why I'm even surprised.
 
