@@ -8,8 +8,8 @@ Here we are Matt, heh place has changed a bit since you were last here huh?
  === MakeHimComfortable ===
  Hey what's with that look? It's still the same ol' pub we used to hang out at way back when. Come'on, I'll go find us a seat while you have a look around.
  
- * [ - Follow Dillon - ] ->EncourageHimGeneral
- * [ Alright - Wander off -] ->DONE
+ * [*Follow Dillon*] ->EncourageHimGeneral
+ * [ Alright *Wander off*] ->DONE
 
  === EncourageHimForCathy ===
   Not to worry buddy, this is the perfect place to unwind and get to know new people. Take that girl over there for example, looks like she's having the time of her life without a care in the world.

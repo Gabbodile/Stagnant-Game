@@ -1,7 +1,7 @@
 ...Was this girl always here?#speaker:Matt #portrait:Matt
 
 * [Are you okay?] ->TalkCryGirl
-* [* Ignore her *] ->NotTalkToCry
+* [*Ignore her*] ->NotTalkToCry
 
  === NotTalkToCry ===
  #speaker:Matt #portrait:Matt
@@ -24,7 +24,7 @@
  I screwed it all up, it seems to be the only stupid thing I'm good for.
  
  * [No one is a complete screw up ya know, there must be something you enjoy right?] ->StartGoodConvo 
- * [ - Back away slowly - ] ->SadEndConvo
+ * [*Back away slowly*] ->SadEndConvo
  * [Seems that way] ->SadEndConvo
  
  
@@ -252,6 +252,6 @@ Same to you.
  === CarClose ===
  Car's just around the corner.
  
- * [ - Follow Dillon - ] ->DONE
+ * [*Follow Dillon*] ->DONE
  
  //go to car ride

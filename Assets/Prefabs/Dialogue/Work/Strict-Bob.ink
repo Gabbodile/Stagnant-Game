@@ -31,7 +31,7 @@ You need to get your act together and actually TRY to move forward.
  Do it for yourself if not for her.
  I'll be seeing you Matt.
  
- * [ - Nod head - ] ->DONE
+ * [*Nod head*] ->DONE
  * [See you...] ->DONE
 
  === TryHarder ===
@@ -79,6 +79,6 @@ Because it's pathetic seeing you drag yourself around like a toddler having a ta
  You need to get your life together and stop living in the past, maybe you'll finally learn to act your age and we won't have to have this discussion in the future.
  I'll be seeing you Matt, don't slack off, the boss won't take kindly to it if he catches you again.
  
- * [ - Nod head - ] ->DONE
+ * [*Nod head*] ->DONE
  * [See you...] ->DONE
 //Bob leaves breakroom

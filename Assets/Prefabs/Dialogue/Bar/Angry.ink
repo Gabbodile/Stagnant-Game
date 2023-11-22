@@ -88,7 +88,7 @@ You looking for a fucking fight punk!?
 
 
 * [Sorry, nevermind.] -> endConvo
-* [I don't know, are you!? - Throw a punch -] -> buhBye
+* [I don't know, are you!? *Throw a punch*] -> buhBye
 
 === buhBye === 
 - Laughs- 
@@ -168,7 +168,7 @@ Big mistake buddy.
  It's fine. What matters is that you're okay.
  Let's get you up
  
- * [ - Stand up - ] ->StoodUp
+ * [*Stand up*] ->StoodUp
  
  === StoodUp ===
  There ya go, I'll help you to the car, don't worry, it's not too far away.

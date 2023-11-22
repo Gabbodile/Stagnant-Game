@@ -2,8 +2,8 @@
 
 Matt, put that away! When you're on the clock, you should be prioritising your work, not random bits of useless rubbish.
 
-* [Sorry Sir - Put away item - ] ->Anyway
-* [... - Put away item - ] ->Anyway
+* [Sorry Sir *Put away item* ] ->Anyway
+* [... *Put away item* ] ->Anyway
 
  === Anyway ===
 Anyway, I was informed you were running late again. Would you mind telling me why?

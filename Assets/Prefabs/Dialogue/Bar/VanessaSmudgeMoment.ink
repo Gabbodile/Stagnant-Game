@@ -2,7 +2,7 @@
 ...
 - Disappears -
 
- * [ - Stare Blankly - ] ->VanessaSmudgeDisappear
+ * [*Stare Blankly*] ->VanessaSmudgeDisappear
  * [Wait...] ->VanessaSmudgeDisappear
 
 === VanessaSmudgeDisappear ===
