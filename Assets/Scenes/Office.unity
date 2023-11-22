@@ -2527,6 +2527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845793727}
   - component: {fileID: 845793728}
+  - component: {fileID: 845793729}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -2563,6 +2564,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSON: {fileID: 4900000, guid: 8cd4222d0d946404baab93cc56bee4f1, type: 3}
   disabled: 0
+--- !u!114 &845793729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845793726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a44e97dc03b9684092b290fb89caf3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkJSON_main: {fileID: 4900000, guid: 8cd4222d0d946404baab93cc56bee4f1, type: 3}
+  inkJSON_alt: {fileID: 4900000, guid: 2bc1f8c8d0f5258418ec7ed403f631c2, type: 3}
+  isDressed: 0
 --- !u!1 &930330901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,6 +4835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroy: 0
+  sceneName: 
 --- !u!114 &1640009164
 MonoBehaviour:
   m_ObjectHideFlags: 0

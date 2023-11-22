@@ -18,6 +18,9 @@ public class late : GameBehaviour
         if (_LOOP.dressed)
             isDressed = true;
 
+        if (_LOOP.late)
+            Speak();
+ 
         //Temp
         if (!isDressed)
         {

@@ -69,5 +69,13 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
         drinksConsumed += _increaseValue;
     }
 
+    public void AmLate()
+    {
+        late = true;
+    }
 
+    public void AmDressed()
+    {
+        dressed = true;
+    }
 }
