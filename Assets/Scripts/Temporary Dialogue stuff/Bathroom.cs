@@ -9,19 +9,19 @@ public class Bathroom : GameBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _LOOP.Bathroom = false;
+        _LOOP.bathroom = false;
         cryingGirl.SetActive(false);
         partyAnimal.SetActive(true);
     }
 
     public void WentBathroom()
     {
-        _LOOP.Bathroom = true;
+        _LOOP.bathroom = true;
     }
 
     public void Crying()
     {
-        if (_LOOP.Bathroom == true)
+        if (_LOOP.bathroom == true)
         {
             cryingGirl.SetActive(true);
             partyAnimal.SetActive(false);

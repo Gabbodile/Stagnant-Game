@@ -1,4 +1,6 @@
 #speaker:Matt #portrait:Matt
+
+=== unshowered ===
 I finally took a shower... How should I dress today?
 
 * Comfortable.
@@ -10,4 +12,8 @@ I finally took a shower... How should I dress today?
 * Pyjamas.
     This would do.
     
+-> DONE
+
+=== AlreadyShowered ===
+I already went shower.
 -> DONE

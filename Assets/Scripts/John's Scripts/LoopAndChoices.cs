@@ -18,9 +18,9 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public bool hasShowered;
     public bool hasEaten;
     public bool hasLaundry;
-    public bool Late;
-    public bool Dressed;
-    public bool Bathroom;
+    public bool late;
+    public bool dressed;
+    public bool bathroom;
 
 
     private static LoopAndChoices instance;
