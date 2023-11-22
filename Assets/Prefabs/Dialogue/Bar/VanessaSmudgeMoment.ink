@@ -1,6 +1,5 @@
-#speaker:Vanessa Smudged #portrait:Vanessa Smudged
+#speaker:Stranger #portrait:Vanessa_Smudged
 ...
-- Disappears -
 
  * [ - Stare Blankly - ] ->VanessaSmudgeDisappear
  * [Wait...] ->VanessaSmudgeDisappear
