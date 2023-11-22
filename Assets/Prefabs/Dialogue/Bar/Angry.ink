@@ -25,6 +25,8 @@ What do you think? Get out of here.
  
  ->DONE
 
+//go to bar main shot
+
 === NoOffence ===
 Heh...yeah no offence but it's a little weird to just spill my guts out to some stranger. 
 
@@ -59,10 +61,14 @@ Damn, I haven't laughed like this in a long time...you got a name? Let me buy yo
 
 ->DONE 
 
+//go to bar main shot
+
 === LeaveAngryBar ===
  No worries Matt, have a good one. 
  
  ->DONE 
+ 
+//go to bar main shot
 
 === why===
 Then why are you still in here?
@@ -89,12 +95,90 @@ You looking for a fucking fight punk!?
 Big mistake buddy.
  - punch -
  
--> DONE
+ //go to bar main shot
+-> PunchedThroughBathroomDoor
 
-//go to car ride
+ === PunchedThroughBathroomDoor ===
+ #speaker:Dillon #portrait:Dillon 
+ ...
+ Wholly shit!
+ Matt are you okay!?
+ 
+ * [...?] ->AngryBarGuyYell
+ 
+ === AngryBarGuyYell ===
+ #speaker:Angy Man #Portrait:Barret
+ ...
+ That's for not minding your damn fucking business punk!
+ 
+ ->DillonDefend
+ 
+ === DillonDefend ===
+ #speaker:Dillon #portrait:Dillon
+ ...
+ Hey! 
+ Look I don't know what my friend did to you in there but please go easy on him, he's not himself. I'm sure he didn't really mean to bother you.
+ 
+ ->GrumblingAngryBarGuy
+ 
+ === GrumblingAngryBarGuy ===
+#speaker:Angy Man #portrait:Barret
+ ...
+ - He glares at you -
+ 
+ * [...] ->SayNothing
+ 
+ === SayNothing ===
+ #speaker:Dillon #portrait:Dillon
+ ...
+ I sincerely apologise on his behalf, it won't happen again.
+ 
+ ->BarretGlareAtDillon
+ 
+ === BarretGlareAtDillon ===
+ #speaker:Angy Man #portrait:Barret
+ ...
+ Whatever
+ - He leaves -
+ 
+ ->DillonSighs
+ 
+ === DillonSighs ===
+ #speaker:Dillon #portrait:Dillon
+ ...
+ - Sigh -
+ Are you okay? What were you thinking?
+ 
+ * [I don't know...] ->DontKnowDillon
+ * [...] ->DontKnowDillon
+ 
+ === DontKnowDillon ===
+ When I said to go meet new people to unwind, I didn't mean find some random and get in a fight...
+ 
+ * [Sorry...] ->AtLeastYoureOkay
+ * [He started it...] ->DontBeImmature
+ 
+ === DontBeImmature ===
+ Even if he did, you should've just backed off. 
+ I'll admit, I'm impressed you were crazy enough to take on a dude that was built like a fridge but it'd be better if you didn't die ya know?
+ 
+ * [Sorry...] ->AtLeastYoureOkay
+ 
+ === AtLeastYoureOkay ===
+ It's fine. What matters is that you're okay.
+ Let's get you up
+ 
+ * [ - Stand up - ] ->StoodUp
+ 
+ === StoodUp ===
+ There ya go, I'll help you to the car, don't worry, it's not too far away.
+ 
+ * [Wait-Who was...that?] ->DONE 
+ //In bar main shot. Vanessa smudge there.
 
 === endConvo ===
 Hmph.
     
 Thats what I fucking thought. Beat it.
 -> DONE
+//go to bar main shot
