@@ -11,7 +11,7 @@ You forgot your wallet again?
 * no -> Wallet
 
 === no_wallet ===
--sigh- okay then Matty boy, but you owe me a drink.
+- sigh - okay then Matty boy, but you owe me a drink.
 
 * [how are you?] -> coworker_interaction
 

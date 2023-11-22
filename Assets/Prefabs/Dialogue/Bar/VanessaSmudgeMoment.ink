@@ -1,7 +1,7 @@
 #speaker:Stranger #portrait:Vanessa_Smudged
 ...
 
- * [ - Stare Blankly - ] ->VanessaSmudgeDisappear
+ * [*Stare Blankly*] ->VanessaSmudgeDisappear
  * [Wait...] ->VanessaSmudgeDisappear
 
 === VanessaSmudgeDisappear ===

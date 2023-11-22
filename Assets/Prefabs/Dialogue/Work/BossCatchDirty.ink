@@ -3,8 +3,8 @@ Matt, I've been informed you were running late today again...
  And what is the meaning of the state your attire is in!? What do you have to say for yourself?
  
  * ... -> silence
-* I'm sorry, -> excuse
-* [I dont fucking care. Fuck you.] -> excuseMe
+ * I'm sorry, -> excuse
+ * [I dont fucking care. Fuck you.] -> excuseMe
 
 === excuse ===
 ...?

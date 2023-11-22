@@ -34,23 +34,23 @@ You look like you know how to party, wanna grab some drinks?
  No worries, if you wanna go another round, let me know.
  
  * [Actually, I think I'll be alright for another one.] ->GoodMan
- * [Thanks - Leave - ] ->MattThinkToSelf
+ * [Thanks *Leave*] ->MattThinkToSelf
  
  === GoodMan ===
  Good man! Here you go.
  
- * [Really doing this? Okay then! - Drink - ] ->DrunkBeforeDillonFindsYa
+ * [Really doing this? Okay then! *Drink* ] ->DrunkBeforeDillonFindsYa
  
  === DrunkBeforeDillonFindsYa ===
  Nice! Have another!
  
- * [ No turning back - Drink - ] ->DillonFindDrunkMatt
+ * [ No turning back *Drink*] ->DillonFindDrunkMatt
  * [Sorry, I need the bathroom] ->OhSure
  
  === OhSure ===
  Oh sure, no problem. It's just over there.
  
- * [Thanks - leave - ] ->DONE
+ * [Thanks *Leave*] ->DONE
  //go to bar bathroom
 
  === ConvinceHim ===
@@ -63,7 +63,7 @@ Aww come'on, it'll be fun!
  Alright then, suit yourself!
  It was nice to meet you too stranger!
  
- * [ - Leave - ] ->MattThinkToSelf
+ * [*Leave*] ->MattThinkToSelf
 
  === MattAwkward ===
  Oh...Well hi there! 
@@ -76,7 +76,7 @@ Aww come'on, it'll be fun!
  Okay then! Suit yourself!
  - She smiles and continues dancing -
  
- * [ - Walk away - ] ->MattThinkToSelf
+ * [*Walk away*] ->MattThinkToSelf
  
  === DillonFindDrunkMatt ===
  Hey you don't look too good...
@@ -128,8 +128,8 @@ Aww come'on, it'll be fun!
  #speaker:Matt #portrait:Matt
  That girl was a bit intense. I want to rinse my face in the bathroom to calm down but maybe I should find Dillon first?
  
- * [ - Wash up - ] ->WashUp 
- * [ - Find Dillon - ] ->LookForDillon
+ * [*Wash up*] ->WashUp 
+ * [*Find Dillon*] ->LookForDillon
  
  === LookForDillon ===
  I'll go find Dillon first.

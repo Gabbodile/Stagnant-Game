@@ -22,7 +22,7 @@ Oh hey there you are! How did things go?
  === HeyWayToGo ===
  Atta boy. I grabbed one for ya while I was waiting. Here.
  
- * [Thanks - Drink - ] ->MediumDrinkStrength
+ * [Thanks *Drink*] ->MediumDrinkStrength
  
  === MediumDrinkStrength ===
  How is it?
@@ -52,7 +52,7 @@ Oh hey there you are! How did things go?
  === Drink2 ===
  Here ya go 
  
- * [ - Drink - ] ->MattYouOkay
+ * [*Drink*] ->MattYouOkay
  
  === MattYouOkay ===
  Okay I think that's enough drinking for now. It's starting to get late, we should probably head off.
