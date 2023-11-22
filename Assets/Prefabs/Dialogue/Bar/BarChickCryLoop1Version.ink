@@ -8,7 +8,6 @@
  None of my business, I'll leave her be. 
  
  ->DillonCatchesYa
- 
 
  === TalkCryGirl === 
  #speaker:Bar Chick #portrait:Cathy
@@ -58,9 +57,14 @@ Well...I like playing videogames and gardening...reading in the park is fun too.
 === AskingGaming ===
 I like to play first person shooters, Boom Killer is my favourite but I also like fantasy RPGs like the Legend of Lunk: Wind of the Outback.
 
-* [Yeah those are pretty cool ones] ->AskingHobbies2
+* [Yeah those are pretty cool ones] ->SmilingCathy
 * [I personally prefer games like Monster Seeker] ->GettingAlong 
 * [Kinda basic not gonna lie] ->EveryoneOppinionMean
+
+=== SmilingCathy ===
+- She smiles -
+
+->AskingHobbies2
 
 === GettingAlong ===
 Oh yeah, that's a good one too -smiles-
@@ -76,7 +80,6 @@ Everyone has their own oppinion, it's just something I enjoy
 === AskingHobbies2 ===
 
 * [What kinds of plants have you grown?] ->AskGardening
-
 
 === AskingHobbies3 ===
 
@@ -137,7 +140,6 @@ It's nice to meet another fan of the series
 
 ->AskingHobbies4
 
-
 === DoneAskingHobbies ===
  #speaker:Cathy #portrait:Cathy
 Thanks for helping me calm down...I'm Cathy by the way, what about you?
@@ -183,17 +185,6 @@ Thanks
 
 * [*Leave*] ->DillonFindsYa 
 
- === DillonFindsYa ===
- Hey bud, I've been looking for ya. Guess who just showed up?
- 
- * [Who?] ->Seenfound 
- * [...] ->Seenfound
-
- === Seenfound ===
- Go on, have a look.
- 
- ->DONE
- 
 === ExplainAdvice ===
 What do you mean?
 
@@ -227,7 +218,6 @@ Same to you.
   
   //go to car ride
  
- 
   === HeDefNotFine === 
   What do you mean "fine"? You can barely keep yourself standing. 
   Come on'bud, let's get you home.
@@ -253,11 +243,15 @@ Same to you.
  
  //go to car ride
 
-
-
-
-
-
-
-
-
+=== DillonFindsYa ===
+#speaker:Dillon #portrait:Dillon
+ Hey bud, I've been looking for ya. It's getting a bit late, we should head off.
+ 
+ * [Sure.] ->CarClose
+ 
+ === CarClose ===
+ Car's just around the corner.
+ 
+ * [ - Follow Dillon - ] ->DONE
+ 
+ //go to car ride
