@@ -1693,6 +1693,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1363316682}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &472266330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8698,11 +8710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836089, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 275.6722
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836089, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 76.2689
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836089, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_LocalScale.x
@@ -8746,11 +8758,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836089, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 822.99976
+      value: 765.16364
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836089, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -491.00003
+      value: -467.8656
       objectReference: {fileID: 0}
     - target: {fileID: 7066896513072836089, guid: 6bd246bc0d58fe04295580bff647e964, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
