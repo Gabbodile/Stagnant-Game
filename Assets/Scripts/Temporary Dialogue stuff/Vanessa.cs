@@ -12,8 +12,10 @@ public class Vanessa : GameBehaviour
     }
     void Update()
     {
-        if (_LOOP.loop == 3)
+        if (_LOOP.loop == 2)
+        {
             vanessa.SetActive(true);
-
+            Debug.Log("APPEAR");
+        }
     }
 }

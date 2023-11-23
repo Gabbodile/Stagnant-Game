@@ -78,4 +78,9 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     {
         dressed = true;
     }
+    
+    public void WentBathroom()
+    {
+        bathroom = true;
+    }
 }
