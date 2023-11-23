@@ -1,4 +1,4 @@
-#speaker:Dillon #portrait:Dillon
+#speaker:Dillon #portrait:Laid_Back
 Oh hey there you are! How did things go?
 
  * [She was fine...] ->NotYourType

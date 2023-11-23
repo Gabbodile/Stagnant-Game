@@ -1,5 +1,5 @@
 
-#speaker:Angy Man #portrait:Barret
+#speaker:... #portrait:Barret
 
 The fuck are you looking at?!
 
@@ -56,14 +56,17 @@ Damn, I haven't laughed like this in a long time...you got a name? Let me buy yo
 * [ Thanks, it's Matt ] -> HeBuyDrinkForU 
 * [ It's Matt. I appreciate the offer but I'll be alright, I'm glad I could help out though, take care. ] -> LeaveAngryBar 
 
+
 === HeBuyDrinkForU ===
- Good to meet ya Matt, I'm Angry Bar Dude.
+#speaker:Barret #portrait:Barret
+ Good to meet ya Matt, I'm Barret.
 
 ->DONE 
 
 //go to bar main shot
 
 === LeaveAngryBar ===
+#speaker:Barret #portrait:Barret
  No worries Matt, have a good one. 
  
  ->DONE 
@@ -99,7 +102,7 @@ Big mistake buddy.
 -> PunchedThroughBathroomDoor
 
  === PunchedThroughBathroomDoor ===
- #speaker:Dillon #portrait:Dillon 
+ #speaker:Dillon #portrait:Laid_Back
  ...
  Wholly shit!
  Matt are you okay!?
@@ -107,14 +110,14 @@ Big mistake buddy.
  * [...?] ->AngryBarGuyYell
  
  === AngryBarGuyYell ===
- #speaker:Angy Man #Portrait:Barret
+ #speaker:... #Portrait:Barret
  ...
  That's for not minding your damn fucking business punk!
  
  ->DillonDefend
  
  === DillonDefend ===
- #speaker:Dillon #portrait:Dillon
+ #speaker:Dillon #portrait:Laid_Back
  ...
  Hey! 
  Look I don't know what my friend did to you in there but please go easy on him, he's not himself. I'm sure he didn't really mean to bother you.
@@ -122,21 +125,21 @@ Big mistake buddy.
  ->GrumblingAngryBarGuy
  
  === GrumblingAngryBarGuy ===
-#speaker:Angy Man #portrait:Barret
+#speaker:... #portrait:Barret
  ...
  - He glares at you -
  
  * [...] ->SayNothing
  
  === SayNothing ===
- #speaker:Dillon #portrait:Dillon
+ #speaker:Dillon #portrait:Laid_Back
  ...
  I sincerely apologise on his behalf, it won't happen again.
  
  ->BarretGlareAtDillon
  
  === BarretGlareAtDillon ===
- #speaker:Angy Man #portrait:Barret
+ #speaker:... #portrait:Barret
  ...
  Whatever
  - He leaves -
@@ -144,7 +147,7 @@ Big mistake buddy.
  ->DillonSighs
  
  === DillonSighs ===
- #speaker:Dillon #portrait:Dillon
+ #speaker:Dillon #portrait:Laid_Back
  ...
  - Sigh -
  Are you okay? What were you thinking?

@@ -11,7 +11,7 @@
  
 
  === TalkCryGirl === 
- #speaker:Bar Chick #portrait:Cathy
+ #speaker:Cathy #portrait:Cathy
  
   ...Oh-sorry, I just-I didn't see you there. 
   Did you need something?

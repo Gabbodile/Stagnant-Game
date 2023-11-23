@@ -1,4 +1,4 @@
-#speaker:Bob #portrait:Bob
+#speaker:Bob Anthony #portrait:Strict
 Morning Matt - He glances at your appearance -
 Good to see you're actually taking your presentation at this company seriously for once...
 

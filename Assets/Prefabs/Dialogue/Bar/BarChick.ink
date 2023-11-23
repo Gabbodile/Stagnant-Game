@@ -1,5 +1,5 @@
 
-#speaker:Cathy #portrait:Cathy
+#speaker:... #portrait:Cathy
 Hey there! 
 You look like you know how to party, wanna grab some drinks?
 

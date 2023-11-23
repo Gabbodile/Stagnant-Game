@@ -1,5 +1,5 @@
 INCLUDE GlobalFunction.ink
-Sup? #speaker: Laid back #portrait: Laid_Back
+Sup? #speaker: Dillon #portrait: Laid_Back
 
 * can you get me a snack? -> snack
 * How are you going? -> coworker_interaction

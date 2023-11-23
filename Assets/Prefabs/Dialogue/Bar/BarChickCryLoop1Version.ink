@@ -10,7 +10,7 @@
  ->DillonCatchesYa
 
  === TalkCryGirl === 
- #speaker:Bar Chick #portrait:Cathy
+ #speaker:... #portrait:Cathy
  
   ...Oh-sorry, I just-I didn't see you there. 
   Did you need something?
@@ -244,7 +244,7 @@ Same to you.
  //go to car ride
 
 === DillonFindsYa ===
-#speaker:Dillon #portrait:Dillon
+#speaker:Dillon #portrait:Laid_Back
  Hey bud, I've been looking for ya. It's getting a bit late, we should head off.
  
  * [Sure.] ->CarClose

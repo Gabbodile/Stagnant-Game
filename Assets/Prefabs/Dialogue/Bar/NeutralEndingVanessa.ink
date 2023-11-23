@@ -1,9 +1,11 @@
-#speaker:Vanessa #portrait:Vanessa 
+#speaker:... #portrait:Vanessa 
 Matt? It's been a while... - She looks you up and down and seems unphased by your state -
 
  * [Vanessa...] ->HeSeesHer
  
  === HeSeesHer ===
+ #speaker:Vanessa #portrait:Vanessa
+ 
  I see not much has changed...
  
  * [Vanessa...About what happened back then-I...] ->DontWantToHearIt
@@ -40,7 +42,6 @@ Matt? It's been a while... - She looks you up and down and seems unphased by you
  * [Bye...] ->DillonCatchesUp
  * [...] ->DillonCatchesUp
  
- 
  === DontWantToHearIt ===
  ...
  
@@ -58,7 +59,7 @@ Matt? It's been a while... - She looks you up and down and seems unphased by you
  ->HopefullyNextTime
  
  === DillonCatchesUp ===
- #speaker:Dillon #portrait:Dillon
+ #speaker:Dillon #portrait:Laid_Back
  ...
  Everything okay Matt?
  

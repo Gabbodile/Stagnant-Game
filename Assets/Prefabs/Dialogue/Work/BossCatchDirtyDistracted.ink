@@ -1,4 +1,4 @@
-#speaker:Boss #portrait:boss
+#speaker:Boss #portrait:Boss
 Matt, I've been informed you were running late today again...
  And you're not even doing the simple tasks assigned to you!? Not to mention the horrible state of your attire!? What do you have to say for yourself?
  

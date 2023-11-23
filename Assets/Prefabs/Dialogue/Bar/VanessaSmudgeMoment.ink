@@ -1,11 +1,11 @@
-#speaker:Stranger #portrait:Vanessa_Smudged
+#speaker:... #portrait:Vanessa_Smudged
 ...
 
  * [*Stare Blankly*] ->VanessaSmudgeDisappear
  * [Wait...] ->VanessaSmudgeDisappear
 
 === VanessaSmudgeDisappear ===
-#speaker:Dillon #portrait:Dillon
+#speaker:Dillon #portrait:Laid_Back
 Matt...?
 Everything okay?
 
