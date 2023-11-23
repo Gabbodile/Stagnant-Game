@@ -1,4 +1,4 @@
-#speaker:Bob #portrait:Bob
+#speaker:Bob #portrait:Strict
 Morning Matt - He glances at your appearance -
 Good to see you're actually taking your presentation at this company seriously for once...
 
@@ -33,6 +33,7 @@ You need to get your act together and actually TRY to move forward.
  
  * [*Nod head*] ->DONE
  * [See you...] ->DONE
+ //Bob leaves breakroom
 
  === TryHarder ===
  From the looks of things, you need to try harder. You can start by making sure you get your work done and avoid slacking off. - He gestures to Dillon -
@@ -40,6 +41,7 @@ You need to get your act together and actually TRY to move forward.
  
  * [See you...] ->DONE
  * [...] ->DONE
+ //Bob leaves breakroom
 
 === DoesntLookLikeIt ===
 Mhm sure... 
@@ -54,6 +56,7 @@ Look it's obvious you're not over it, you can't deny that. What I don't understa
  
  * [Bye...] ->DONE
  * [...] ->DONE
+ //Bob leaves breakroom
 
 === Typical ===
 Typical of you isn't it Mathew? Still "working through things"? How long did you expect she was going to wait for you? Years? Decades? The world doesn't revolve around you you know? 
@@ -68,6 +71,7 @@ The sooner you realise that, the better off you'll be.
  
  * [Bye...] ->DONE
  * [...] ->DONE
+ //Bob leaves breakroom
 
 === Pathetic ===
 Because it's pathetic seeing you drag yourself around like a toddler having a tantrum. You don't get to be the one who recieves sympathy for acting like a coward, Cyrus's daughter deserved better and you know it.
