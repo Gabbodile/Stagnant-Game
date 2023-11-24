@@ -1,24 +1,39 @@
-#speaker:Bob Anthony #portrait:Strict
+#speaker:Bob #portrait:Strict
 Morning Matt - He glances at your appearance -
-Good to see you're actually taking your presentation at this company seriously for once...
+...
+Your presentation is important you know?
 
-* [Thanks..?] ->StillDoesntExcuseMoping
-* [Yeah I guess...] ->YouGuess
+* [I'm wearing clothes, that should be enough shouldn't it?] ->NotExcuse
+* [I know, I couldn't find my uniform this morning] ->KindOfExcuse
 
-=== YouGuess ===
-The same can't be said for all that moping you're doing, you're still stuck on what happened aren't you?
+ === KindOfExcuse ===
+ That's just a sign you're disorganised, you should prioritise the more important things you need to do in the day first.
+ 
+ * [...] ->NotTalkingAboutThat
+ 
+ === NotExcuse ===
+ Matt, you look like you walked into the wardrobe of a high school degenerate then left witrh whatever stuck to you. 
+ A bit of advice, don't follow Dillon's fashion tips.
+ 
+ * [...] ->NotTalkingAboutThatAlteration
+ 
+ === NotTalkingAboutThatAlteration ===
+ Reguardless, your clothes aren't the only thing I'm referring to. You're slouching and moping about.
+ ...
+ You still haven't gotten over what happened yet have you?
+ 
+ * [Not really...] ->ItsBeenAges
+ * [Yes I have actually] ->DoesntLookLikeIt
+ * [Why do you even care?] ->Pathetic 
 
+=== NotTalkingAboutThat ===
+ Reguardless, your clothes aren't the only thing I'm referring to. You're slouching and moping about.
+ ...
+ You're still stuck on what happened aren't you?
+ 
 * [No...] ->DoesntLookLikeIt
 * [I'm still working through things...] ->Typical
 * [Why do you even care?] ->Pathetic
-
- === StillDoesntExcuseMoping ===
- Though it doesn't excuse all that moping you're doing...
- You still haven't gotten over what happened yet have you?
-
-* [Not really...] ->ItsBeenAges
-* [Yes I have actually] ->DoesntLookLikeIt
-* [Why do you even care?] ->Pathetic 
 
 === ItsBeenAges ===
 Mathew it's been how long now? The way you betrayed Cyrus's little girl was cowardly and pathetic but even she was able to move on from what happened. 
@@ -33,6 +48,7 @@ You need to get your act together and actually TRY to move forward.
  
  * [*Nod head*] ->DONE
  * [See you...] ->DONE
+ //Bob leaves breakroom 
 
  === TryHarder ===
  From the looks of things, you need to try harder. You can start by making sure you get your work done and avoid slacking off. - He gestures to Dillon -
@@ -40,6 +56,7 @@ You need to get your act together and actually TRY to move forward.
  
  * [See you...] ->DONE
  * [...] ->DONE
+//Bob leaves breakroom 
 
 === DoesntLookLikeIt ===
 Mhm sure... 
@@ -54,6 +71,7 @@ Look it's obvious you're not over it, you can't deny that. What I don't understa
  
  * [Bye...] ->DONE
  * [...] ->DONE
+ //Bob leaves breakroom
 
 === Typical ===
 Typical of you isn't it Mathew? Still "working through things"? How long did you expect she was going to wait for you? Years? Decades? The world doesn't revolve around you you know? 
@@ -68,6 +86,7 @@ The sooner you realise that, the better off you'll be.
  
  * [Bye...] ->DONE
  * [...] ->DONE
+ //Bob leaves breakroom
 
 === Pathetic ===
 Because it's pathetic seeing you drag yourself around like a toddler having a tantrum. You don't get to be the one who recieves sympathy for acting like a coward, Cyrus's daughter deserved better and you know it.
@@ -82,3 +101,11 @@ Because it's pathetic seeing you drag yourself around like a toddler having a ta
  * [*Nod head*] ->DONE
  * [See you...] ->DONE
 //Bob leaves breakroom
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
