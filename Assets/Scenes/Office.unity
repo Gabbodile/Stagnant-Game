@@ -3290,9 +3290,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 974497144}
-  - {fileID: 1229807235}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1147610399 stripped
 RectTransform:
@@ -3583,7 +3582,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1142086281}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1297621958, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: Late
@@ -3599,19 +3598,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.38935027
       objectReference: {fileID: 0}
     - target: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.46512717
       objectReference: {fileID: 0}
     - target: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.30694738
       objectReference: {fileID: 0}
     - target: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3653,11 +3652,6 @@ PrefabInstance:
     - {fileID: 3729944616300293396, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
     - {fileID: 3729944616300293393, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
---- !u!4 &1229807235 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3729944616300293397, guid: 2e00d0495320efb48984f2b3aa15ff09, type: 3}
-  m_PrefabInstance: {fileID: 1229807234}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1235813341
 GameObject:
   m_ObjectHideFlags: 0
@@ -4815,7 +4809,7 @@ RectTransform:
   - {fileID: 1342768496}
   - {fileID: 1794792961}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5374,7 +5368,7 @@ Transform:
   - {fileID: 304810444}
   - {fileID: 523974777}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727367954
 GameObject:
@@ -6535,6 +6529,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1640009162}
     m_Modifications:
+    - target: {fileID: 86470000743546564, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 974497146}
+    - target: {fileID: 86470000743546564, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseDialogueButton
+      objectReference: {fileID: 0}
     - target: {fileID: 8626353750281209081, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
