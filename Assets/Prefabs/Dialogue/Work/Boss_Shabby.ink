@@ -1,8 +1,7 @@
-
 EXTERNAL logEvent(eventLog)
-#speaker:Boss #portrait:Boss
 
-Matt, you're late! And what is the meaning of this attire?! What do you have to say for yourself? 
+
+Matt, you're late! And what is the meaning of this attire?! What do you have to say for yourself? #speaker: Boss #portrait:Boss
 
 * ... -> silence
 * I'm sorry, -> excuse
