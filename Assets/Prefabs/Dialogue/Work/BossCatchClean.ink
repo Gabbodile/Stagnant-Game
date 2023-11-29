@@ -1,11 +1,8 @@
 #speaker:Boss #portrait:Boss
-
 Matt, I was informed you were running late again. Would you mind telling me why?
-
 * [...] ->SayNothing
 * [I-I'm sorry sir, I just had a bad morning, please I won't let it happen again] ->MakeUpExcuse
 * [O-Oh hi Mr. Boss! There was a lot of traffic this morning, I'm so sorry] ->TrafficExcuse
-
  === SayNothing ===
  Well then? Speak!
  
@@ -14,7 +11,6 @@ Matt, I was informed you were running late again. Would you mind telling me why?
  === AppologiseAfterSayingNothing ===
  I don't pay you to stand around watching clouds go by and I most DEFINITELY do not pay you to arrive at work whenever you feel like it. 
  Get to work Mathew, or I'll have security escort you off the premises.
-
 * [Sorry, yes sir] ->DONE 
 //go back to cubicle. Do data entry 
  
@@ -23,7 +19,6 @@ Matt, I was informed you were running late again. Would you mind telling me why?
  ...
 You'd better not let it happen again. 
 Get to work.
-
 * [Yes sir] ->DONE 
 //go back to cubicle. Do data entry
  
@@ -32,11 +27,5 @@ Get to work.
  - He looks you up and down -
  Tsk- Very well...Don't waste any more of my time.
  Get to work.
-
 * [Thank you sir] ->DONE 
 //go back to cubicle. Do data entry 
- 
- 
- 
- 
- 

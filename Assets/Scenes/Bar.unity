@@ -6558,6 +6558,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1640009162}
     m_Modifications:
+    - target: {fileID: 86470000743546564, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 974497146}
+    - target: {fileID: 86470000743546564, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseDialogueButton
+      objectReference: {fileID: 0}
     - target: {fileID: 8626353750281209081, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

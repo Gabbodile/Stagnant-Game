@@ -9,7 +9,7 @@ public class Laundry : MonoBehaviour
     /// </summary>
 
     // the first loop at which the dragging option becomes avalable
-    [SerializeField] private int startingLoop;
+    [SerializeField] private int startingLoop = 1;
 
     public GameObject[] clothesPiles;
 
