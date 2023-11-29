@@ -719,7 +719,6 @@ GameObject:
   - component: {fileID: 286589935}
   - component: {fileID: 286589934}
   - component: {fileID: 286589937}
-  - component: {fileID: 286589938}
   - component: {fileID: 286589939}
   m_Layer: 0
   m_Name: Vanessa
@@ -829,19 +828,6 @@ MonoBehaviour:
   available: {fileID: 21300000, guid: 53cdd5231e06bc845bdfcadb2be5ed6e, type: 3}
   dialogueBox: {fileID: 1173057573}
   donttalking: 0
---- !u!114 &286589938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286589932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1687c730591b0974b984f9c1e4b34bea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vanessa: {fileID: 286589932}
 --- !u!60 &286589939
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5322,6 +5308,7 @@ GameObject:
   - component: {fileID: 1759977718}
   - component: {fileID: 1759977719}
   - component: {fileID: 1759977720}
+  - component: {fileID: 1759977721}
   m_Layer: 0
   m_Name: Bar
   m_TagString: Untagged
@@ -5416,6 +5403,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cryingGirl: {fileID: 2003910842}
   partyAnimal: {fileID: 1964759690}
+--- !u!114 &1759977721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759977717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1687c730591b0974b984f9c1e4b34bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vanessa: {fileID: 286589932}
 --- !u!224 &1794792961 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1991747563428502625, guid: af1579aaf6d673f4f84895a7e86fa8e4, type: 3}
