@@ -2344,6 +2344,7 @@ GameObject:
   - component: {fileID: 682407125}
   - component: {fileID: 682407129}
   - component: {fileID: 682407130}
+  - component: {fileID: 682407131}
   m_Layer: 5
   m_Name: --------- UI -----------
   m_TagString: Untagged
@@ -2461,12 +2462,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682407123}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6fe9753efdd5a94792c42493ac92886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 879064522}
+  pauseMenu: {fileID: 1263521085}
+--- !u!114 &682407131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682407123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe4efe5a1a58a643a04ecb002cb4d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  PausePanel: {fileID: 1263521085}
 --- !u!1 &734355084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3282,11 +3297,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &879064522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1991747563428502654, guid: af1579aaf6d673f4f84895a7e86fa8e4, type: 3}
-  m_PrefabInstance: {fileID: 1025619962}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &883396507
 GameObject:
   m_ObjectHideFlags: 0
@@ -5529,6 +5539,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1263521085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1828448619463482163, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+  m_PrefabInstance: {fileID: 1468824199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273974963
 GameObject:
   m_ObjectHideFlags: 0
