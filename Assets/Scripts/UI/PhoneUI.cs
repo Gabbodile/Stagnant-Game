@@ -74,13 +74,27 @@ public class PhoneUI : GameBehaviour<PhoneUI>
             anim.SetTrigger("Active");
             hasClicked = true;
             isActive = true;
-
+            phoneConent.SetActive(true);
         }
-        else
+        //else
+        //{
+        //    anim.SetTrigger("Deactive");
+        //    hasClicked = false;
+        //    isActive = false;
+        //}
+
+
+    }
+
+    public void ClosePhone()
+    {
+        if(isActive)
         {
             anim.SetTrigger("Deactive");
             hasClicked = false;
             isActive = false;
+            phoneConent.SetActive(false);
+            phoneList.SetActive(false);
         }
     }
 
