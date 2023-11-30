@@ -1234,6 +1234,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -394.16666
       objectReference: {fileID: 0}
+    - target: {fileID: 1828448618492117566, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1640009158}
     - target: {fileID: 1828448618492117567, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1281,6 +1285,18 @@ PrefabInstance:
     - target: {fileID: 1828448618929520068, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -98.83333
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828448618929520071, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1640009165}
+    - target: {fileID: 1828448618929520071, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnResume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828448618929520071, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1828448619463482162, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_Pivot.x
