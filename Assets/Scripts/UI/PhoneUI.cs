@@ -4,13 +4,14 @@ using UnityEngine;
 using DG.Tweening;
 using Ink.Runtime;
 
-public class PhoneUI : MonoBehaviour
+public class PhoneUI : GameBehaviour<PhoneUI>
 {
     public GameObject phoneMenu;
     public Animator anim;
     public GameObject phoneConent;
     public GameObject resetPoint;
     public GameObject targetPoint;
+    public GameObject phoneList;
     public bool isActive;
     public bool isHovered;
     public bool hasClicked;
@@ -77,20 +78,20 @@ public class PhoneUI : MonoBehaviour
         }
         else
         {
-            anim.SetTrigger("Deactivate");
+            anim.SetTrigger("Deactive");
             hasClicked = false;
             isActive = false;
         }
     }
 
-    public void OnHoverPhone()
-    {
-        if (!hasClicked && !isHovered)
-        {
-            anim.SetTrigger("Hovering");
-            isHovered = true;
-        }
-    }
+    //public void OnHoverPhone()
+    //{
+    //    if (!hasClicked && !isHovered)
+    //    {
+    //        anim.SetTrigger("Hovering");
+    //        isHovered = true;
+    //    }
+    //}
 
     public void OnExitPhone()
     {
@@ -134,6 +135,27 @@ public class PhoneUI : MonoBehaviour
             yield return null;
         }
         
+    }
+
+    public void WhenActive()
+    {
+        if(isActive)
+        {
+
+        }
+    }
+
+    public void ActivatePause()
+    {
+        _GM.OnPause();
+        isActive = false;
+        OnClickPhone();
+    }
+
+    public void OpenList()
+    {
+        phoneConent.SetActive(false);
+        phoneList.SetActive(true);
     }
 
 }

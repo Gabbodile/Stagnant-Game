@@ -12,6 +12,7 @@ public class GameBehaviour : MonoBehaviour
     protected static ItemGlow _Glow { get { return ItemGlow.Instance; } }
     protected static SceneController _SC { get { return SceneController.Instance; } }
     protected static UIManager _UI { get { return UIManager.Instance; } }
+    protected static PhoneUI _PU { get { return PhoneUI.Instance; } }
 
     
 
