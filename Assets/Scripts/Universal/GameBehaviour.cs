@@ -13,6 +13,7 @@ public class GameBehaviour : MonoBehaviour
     protected static SceneController _SC { get { return SceneController.Instance; } }
     protected static UIManager _UI { get { return UIManager.Instance; } }
     protected static SaturationIncrease _SI { get { return SaturationIncrease.Instance; } }
+    protected static PhoneUI _PU { get { return PhoneUI.Instance; } }
 
     
 
