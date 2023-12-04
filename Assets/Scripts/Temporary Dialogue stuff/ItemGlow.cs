@@ -38,7 +38,7 @@ public class ItemGlow : GameBehaviour<ItemGlow>
 
     private void Update()
     {
-        if (_LOOP.loop == loopAvailable)
+        if (_LOOP.loop >= loopAvailable)
         {
             availibility = true;
         }

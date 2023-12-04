@@ -5,6 +5,7 @@ using UnityEngine;
 public class Vanessa : GameBehaviour
 {
     public GameObject vanessa;
+    public int loopNo = 2;
 
     private void Start()
     {
@@ -12,7 +13,7 @@ public class Vanessa : GameBehaviour
     }
     void Update()
     {
-        if (_LOOP.loop == 2)
+        if (_LOOP.loop >= loopNo)
         {
             vanessa.SetActive(true);
             Debug.Log("APPEAR");

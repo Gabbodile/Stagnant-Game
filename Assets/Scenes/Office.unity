@@ -1210,6 +1210,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1640009162}
     m_Modifications:
+    - target: {fileID: 1828448618375670952, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1640009163}
+    - target: {fileID: 1828448618375670952, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828448618375670952, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1828448618375670953, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1235,9 +1247,29 @@ PrefabInstance:
       value: -394.16666
       objectReference: {fileID: 0}
     - target: {fileID: 1828448618492117566, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828448618492117566, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1640009158}
+      objectReference: {fileID: 1640009163}
+    - target: {fileID: 1828448618492117566, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828448618492117566, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828448618492117566, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828448618492117566, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1828448618492117567, guid: 5c876000ba4489945a3dee37532bb456, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
