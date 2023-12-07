@@ -4,13 +4,14 @@ using UnityEngine;
 using DG.Tweening;
 using Ink.Runtime;
 
-public class PhoneUI : MonoBehaviour
+public class PhoneUI : GameBehaviour<PhoneUI>
 {
     public GameObject phoneMenu;
     public Animator anim;
     public GameObject phoneConent;
     public GameObject resetPoint;
     public GameObject targetPoint;
+    public GameObject phoneList;
     public bool isActive;
     public bool isHovered;
     public bool hasClicked;
@@ -73,24 +74,38 @@ public class PhoneUI : MonoBehaviour
             anim.SetTrigger("Active");
             hasClicked = true;
             isActive = true;
-
+            phoneConent.SetActive(true);
         }
-        else
+        //else
+        //{
+        //    anim.SetTrigger("Deactive");
+        //    hasClicked = false;
+        //    isActive = false;
+        //}
+
+
+    }
+
+    public void ClosePhone()
+    {
+        if(isActive)
         {
-            anim.SetTrigger("Deactivate");
+            anim.SetTrigger("Deactive");
             hasClicked = false;
             isActive = false;
+            phoneConent.SetActive(false);
+            phoneList.SetActive(false);
         }
     }
 
-    public void OnHoverPhone()
-    {
-        if (!hasClicked && !isHovered)
-        {
-            anim.SetTrigger("Hovering");
-            isHovered = true;
-        }
-    }
+    //public void OnHoverPhone()
+    //{
+    //    if (!hasClicked && !isHovered)
+    //    {
+    //        anim.SetTrigger("Hovering");
+    //        isHovered = true;
+    //    }
+    //}
 
     public void OnExitPhone()
     {
@@ -134,6 +149,27 @@ public class PhoneUI : MonoBehaviour
             yield return null;
         }
         
+    }
+
+    public void WhenActive()
+    {
+        if(isActive)
+        {
+
+        }
+    }
+
+    public void ActivatePause()
+    {
+        _GM.OnPause();
+        isActive = false;
+        OnClickPhone();
+    }
+
+    public void OpenList()
+    {
+        phoneConent.SetActive(false);
+        phoneList.SetActive(true);
     }
 
 }
