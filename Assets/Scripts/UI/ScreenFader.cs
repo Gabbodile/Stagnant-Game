@@ -13,7 +13,7 @@ public class ScreenFader : MonoBehaviour
     void Start()
     {
         fadeScreen.DOFade(0, 1);
-        fader.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -24,8 +24,10 @@ public class ScreenFader : MonoBehaviour
 
     public void Reactivate()
     {
+
+        fadeScreen.DOFade(1, 0.001f);
         fadeScreen.DOFade(0, 1);
-        fader.SetActive(false);
+
     }
 
     
