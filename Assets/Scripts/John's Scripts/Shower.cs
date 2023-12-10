@@ -9,7 +9,7 @@ public class Shower : GameBehaviour
     private void OnMouseDown()
     {
         //if (_TIME.currentTime >= 3 || _LOOP.hasShowered)
-            //return;
+        //    return;
 
         AudioSource audio = GetComponent<AudioSource>();
 
