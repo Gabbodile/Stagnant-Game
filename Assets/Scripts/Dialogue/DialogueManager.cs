@@ -79,6 +79,11 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         {
             ContinueStory();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Backspace))
+        {
+            ExitDialogueMode();
+        }
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)
