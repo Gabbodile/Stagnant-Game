@@ -7,40 +7,15 @@ Your presentation is important you know?
 * [I know, I couldn't find my uniform this morning] ->KindOfExcuse
 
  === KindOfExcuse ===
- Being disorganised won't end well with the boss, you know that right?
- You should prioritise the more important things you need to do in the day first.
+ That's just a sign you're disorganised, you should prioritise the more important things you need to do in the day first.
  
- * [I know] ->NotTalkingAboutThat
+ * [...] ->NotTalkingAboutThat
  
  === NotExcuse ===
- Matt, the last thing we need is more people following Dillon's fashion advice. 
+ Matt, you look like you walked into the wardrobe of a high school degenerate then left witrh whatever stuck to you. 
+ A bit of advice, don't follow Dillon's fashion tips.
  
- * [Heh good one] ->ImSerious
- * [*Glance at Dillon*] ->GlanceAtDillon
- * [*Say nothing*] ->NotTalkingAboutThatAlteration
- 
- === ImSerious ===
- I'm not joking.
- 
- *[*Stare blankly at Bob*] ->Sigh
- *[Sorry...] ->NotTalkingAboutThatAlteration
- 
- === GlanceAtDillon ===
- #speaker:Dillon #portrait:Laid_Back
- Hey bud!
- 
- * [* Wave at Dillon*] ->Sigh 
- * [*Look back to Bob*] ->NotTalkingAboutThatAlteration
- 
- === Sigh ===
- #speaker:Bob #portrait:Strict
- Hm...Anyway, your clothes aren't the only thing I'm referring to. You're slouching and moping about.
- ...
- You still haven't gotten over what happened yet have you?
- 
- * [Not really...] ->ItsBeenAges
- * [Yes I have actually] ->DoesntLookLikeIt
- * [Why do you even care?] ->Pathetic 
+ * [...] ->NotTalkingAboutThatAlteration
  
  === NotTalkingAboutThatAlteration ===
  Reguardless, your clothes aren't the only thing I'm referring to. You're slouching and moping about.
@@ -65,7 +40,7 @@ Mathew it's been how long now? The way you betrayed Cyrus's little girl was cowa
 You need to get your act together and actually TRY to move forward.
 
 * [I know. I'm trying...] ->TryHarder
-* [*Look away*] ->DoItForYourself
+* [...] ->DoItForYourself
 
  === DoItForYourself ===
  Do it for yourself if not for her.
@@ -80,15 +55,14 @@ You need to get your act together and actually TRY to move forward.
  I'll be seeing you Matt 
  
  * [See you...] ->DONE
- * [*Say nothing*] ->DONE 
- 
+ * [...] ->DONE
 //Bob leaves breakroom 
 
 === DoesntLookLikeIt ===
 Mhm sure... 
 Look it's obvious you're not over it, you can't deny that. What I don't understand is why you're still acting like she'll come back to you after what you did?
 * [I...don't know...] ->DontKnow
-* [*Look away*] ->DontKnow
+* [...] ->DontKnow
 
  === DontKnow ===
  You're a grown man Matt, people can only be so patient with immature behaviour.
@@ -96,25 +70,8 @@ Look it's obvious you're not over it, you can't deny that. What I don't understa
  I'll be going now
  
  * [Bye...] ->DONE
- * [*Say nothing*] ->DONE
- * [Whatever Asshole] ->Backchat
+ * [...] ->DONE
  //Bob leaves breakroom
-
-=== Backchat ===
-Cursing won't make it any better Matt, I'll see to it that the boss has a word with you.
-
-* [*Say nothing*] ->DONE //Bob leaves the breakroom and Chill Dillon response dressed casual dialogue happens when clicking on Dillon
-* [*Take a swing at Bob*] ->AngryBob
-//Bob leaves breakroom and the boss scolding dialogue happens later
-
-=== AngryBob ===
--!?
-MATHEW I WILL SEE TO IT YOU ARE FIRED IMMEDIATELY!
-
-* [*Roll eyes*] ->DONE
-* [Do it!] ->DONE
-
-//Bob leaves the breakroom Dillon reaction aggressive dialogue response happens when clicked on
 
 === Typical ===
 Typical of you isn't it Mathew? Still "working through things"? How long did you expect she was going to wait for you? Years? Decades? The world doesn't revolve around you you know? 
@@ -122,41 +79,19 @@ The sooner you realise that, the better off you'll be.
 
 * [I know] ->ActLikeIt
 * [I understand] ->ActLikeIt
-* [It's none of your business asshole!] ->AgressiveBob
-
-=== AgressiveBob ===
-HOW ABOUT YOU WATCH YOUR TONE WHEN SPEAKING TO A SENIOR COLLEGUE!?
-
-* [How about "No"?] ->AngryBob
-* [*Punch Bob*] ->AngryBob
-* [*Appologise*] ->AnnoyedBob
-
-=== AnnoyedBob ===
-You need to learn some respect Mathew, don't ever speak to me like that again.
-The boss will be having a word with you later today to discuss your behaviour, I suggest you get your act together before then.
-
-* [*Say nothing*] ->DONE //Bob leaves the breakroom and Chill Dillon response dressed casual dialogue happens when clicking on Dillon
-* [Whatever] ->DONE //Bob leaves the breakroom and Chill Dillon response dressed casual dialogue happens when clicking on Dillon
 
  === ActLikeIt ===
  Good, then act like it.
  Goodbye Matt.
  
  * [Bye...] ->DONE
- * [Whatever asshole] ->Backchat
- 
+ * [...] ->DONE
  //Bob leaves breakroom
 
 === Pathetic ===
 Because it's pathetic seeing you drag yourself around like a toddler having a tantrum. You don't get to be the one who recieves sympathy for acting like a coward, Cyrus's daughter deserved better and you know it.
 
  * [I know...] ->StartGettingLifeTogether
- * [*Glare*] ->Glare
- * [It's none of your business, fuck off!] ->Backchat
- 
- === Glare ===
- Glaring at me won't make a difference Matt.
- 
  * [...] ->StartGettingLifeTogether
  
  === StartGettingLifeTogether ===
@@ -165,13 +100,4 @@ Because it's pathetic seeing you drag yourself around like a toddler having a ta
  
  * [*Nod head*] ->DONE
  * [See you...] ->DONE
- * [Get off my damn case already] ->Backchat
 //Bob leaves breakroom
-
- 
- 
- 
- 
- 
- 
- 

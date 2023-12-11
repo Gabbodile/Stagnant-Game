@@ -1,5 +1,5 @@
 INCLUDE GlobalFunction.ink
-Sup? #speaker: Laid back #portrait: Laid_Back
+Sup? #speaker: Dillon #portrait: Laid_Back
 
 * can you get me a snack? -> snack
 * How are you going? -> coworker_interaction
@@ -28,7 +28,8 @@ But hey, how's it going with your partner? Still mad at you?
 * [I don't know] -> continue
 
 === continue ===
-Eh, they’ll get over it eventually. Not your fault that you just need the time to get ready, y’know? If they were half as understanding, they’d give you the time to recover and get back to it when you’re ready. Isn’t that what love is?
+Eh, they’ll get over it eventually. Not your fault that you just need the time to get ready, y’know? 
+If they were half as understanding, they’d give you the time to recover and get back to it when you’re ready. Isn’t that what love is?
 
 * [I guess...] -> thats_the_spirit
 * [...] -> awkward

@@ -18,9 +18,9 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public bool hasShowered;
     public bool hasEaten;
     public bool hasLaundry;
-    public bool Late;
-    public bool Dressed;
-    public bool Bathroom;
+    public bool late;
+    public bool dressed;
+    public bool bathroom;
 
 
     private static LoopAndChoices instance;
@@ -69,5 +69,18 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
         drinksConsumed += _increaseValue;
     }
 
+    public void AmLate()
+    {
+        late = true;
+    }
 
+    public void AmDressed()
+    {
+        dressed = true;
+    }
+    
+    public void WentBathroom()
+    {
+        bathroom = true;
+    }
 }

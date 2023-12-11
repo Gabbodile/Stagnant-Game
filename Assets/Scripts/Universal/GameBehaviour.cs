@@ -10,6 +10,11 @@ public class GameBehaviour : MonoBehaviour
     protected static LoopAndChoices _LOOP { get { return LoopAndChoices.Instance; } }
     protected static TimeChange _TIME { get { return TimeChange.Instance; } }
     protected static ItemGlow _Glow { get { return ItemGlow.Instance; } }
+    protected static SceneController _SC { get { return SceneController.Instance; } }
+    protected static UIManager _UI { get { return UIManager.Instance; } }
+    protected static SaturationIncrease _SI { get { return SaturationIncrease.Instance; } }
+
+    
 
 }
     

@@ -1,6 +1,6 @@
 EXTERNAL logEvent(eventLog)
 Sup?
-#speaker: Laid back #portrait: Laid_Back
+#speaker: Dillon #portrait: Laid_Back
 
 ** [can you get me a snack?] -> snack
 ** [How are you going?] -> coworker_interaction

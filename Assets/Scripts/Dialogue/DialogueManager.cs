@@ -75,7 +75,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         //    ContinueStory();
         //}
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
             ContinueStory();
         }
@@ -107,7 +107,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         dialogueText.text = "";
     }
 
-    private void ContinueStory()
+    public void ContinueStory()
     {
         if (currentStory.canContinue)
         {

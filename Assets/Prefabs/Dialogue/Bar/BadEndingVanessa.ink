@@ -61,7 +61,7 @@ I don't know why I'm even surprised.
 * [...] ->MattFInTheChat
 
  === MattFInTheChat ===
- #speaker:Dillon #portrait:Dillon
+ #speaker:Dillon #portrait:Laid_Back
  That was painfull to watch... 
  You okay there Matt?
  
