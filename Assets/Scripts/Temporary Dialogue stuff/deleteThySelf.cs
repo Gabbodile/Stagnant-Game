@@ -8,6 +8,7 @@ public class deleteThySelf : MonoBehaviour
     public GameObject wakeup;
     public GameObject alarmClock;
     public GameObject sleep;
+    public AudioClip alarmNoises;
     void Start()
     {
         deleteThistm.SetActive(true);
