@@ -21,12 +21,15 @@ public class deleteThySelf : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        alarmNoises = GetComponent<AudioSource>();
+        alarmNoises.Play
         if (Input.GetKeyDown(KeyCode.Return))
         {
             deleteThistm.SetActive(false);
             wakeup.SetActive(true);
             alarmClock.SetActive(true);
             sleep.SetActive(true);
+            
         }
     }
 }
