@@ -11,6 +11,8 @@ TagManager:
   - Props
   - Laundry
   - UniversalManagers
+  - Dishes
+  - Bin
   layers:
   - Default
   - TransparentFX

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 6572416}
   - component: {fileID: 6572420}
   - component: {fileID: 6572419}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Sticky_Note_Stack_4
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTag: Laundry
+  destroyTag: Bin
 --- !u!1 &22559335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,7 +3575,7 @@ GameObject:
   - component: {fileID: 758286896}
   - component: {fileID: 758286898}
   - component: {fileID: 758286897}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Sticky_Note_Stack_1
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -3742,7 +3742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTag: Laundry
+  destroyTag: Bin
 --- !u!1 &794212662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +3912,7 @@ GameObject:
   - component: {fileID: 802403694}
   - component: {fileID: 802403698}
   - component: {fileID: 802403697}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Sticky_Note_5
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -4074,7 +4074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTag: Laundry
+  destroyTag: Bin
 --- !u!1 &824330639
 GameObject:
   m_ObjectHideFlags: 0
@@ -5352,7 +5352,7 @@ GameObject:
   - component: {fileID: 1046828308}
   - component: {fileID: 1046828307}
   - component: {fileID: 1046828306}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Sticky_Note_2
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -5491,7 +5491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTag: Laundry
+  destroyTag: Bin
 --- !u!114 &1046828307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5551,7 +5551,6 @@ GameObject:
   - component: {fileID: 1107630557}
   - component: {fileID: 1107630558}
   - component: {fileID: 1107630560}
-  - component: {fileID: 1107630559}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -5667,47 +5666,6 @@ PolygonCollider2D:
       - {x: 0.24499999, y: -0.29}
       - {x: 0.325, y: 0.03}
       - {x: 0.325, y: 0.21}
---- !u!60 &1107630559
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107630555}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67, y: 0.9}
-    newSize: {x: 0.67, y: 0.9}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.235, y: 0.34}
-      - {x: -0.065, y: 0.45}
-      - {x: -0.16499999, y: 0.45}
-      - {x: -0.185, y: 0.42}
-      - {x: -0.195, y: 0.35999998}
-      - {x: -0.325, y: 0.26}
-      - {x: -0.33499998, y: 0.24}
-      - {x: -0.33499998, y: -0.089999996}
-      - {x: -0.24499999, y: -0.26}
-      - {x: -0.175, y: -0.35999998}
-      - {x: -0.13499999, y: -0.37}
-      - {x: 0.095, y: -0.37}
-      - {x: 0.185, y: -0.35999998}
-      - {x: 0.24499999, y: -0.29}
-      - {x: 0.325, y: 0.03}
-      - {x: 0.325, y: 0.21}
 --- !u!114 &1107630560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5777,7 +5735,6 @@ GameObject:
   - component: {fileID: 1165990920}
   - component: {fileID: 1165990921}
   - component: {fileID: 1165990923}
-  - component: {fileID: 1165990922}
   m_Layer: 0
   m_Name: ScrapBook_Prop
   m_TagString: Untagged
@@ -5902,56 +5859,6 @@ PolygonCollider2D:
       - {x: 0.66999996, y: -0.375}
       - {x: 0.97999996, y: -0.355}
       - {x: 1, y: -0.315}
---- !u!60 &1165990922
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165990918}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.04, y: 1.17}
-    newSize: {x: 2.04, y: 1.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1, y: -0.145}
-      - {x: 0.98999995, y: -0.125}
-      - {x: 0.96, y: -0.035}
-      - {x: 0.7, y: 0.375}
-      - {x: 0.65, y: 0.385}
-      - {x: 0.59999996, y: 0.385}
-      - {x: 0.59999996, y: 0.375}
-      - {x: 0.39999998, y: 0.385}
-      - {x: -0.89, y: 0.385}
-      - {x: -0.96, y: 0.315}
-      - {x: -0.96, y: 0.195}
-      - {x: -0.91999996, y: 0.044999998}
-      - {x: -0.85999995, y: -0.125}
-      - {x: -0.82, y: -0.225}
-      - {x: -0.71999997, y: -0.375}
-      - {x: -0.34, y: -0.36499998}
-      - {x: 0.06, y: -0.345}
-      - {x: 0.06, y: -0.36499998}
-      - {x: 0.17, y: -0.355}
-      - {x: 0.21, y: -0.435}
-      - {x: 0.55, y: -0.505}
-      - {x: 0.64, y: -0.505}
-      - {x: 0.66999996, y: -0.375}
-      - {x: 0.97999996, y: -0.355}
-      - {x: 1, y: -0.315}
 --- !u!114 &1165990923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6007,7 +5914,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184374534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.9, y: -4.23, z: 0}
+  m_LocalPosition: {x: 5.9, y: -4.23, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6783,7 +6690,7 @@ GameObject:
   - component: {fileID: 1379902704}
   - component: {fileID: 1379902703}
   - component: {fileID: 1379902702}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Paper_Ball_2
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -6889,7 +6796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTag: Laundry
+  destroyTag: Bin
 --- !u!114 &1379902703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7230,9 +7137,9 @@ GameObject:
   - component: {fileID: 1437755299}
   - component: {fileID: 1437755300}
   - component: {fileID: 1437755301}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bin
-  m_TagString: Laundry
+  m_TagString: Bin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7576,7 +7483,7 @@ GameObject:
   - component: {fileID: 1582192991}
   - component: {fileID: 1582192990}
   - component: {fileID: 1582192989}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Sticky_Note_1
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -7719,7 +7626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTag: Laundry
+  destroyTag: Bin
 --- !u!114 &1582192990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8999,6 +8906,7 @@ GameObject:
   - component: {fileID: 1864377087}
   - component: {fileID: 1864377088}
   - component: {fileID: 1864377089}
+  - component: {fileID: 1864377090}
   m_Layer: 0
   m_Name: desk_door
   m_TagString: Untagged
@@ -9141,6 +9049,19 @@ MonoBehaviour:
   available: {fileID: 21300000, guid: db7c1f44a91805c4382d8c8060f43c5c, type: 3}
   dialogueBox: {fileID: 1173057573}
   donttalking: 0
+--- !u!114 &1864377090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864377085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61c31df39fbfd248b5be8a4dd38c2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDrawer: {fileID: 1184374534}
 --- !u!224 &1902484558 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8626353751230811109, guid: f0ee189a8fdf55b428153b86e46222d9, type: 3}
@@ -9886,7 +9807,7 @@ GameObject:
   - component: {fileID: 1985689809}
   - component: {fileID: 1985689808}
   - component: {fileID: 1985689807}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Paper_Ball_1
   m_TagString: Props
   m_Icon: {fileID: 0}
@@ -10058,7 +9979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94caf1ef188750142a3ab14e4fbb3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTag: Laundry
+  destroyTag: Bin
 --- !u!114 &1985689808
 MonoBehaviour:
   m_ObjectHideFlags: 0
