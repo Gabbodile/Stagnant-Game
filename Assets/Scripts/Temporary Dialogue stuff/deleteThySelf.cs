@@ -8,7 +8,8 @@ public class deleteThySelf : MonoBehaviour
     public GameObject wakeup;
     public GameObject alarmClock;
     public GameObject sleep;
-    public AudioClip alarmNoises;
+    public AudioSource alarmNoises;
+
     void Start()
     {
         deleteThistm.SetActive(true);
@@ -21,15 +22,15 @@ public class deleteThySelf : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        alarmNoises = GetComponent<AudioSource>();
-        alarmNoises.Play
+        
         if (Input.GetKeyDown(KeyCode.Return))
         {
             deleteThistm.SetActive(false);
             wakeup.SetActive(true);
             alarmClock.SetActive(true);
             sleep.SetActive(true);
-            
+
+            alarmNoises.Play();
         }
     }
 }
