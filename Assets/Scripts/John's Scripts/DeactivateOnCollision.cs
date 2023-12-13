@@ -10,6 +10,9 @@ public class DeactivateOnCollision : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(destroyTag))
+        {
             gameObject.SetActive(false);
+            Debug.Log("I hit something");
+        }
     }
 }
