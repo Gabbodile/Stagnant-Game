@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
-public enum ButtonType { Bedroom, Kitchen, Bathroom, Office, Bar, Car}
+public enum ButtonType { Bedroom, Kitchen, Bathroom, Office, Bar, Car, Home}
 public class ButtonStylist : GameBehaviour
 {
 
@@ -20,6 +20,7 @@ public class ButtonStylist : GameBehaviour
     public Sprite officeIcon;
     public Sprite barIcon;
     public Sprite carIcon;
+    public Sprite homeIcon;
 
     public GameObject[] houseRooms;
     public GameObject[] officeRooms;
@@ -63,13 +64,22 @@ public class ButtonStylist : GameBehaviour
             case ButtonType.Office:
                 buttonIcon.sprite = officeIcon;
                 buttonText.text = "Office";
-                _SC.ChangeScene("Office");
+                _SC.ChangeScene("CarRide");
+                _SC.carTransition = SceneController.CarTransition.Office;
                 break;
 
             case ButtonType.Bar:
                 buttonIcon.sprite = barIcon;
                 buttonText.text = "Bar";
-                _SC.ChangeScene("Bar");
+                _SC.ChangeScene("CarRide");
+                _SC.carTransition = SceneController.CarTransition.Bar;
+                break;
+
+            case ButtonType.Home:
+                buttonIcon.sprite = barIcon;
+                buttonText.text = "Home";
+                _SC.ChangeScene("CarRide");
+                _SC.carTransition = SceneController.CarTransition.Home;
                 break;
 
             case ButtonType.Car:

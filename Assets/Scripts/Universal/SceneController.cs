@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class SceneController : GameBehaviour<SceneController>
 {
     public string sceneName;
+
+    public enum CarTransition { Home, Office, Bar}
+
+    public CarTransition carTransition;
     
     // Will change the scene to the string passed in
     public void ChangeScene(string _sceneName)
@@ -17,6 +21,22 @@ public class SceneController : GameBehaviour<SceneController>
     {
         SceneManager.LoadScene("Bedroom");
     }
+
+    public void LoadBar()
+    {
+        SceneManager.LoadScene("Bar");
+    }
+
+    public void LoadOffice()
+    {
+        SceneManager.LoadScene("Office");
+    }
+
+    public void LoadHome()
+    {
+        SceneManager.LoadScene("Home");
+    }
+
 
     // Will increase the loop the gamme is on
     public void Loop()
@@ -33,5 +53,25 @@ public class SceneController : GameBehaviour<SceneController>
     {
         Debug.Log("Quit");
         Application.Quit();
+    }
+
+    public void TransitionFromCar()
+    {
+
+        switch(carTransition)
+        {
+            case CarTransition.Home:
+                SceneManager.LoadScene("Home");
+                break;
+
+            case CarTransition.Office:
+                SceneManager.LoadScene("Office");
+                break;
+
+            case CarTransition.Bar:
+                SceneManager.LoadScene("Bar");
+                break;
+        }
+
     }
 }

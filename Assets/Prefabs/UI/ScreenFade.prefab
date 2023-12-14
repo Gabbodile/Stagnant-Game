@@ -89,5 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a159c6e13f8f6524a92f210f5ba18e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   fadeScreen: {fileID: 5095040085480257486}
   fader: {fileID: 5095040085480257472}
+  carDay: {fileID: 0}
+  carNight: {fileID: 0}
+  isDayTime: 0
