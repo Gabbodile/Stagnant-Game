@@ -2,16 +2,16 @@
 Matt, I've been informed you were running late today again...
  And what is the meaning of the state your attire is in!? What do you have to say for yourself?
  
- * ... -> silence
- * I'm sorry, -> excuse
+ * [*Say Nothing*] -> silence
+ * [I'm sorry] -> excuse
  * [I dont fucking care. Fuck you.] -> excuseMe
 
 === excuse ===
-...?
+...Well?
 
 * [There was a lot of traffic] -> excuseone
 * [I woke up late] -> excusetwo
-* [...] -> Fired
+* [*Remain Silent*] -> Fired
 
 === excuseone ===
 Traffic is NOT an excuse for waking up late and dicking around! 
@@ -34,19 +34,12 @@ How pathetic.
 * [fuck you.] -> excuseMe
 * [I'm sorry. it won't happen again] -> ImSorry
 
-=== excuse_three ===
-... Thats it? thats all you got to say?
-
-* [fuck you.] -> excuseMe
-* [I'm incredibly sorry sir, I've been having a rough time.] -> hardTimesTM
-* [...] -> Fired
-
 === silence ===
 ANSWER ME BOY!
 
 * [fuck you.] -> excuseMe
 * [I'm incredibly sorry sir, I've been having a rough time.] -> hardTimesTM
-* [...] -> Fired
+* [*Remain Silent*] -> Fired
 
 === excuseMe ===
 EXCUSE ME!? 
