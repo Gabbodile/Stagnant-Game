@@ -2,26 +2,26 @@ EXTERNAL logEvent(eventLog)
 Sup?
 #speaker: Dillon #portrait: Laid_Back
 
-** [can you get me a snack?] -> snack
+** [Can you get me a snack?] -> snack
 ** [How are you going?] -> coworker_interaction
 
 === snack ===
 You forgot your wallet again?
 
-* [yeah] -> IGotSnack
-* [no] -> Wallet
+* [Yeah] -> IGotSnack
+* [No] -> Wallet
 
 === IGotSnack ===
-sighhhh... 
+Sighhhh... 
 
 okay then Matty boy, but you owe me a drink.
 
-* [how are you?] -> coworker_interaction
+* [How are you?] -> coworker_interaction
 
 === Wallet ===
-well, you can go get your own snack.
+Well, you can go get your own snack.
 
-* [how are you?] -> coworker_interaction
+* [How are you?] -> coworker_interaction
 
 === coworker_interaction ===
 I'm pretty good. Just chilling really.
@@ -45,7 +45,7 @@ and get back to it when you’re ready.
 Isn’t that what love is?
 
 * [I guess...] -> thats_the_spirit
-* [...] -> awkward
+* [*Say nothing*] -> awkward
 
 === thats_the_spirit ===
 Thats the spirit. 
@@ -78,6 +78,6 @@ Alrighty then, see you then!
 -> DONE
 
 === okay ===
-well, invites still open if you want it. We should probably get back to work soon.
+Well, invite's still open if you want it. We should probably get back to work soon.
 
 -> DONE

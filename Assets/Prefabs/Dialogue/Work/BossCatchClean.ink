@@ -1,6 +1,6 @@
 #speaker:Boss #portrait:Boss
 Matt, I was informed you were running late again. Would you mind telling me why?
-* [...] ->SayNothing
+* [*Remain Silent*] ->SayNothing
 * [I-I'm sorry sir, I just had a bad morning, please I won't let it happen again] ->MakeUpExcuse
 * [O-Oh hi Mr. Boss! There was a lot of traffic this morning, I'm so sorry] ->TrafficExcuse
  === SayNothing ===

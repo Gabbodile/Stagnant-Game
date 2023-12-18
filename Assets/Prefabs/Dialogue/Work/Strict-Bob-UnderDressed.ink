@@ -121,7 +121,7 @@ The sooner you realise that, the better off you'll be.
 Because it's depressing seeing you drag yourself around like you've given up in life, you can be more than that and you know it. 
 I don't approve of you running away from Cyrus's daughter the way you did, they're family to me but I don't want to see you throwing your life away either. 
 
- * [...] ->StartGettingLifeTogether
+ * [*NEXT*] ->StartGettingLifeTogether
  
  === StartGettingLifeTogether ===
  You need to get your life together and stop living in the past.
