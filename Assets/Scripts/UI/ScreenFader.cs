@@ -19,6 +19,7 @@ public class ScreenFader : GameBehaviour<ScreenFader>
         fadeScreen.DOFade(0, 1);
         carDay.SetActive(false);
         carNight.SetActive(false);
+        print("isFading");
     }
 
     // Update is called once per frame
