@@ -40,7 +40,6 @@ Matt? It's been a while... - She looks you up and down and seems unphased by you
  Goodbye.
  
  * [Bye...] ->DillonCatchesUp
- * [...] ->DillonCatchesUp
  
  === DontWantToHearIt ===
  ...
@@ -52,7 +51,7 @@ Matt? It's been a while... - She looks you up and down and seems unphased by you
  ...
  I don't want you to try to fix the past, I want you to make sure you can have your own future by moving on and by continuing to make changes in your life for the better. 
  
- * [...] ->AskAsFriend
+ * [*Remain silent*] ->AskAsFriend
  
  === AskAsFriend ===
  I'm asking you as a friend. Please keep trying to move on until you're finally free from everything.
@@ -76,7 +75,7 @@ Matt? It's been a while... - She looks you up and down and seems unphased by you
  === CarNotFar ===
  Come'on, the car's not too far away.
  
- * [ - Follow Dillon - ] ->DONE 
+ * [*Follow Dillon*] ->DONE 
  //go to car ride 
 
 

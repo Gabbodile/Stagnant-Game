@@ -3,12 +3,11 @@
 Matt, put that away! When you're on the clock, you should be prioritising your work, not random bits of useless rubbish.
 
 * [Sorry Sir *Put away item* ] ->Anyway
-* [... *Put away item* ] ->Anyway
 
  === Anyway ===
 Anyway, I was informed you were running late again. Would you mind telling me why?
 
-* [...] ->SayNothing
+* [*Say Nothing*] ->SayNothing
 * [I-I'm sorry sir, I just had a bad morning, please I won't let it happen again] ->MakeUpExcuse
 * [O-Oh hi Mr. Boss! There was a lot of traffic this morning, I'm so sorry] ->TrafficExcuse
 

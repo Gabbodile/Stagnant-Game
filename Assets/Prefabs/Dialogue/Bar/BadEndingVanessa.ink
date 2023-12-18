@@ -4,7 +4,7 @@ Heh, just as I began to THINK that I could talk to you to sort things out, you'r
 I don't know why I'm even surprised.
 
 * [V-Vanessa, wait, I can explain...] ->TryExplain
-* [...] ->GetScolded
+* [*Remain Silent*] ->GetScolded
 
  === GetScolded ===
  Not talking now huh? 
@@ -35,30 +35,29 @@ I don't know why I'm even surprised.
  Then why are you still doing it? Acting the same as you did back then when times got tough, you'd just give up.
  
  * [I really am trying...] ->Doesntlooklikeit 
- * [...] ->Dissapointed
+ * [*Say nothing*] ->Dissapointed
 
  === Doesntlooklikeit ===
  It doesn't look like it...
  
- * [...] ->Dissapointed
+ * [*NEXT*] ->Dissapointed
 
  === Butwillyou ===
  I know you can Matt...the question is, "Will you?"
 
-* [...] ->GoodbyeMatt
+* [*NEXT*] ->GoodbyeMatt
 
  === GoodbyeMatt ===
  I suggest you do it for your own sake.
  Goodbye Matt...
  
  * [Bye...] ->MattFInTheChat
- * [...] ->MattFInTheChat
 
  === SoAmI ===
  So am I... 
  Goodbye Matt...
 
-* [...] ->MattFInTheChat
+* [Bye...] ->MattFInTheChat
 
  === MattFInTheChat ===
  #speaker:Dillon #portrait:Laid_Back
