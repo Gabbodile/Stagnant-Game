@@ -12,6 +12,9 @@ public class ScreenFader : GameBehaviour<ScreenFader>
     public GameObject carNight;
     public bool isDayTime;
 
+    public enum WhereToGo { Home, Office, Bar}
+    public WhereToGo whereTo;
+
     
     // Start is called before the first frame update
     void Start()
@@ -25,7 +28,14 @@ public class ScreenFader : GameBehaviour<ScreenFader>
     // Update is called once per frame
     void Update()
     {
-        
+        if(_TIME.currentTime >= 18)
+        {
+            isDayTime = false;
+        }
+        else
+        {
+            isDayTime=true;
+        }
     }
 
     public void Reactivate()
@@ -42,9 +52,12 @@ public class ScreenFader : GameBehaviour<ScreenFader>
 
     IEnumerator changeToCar()
     {
+        //Fading out to the car
         FadeOut();
         print("fadingOut");
         yield return new WaitForSeconds(1.2f);
+
+        //Fade in to the car
         Reactivate();
         print("GoingToCar");
         if (isDayTime)
@@ -59,12 +72,30 @@ public class ScreenFader : GameBehaviour<ScreenFader>
         }
         print("inCar");
         yield return new WaitForSeconds(2f);
+
+        //Fading our from the car
         FadeOut();
         print("fadingOutAgain");
         yield return new WaitForSeconds(1.2f);
+
         carDay.SetActive(false);
         carNight.SetActive(false);
-        _SC.ChangeScene("Office");
+
+        //Scene transition
+        switch (whereTo)
+        {
+            case WhereToGo.Home:
+                _SC.ChangeScene("Home");
+                break;
+            
+            case WhereToGo.Office:
+                _SC.ChangeScene("Office");
+                break;
+
+            case WhereToGo.Bar:
+                _SC.ChangeScene("Bar");
+                break;
+        }
     }
 
     public void StartCar()
