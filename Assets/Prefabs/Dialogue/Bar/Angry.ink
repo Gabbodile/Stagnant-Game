@@ -5,7 +5,7 @@ The fuck are you looking at?!
 
 * [Nothing, sorry. Just passing through.] -> endConvo
 * [Are you alright?] -> IDontNeedYourPity
-* [ Obviously you, asshole.] -> Fight
+* [Obviously you, asshole.] -> Fight
 
 === IDontNeedYourPity ===
 What do you think? Get out of here.
@@ -47,30 +47,33 @@ I could fuck you up you know?
 === ImNiceGuy ===
 ...
 
-You really would come up to some random guy like me...just to be nice?
+You really would come up to some random guy like me...just to be "nice"?
 
 Heh you must be all kinds of crazy, man. 
 - Laughs to himself -
-Damn, I haven't laughed like this in a long time...you got a name? Let me buy you a drink.
+Damn, I haven't laughed like this in a long time...you got a name?
 
-* [ Thanks, it's Matt ] -> HeBuyDrinkForU 
-* [ It's Matt. I appreciate the offer but I'll be alright, I'm glad I could help out though, take care. ] -> LeaveAngryBar 
+* [It's Matt] -> HeThank 
 
 
-=== HeBuyDrinkForU ===
-#speaker:Barret #portrait:Barret
- Good to meet ya Matt, I'm Barret.
-
-->DONE 
-
-//go to bar main shot
-
-=== LeaveAngryBar ===
-#speaker:Barret #portrait:Barret
- No worries Matt, have a good one. 
+=== HeThank ===
+ You're a strange one Matt...Thanks.
  
- ->DONE 
+ * [No problem...uhhh] ->Introduce
  
+ === Introduce ===
+ #speaker:Barret #portrait:Barret
+ Barret, the name's Barret.
+ 
+ * [*Nod head and leave*] ->DONE //go to bar main shot
+ 
+ * [I'm glad I could help, will you be alright?] ->GladToHelp
+ 
+ === GladToHelp ===
+ Yeah, just things not going as planned, I'll be alright here, thanks.
+ 
+ * [*Nod head and leave*] ->DONE
+
 //go to bar main shot
 
 === why===
@@ -107,7 +110,7 @@ Big mistake buddy.
  Wholly shit!
  Matt are you okay!?
  
- * [...?] ->AngryBarGuyYell
+ * [*Groan*] ->AngryBarGuyYell
  
  === AngryBarGuyYell ===
  #speaker:... #Portrait:Barret
@@ -129,7 +132,7 @@ Big mistake buddy.
  ...
  - He glares at you -
  
- * [...] ->SayNothing
+ * [*NEXT*] ->SayNothing
  
  === SayNothing ===
  #speaker:Dillon #portrait:Laid_Back
@@ -153,7 +156,6 @@ Big mistake buddy.
  Are you okay? What were you thinking?
  
  * [I don't know...] ->DontKnowDillon
- * [...] ->DontKnowDillon
  
  === DontKnowDillon ===
  When I said to go meet new people to unwind, I didn't mean find some random and get in a fight...

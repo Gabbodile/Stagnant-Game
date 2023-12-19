@@ -217,7 +217,7 @@ Hey there, what can I get for you tonight? #speaker:Bartender #portrait:Bartende
  We've seen many a poor men and women down on their luck come through here and the result is never pretty. 
  You need to sober up if you want to even start to deal with your issues.
  
- * [...] ->ContinueAbsolutelyNot
+ * [*NEXT*] ->ContinueAbsolutelyNot
  
  === ContinueAbsolutelyNot ===
  I'm not responsible for what you do with your life but I will not be serving you any more drinks tonight, I suggest you either sober up or leave.
