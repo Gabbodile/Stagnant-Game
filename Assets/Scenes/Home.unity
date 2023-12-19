@@ -3810,7 +3810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487350c1e85d9f6469b5d31741e2fbb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontDestroy: 1
+  dontDestroy: 0
   sceneName: CarRide
   carTransition: 0
 --- !u!114 &682407130
