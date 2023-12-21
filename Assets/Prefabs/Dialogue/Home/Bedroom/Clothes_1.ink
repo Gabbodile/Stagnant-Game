@@ -1,6 +1,6 @@
 Sniff test?#speaker:Matt #portrait:Matt
 
-sniiiiiiiiiiiff
+Sniff
 
-ew I think thats a biohazard.
+I think thats a biohazard
 -> DONE
