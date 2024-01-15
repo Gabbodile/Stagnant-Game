@@ -1,10 +1,9 @@
 #speaker:... #portrait:Cathy
-Hey there! 
-You look like you know how to party, wanna grab some drinks?
+Oh hey, it's you again!
+Ready to grab some drinks?
 
-* [Sure why not?] ->ThatsTheSpirit
-* [Um not exactly...] ->ConvinceHim
-* [Just coming by to...say "hi"?] ->MattAwkward
+* [Yup!] ->ThatsTheSpirit
+* [Nah, just passing by] ->ConvinceHim
 
  === ThatsTheSpirit ===
  That's the spirit! I've got something nice and strong to get us started, here you go.
@@ -43,33 +42,27 @@ You look like you know how to party, wanna grab some drinks?
  === DrunkBeforeDillonFindsYa ===
  Nice! Have another!
  
- * [ No turning back *Drink*] ->DillonFindDrunkMatt
- * [Sorry, I need the bathroom] ->OhSure
+ * [ No turnings...back *Drink*] ->DillonFindDrunkMatt
+ * [Sssorry, I needs the bathroom?] ->OhSure
  
  === OhSure ===
  Oh sure, no problem. It's just over there.
  
- * [Thanks *Leave*] ->DONE
+ * [Thankssh... *Leave*] ->DONE
  //go to bar bathroom
 
  === ConvinceHim ===
-Aww come'on, it'll be fun! 
+Oh...
+Are you sure?
 
-* [I guess it couldn't hurt...?] ->ThatsTheSpirit
-* [No thanks, I'm okay. Nice meeting you though] ->SuitSelfMeeting
+* [Well...I guess just one couldn't hurt?] ->ThatsTheSpirit
+* [Yeah, I'm sure. Thanks though] ->SuitSelfMeeting
 
  === SuitSelfMeeting ===
  Alright then, suit yourself!
- It was nice to meet you too stranger!
  
- * [*Leave*] ->MattThinkToSelf
-
- === MattAwkward ===
- Oh...Well hi there! 
- You sure you don't wanna have a drink? Come'on, it'll be fun!
- 
- * [I suppose one won't hurt?] ->ThatsTheSpirit
- * [N-No thanks... I'll be alright] ->SuitYourself
+ * [*Leave*] ->DONE 
+ //stay in bar area
  
  === SuitYourself ===
  Okay then! Suit yourself!
@@ -89,7 +82,7 @@ Aww come'on, it'll be fun!
  Woa-easy there bud, you're not looking so good... I think it's time to go home.
  
  * [Pfshhhh I'm fiiine...] ->HeDefNotFine 
- * [Yeah...I'm not feeling that *retches* ] ->Yeesh
+ * [Yeah...I'm nots feeling that *retches* ] ->Yeesh
  
   === Yeesh ===
   Take it easy Matt, deep breaths. The car's not too far away.
@@ -100,15 +93,15 @@ Aww come'on, it'll be fun!
  
   === HeDefNotFine === 
   What do you mean "fine"? You can barely keep yourself standing. 
-  Come on'bud, let's get you home.
+  Come'on bud, let's get you home.
   
- * [You're not my dad, you can't tell me what to do] ->CarryBoi
+ * [You're not my dadshh, you can't tell me whats to do] ->CarryBoi
  * [*sigh and follow Dillon*] ->Attaboy
 
  === CarryBoi ===
  Matt, really? 
  
- -He picks up a drunk Matt and carries him over his shoulders-
+ -He picks you up and carries you over his shoulders-
  
  There we go. The car isn't too far, you'll be alright.
  
@@ -117,7 +110,7 @@ Aww come'on, it'll be fun!
  //go to car ride
 
  === Attaboy ===
- Atta boy, come here -He puts his arm over Matt's shoulder to lean against-
+ Atta boy, come here -He puts your arm over his shoulder to lean against-
  
  ->DONE 
  
@@ -140,3 +133,5 @@ Aww come'on, it'll be fun!
  
  ->DONE
  //go to bar bathroom
+ 
+ 
