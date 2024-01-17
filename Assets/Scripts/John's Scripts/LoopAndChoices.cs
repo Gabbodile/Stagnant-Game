@@ -11,8 +11,9 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public int loop;
     public int goodChoices;
     public int badChoices;
+    public GameObject car;
     public int drinksConsumed;
-
+    
     [Header("Choice Bools")]
     //Check for certain things to happen
     public bool hasShowered;
@@ -21,6 +22,8 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public bool late;
     public bool dressed;
     public bool bathroom;
+
+    
 
 
     private static LoopAndChoices instance;
@@ -82,5 +85,10 @@ public class LoopAndChoices : GameBehaviour<LoopAndChoices>
     public void WentBathroom()
     {
         bathroom = true;
+    }
+
+    public void CarScene(GameObject car)
+    {
+        car.SetActive(true);
     }
 }

@@ -232,6 +232,11 @@ public class DialogueManager : GameBehaviour<DialogueManager>
         {
             LoopAndChoices.GetInstance().DrinksConsumed(increaseValue);
         });
+
+        currentStory.BindExternalFunction("Car", (GameObject car) =>
+        {
+            LoopAndChoices.GetInstance().CarScene(car);
+        });
     }
 
     private void UnbindInkExternalFunctions()

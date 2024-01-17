@@ -1,3 +1,6 @@
+EXTERNAL DrinksConsumed(Consumed)
+EXTERNAL CarScene(car)
+
 Hey there, what can I get for you tonight? #speaker:Bartender #portrait:Bartender
 
 * [A shot of whisky please] ->WhiskyOffer1
@@ -10,6 +13,8 @@ Here you are. - He hands you a shot of whisky -
 * [Thanks *take a drink*] ->DrankAlcohol1
 
 === DrankAlcohol1 ===
+~ DrinksConsumed(1)
+
 Been a long day?
 
 * [Yeah, you could say that...] ->LaughTalkOfferAfterOneAlcohol
@@ -100,6 +105,7 @@ Hmm Bathroom, Bathroom...
 //Matt leaves the bartender after having one alcohol and one water
 
 === AlcoholOffer2 ===
+~ DrinksConsumed(1)
 No worries, here you are.
 - He hands you a second shot of whisky -
 
@@ -226,6 +232,7 @@ Anyway, best be getting him home, again sorry about the trouble
 
 === BringMattToCar ===
 #speaker:Dillon #portrait:Laid_Back
+
 - Sigh -
 What am I gonna do with ya bud?
 Let's get you to the car
