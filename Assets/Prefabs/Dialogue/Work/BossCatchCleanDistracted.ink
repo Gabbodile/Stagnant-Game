@@ -1,3 +1,40 @@
+#speaker:Matt #portrait:Matt
+Oh this thing. I forgot i had it.
+
+* [put it away] -> putItDown
+* [open it] -> LookThroughIt
+
+=== putItDown ===
+Best not to get distracted while working.
+-> DONE
+
+=== LookThroughIt ===
+Maybe I could just take a quick peak through it. Just for the sake of the old times.
+
+I remember these. I had fun picking out materials and colour pallets for my wedding.
+
+A shame we didn't get to use it.
+
+* [next page] -> nextPage
+* [put it down] -> putItDown
+
+=== nextPage ===
+These were the invitations she designed. I wasn't too sure of the green but if it made her happy.
+
+* [next page] -> Page3
+* [put it down] -> Down
+
+=== Page3 ===
+Can't have a wedding without food. It was a lot of money and that cake was looked so tall, i always wondered how it could stay up.
+
+* [next page] -> caught
+* [put it down] -> Down
+
+=== Down ===
+There's a lot I regret about how it all went down, maybe a bite to eat at the breakroom will make me feel better.
+
+-> DONE
+=== caught ===
 #speaker:Boss #portrait:Boss
 
 Matt, put that away! When you're on the clock, you should be prioritising your work, not random bits of useless rubbish.

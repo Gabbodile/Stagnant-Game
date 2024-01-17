@@ -1,6 +1,4 @@
-Sniff test?#speaker:Matt #portrait:Matt
-
-Sniff
+#speaker:Matt #portrait:Matt
 
 I think thats a biohazard
 -> DONE

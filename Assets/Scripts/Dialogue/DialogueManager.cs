@@ -82,6 +82,7 @@ public class DialogueManager : GameBehaviour<DialogueManager>
 
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Backspace))
         {
+            Debug.Log("exited dialogue");
             ExitDialogueMode();
         }
     }

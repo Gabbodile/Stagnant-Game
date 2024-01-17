@@ -11,7 +11,7 @@ public class Boss : GameBehaviour
 
     private void Awake()
     {
-        if (_TIME.currentTime >= 4)
+        if (_LOOP.late)
         {
             // !_DM.dialogueIsPlaying && !disabled
             StartCoroutine(AngryTalk());
