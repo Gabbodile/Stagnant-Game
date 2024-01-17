@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ScreenFader : GameBehaviour<ScreenFader>
 {
+    public string nextScene;
     public Image fadeScreen;
     public GameObject fader;
     public GameObject carDay;
@@ -64,7 +65,7 @@ public class ScreenFader : GameBehaviour<ScreenFader>
         yield return new WaitForSeconds(1.2f);
         carDay.SetActive(false);
         carNight.SetActive(false);
-        _SC.ChangeScene("Office");
+        _SC.ChangeScene(nextScene);
     }
 
     public void StartCar()
