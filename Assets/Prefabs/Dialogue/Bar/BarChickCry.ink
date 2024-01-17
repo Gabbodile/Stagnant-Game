@@ -1,4 +1,5 @@
-EXTERNAL CarScene
+EXTERNAL CarScene(car)
+
 ...Was this girl always here?#speaker:Matt #portrait:Matt
 
 * [Are you okay?] ->TalkCryGirl
@@ -249,7 +250,6 @@ Same to you.
  === Attaboy ===
  Atta boy, come here -He puts his arm over Matt's shoulder to lean against-
  
- ~CarScene(car)
  ->DONE 
  
  //go to car ride

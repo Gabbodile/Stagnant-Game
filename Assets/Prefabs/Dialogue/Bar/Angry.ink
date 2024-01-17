@@ -1,3 +1,4 @@
+INCLUDE GlobalFunctions.ink
 
 #speaker:... #portrait:Barret
 
@@ -14,6 +15,7 @@ What do you think? Get out of here.
 * [I'll leave you to it] -> endConvo
 
 === what ===
+~ goodChoice(1)
 - Scoffs - Talk about it? What are you, my therapist? What's in it for you?
 
 * [Nothing, sorry, I just thought I'd ask.] -> NoOffence
@@ -97,6 +99,7 @@ You looking for a fucking fight punk!?
 * [I don't know, are you!? *Throw a punch*] -> buhBye
 
 === buhBye === 
+~ badChoice(2)
 - Laughs- 
 Big mistake buddy.
  - punch -

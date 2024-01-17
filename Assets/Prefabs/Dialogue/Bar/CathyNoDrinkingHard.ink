@@ -1,3 +1,4 @@
+INCLUDE GlobalFunctions.ink
 #speaker:... #portrait:Cathy
 ...
 Can I...help you?
@@ -79,6 +80,7 @@ Can I...help you?
  -She hands you a third shot of tequila-
  
  * [ No turnings...back *Drink*] ->DillonFindDrunkMatt
+    ~ badChoice(2)
  
  === MattDoneAfter2Alcohol === 
  Heh yeah you're looking a little wobbly, nice drinking with ya man!
